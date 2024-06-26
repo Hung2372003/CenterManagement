@@ -123,6 +123,7 @@
     <None Include="wwwroot\Schedule\assets\global\scripts\app.min.js" />
     <None Include="wwwroot\Schedule\assets\global\scripts\datatable.js" />
     <None Include="wwwroot\Schedule\assets\global\scripts\datatable.min.js" />
+    <None Include="wwwroot\views\home\Home.js" />
     <None Include="wwwroot\views\sign-in\script_signup.js" />
   </ItemGroup>
 
