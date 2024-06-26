@@ -1,0 +1,103 @@
+﻿.message-center {
+    top: 0%;
+}
+.message-header {
+    color: #fff;
+    padding: 0px 5px 0px 5px;
+    border-bottom: 1px solid #eee;
+    background-color: #428bca;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.message-title {
+    font-weight: 700 !important;
+    margin-left: 5px;
+    font-size: 15px;
+    line-height: 2.0;
+}
+.message-body {
+    padding: 15px;
+}
+.message-footer {
+    padding: 10px 15px;
+    border-bottom-right-radius: 3px;
+}
+/*.panel-body {
+    padding-bottom: 0;
+    padding-top: 0;
+}*/
+
+.message-footer {
+    text-align: right;
+}
+
+.images-mess {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.col-md-2 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 12.66667%;
+}
+.message-body {
+    padding: 15px;
+    display: flex;
+}
+
+
+.pr10 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #ebedf2;
+    border-radius: 0.3rem;
+    outline: 0;
+    margin-top: 52px;
+    -webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);
+}
+
+.col-md-9 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+.btn-delete {
+    margin-right: 12px;
+    background: #3598dc;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    -webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);
+}
+.btn-delete:hover{
+   
+}

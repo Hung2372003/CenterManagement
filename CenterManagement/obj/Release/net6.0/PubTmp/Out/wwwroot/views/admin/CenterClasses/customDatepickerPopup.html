@@ -1,0 +1,13 @@
+﻿<div class="uib-popup" ng-if="isOpen" ng-class="{ 'open': isOpen }">
+    <ul class="uib-popup-container dropdown-menu uib-dropdown-menu" ng-style="{top: position.top+'px', left: position.left+'px'}" ng-keydown="keydown($event)">
+        <li ng-transclude></li>
+        <li ng-if="showButtonBar" class="uib-button-bar">
+            <!--<span class="btn-group pull-left">
+                <button type="button" class="btn btn-sm btn-info" ng-click="select('today')" ng-disabled="isDisabled('today')">{{ getText('current') }}</button>
+            </span>
+            <span class="btn-group pull-right">
+                <button type="button" class="btn btn-sm btn-default" ng-click="close()">{{ getText('close') }}</button>
+            </span>-->
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,28 @@
+﻿<link href="../../css/message-box/style.css" rel="stylesheet" />
+<div class="message-header">
+    <img class="images-mess" title="Close" src="/images/default/close.png" ng-click="cancel()" />
+    <div class="message-title" id="message-title">Xác nhận</div>
+</div>
+<div class="message-body">
+    <!--<div class="portlet-body form">
+        <div class="form-body">-->
+    <div class="col-md-2">
+        <img src="../../images/message/deleted.png" class="images-mess" />
+    </div>
+    <div class="col-md-9">
+        <span>{{message}}</span>
+    </div>
+    <!--</div>
+    </div>-->
+</div>
+<div class="message-footer pt-0">
+    <!--<a ng-click="ok()" class="btn btn-green">
+        <i class="fas fa-check"></i>&nbsp;Xác nhận
+    </a>-->
+    <div class="pr10">
+        <a ng-click="ok()" class="">
+            <span><i class="fa fa-check btn-delete"></i></span>
+        </a>
+        <p class="text-underline fs12 mb5 pt3">Xác nhận</p>
+    </div>              
+</div>

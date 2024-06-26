@@ -1,0 +1,40 @@
+﻿
+
+                    <div class="card-body" style="display: ruby; padding: 7px; width :40%;">                      
+                            <div class="form-group">
+                                <label for="exampleInputUsername1">Chọn Lớp:</label>
+                                <input type="text" class="form-control" id="exampleInputUsername1" style="height: 41px;margin-left: -7px;" placeholder="Nhập tên lớp...">
+                            </div>
+                            <button type="button" class="btn btn-gradient-danger btn-icon-text" style="height: 41px;">
+                            <i class="mdi mdi-upload btn-icon-prepend"  ></i> Điểm danh </button>                    
+                    </div>
+
+
+<div class="row">
+    <div class="col-12 grid-margin">
+        <div class="card">
+            <div class="card-body">
+                <div style="display: flex; gap: 20%; width: 100%; margin-bottom: 25px;">
+                    <h4 class="card-title" style="font-weight: bold; font-size: 25px; margin: 0px; height: 40px; width: 40% ">Danh sách học viên</h4>
+                    <div class="card-body" style="display: flex; padding: 0px; width :40%;">
+                        <div style="display: flex; position: absolute;right:40px;">
+                            <div class="form-group" ">
+                                <input type="text" class="form-control" id="exampleInputUsername1" style="height: 41px;margin-left: -7px;" placeholder="Tên học viên...">
+                            </div>
+                            <button type="button" class="btn btn-gradient-info btn-fw" style="height: 41px; ">Tìm kiếm</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table datatable=""
+                           dt-options="dtOptions"
+                           dt-columns="dtColumns"
+                           dt-instance="dtInstance"
+                           class="table dataTable table-bordered table-hover table-striped "                         
+                           style="border-bottom: 0px solid #111;">
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,86 @@
+﻿
+
+<div class="card" style="-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 54%);position:relative">
+    <div class="card-body">
+        <button class="close-button" aria-label="Close" ng-click="cancel()">
+            <span class="close-icon">&times;</span>
+        </button>
+        <form class="forms-sample">
+            <div style="display:flex">
+                <div class="form-group" style="padding-right:17px;width:100%;">
+                    <label for="exampleInputUsername1">Tên Lớp:</label>
+                    <input type="text" class="form-control" ng-model="mode.classes" id="exampleInputUsername1" placeholder="Nhập tên lớp...">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Bài giảng:</label>
+                    <input type="email" class="form-control" ng-model="mode.topic" id="exampleInputEmail1" placeholder="Tên bài giảng...">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputUsername1">Giảng viên:</label>
+                <input type="text" class="form-control" ng-model="mode.teacherId" id="exampleInputUsername1" placeholder="Chọn giảng viên...">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputUsername1">Buổi học:</label>
+                <div style="position:relative">
+                    <i class="fas fa-calendar-alt click-button" ng-click="openStartDate()" style="position: absolute; transform: translateY(88%); right: 17px; "></i>
+                    <input type="text" class="form-control" readonly required ng-click="openStartDate()" ng-model="mode.startDate" placeholder="Ngày dạy..." uib-datepicker-popup="{{format}}" is-open="startDate.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats">
+                </div>
+            </div>
+
+
+            <div style="display:flex">
+                <div class="form-group" style="margin-right:17px">
+                    <label for="exampleInputPassword1">Thời gian bắt đầu:</label>
+                    <div style="position:relative">
+                        <i class="fas fa-calendar-alt click-button" ng-click="showStartTime=true" style="position: absolute; transform: translateY(88%); right: 17px; "></i>
+                        <input type="text" class="form-control" placeholder="Giờ:Phút..." id="datetime" ng-click="showStartTime=true" ng-model="model.startTime" readonly required>
+
+                        <div class="time-picker" ng-show="showStartTime">
+                            <select ng-model="selectedHour">
+                                <option ng-repeat="hour in hours" ng-value="hour">{{hour}}</option>
+                            </select>
+                            :
+                            <select ng-model="selectedMinute">
+                                <option ng-repeat="minute in minutes" ng-value="minute">{{minute}}</option>
+                            </select>
+                            <button ng-click="setStartTime()">OK</button>
+                            <button id="time-picker button close" style="padding: 8px 10px !important; color: #fff !important; border: aliceblue !important; cursor: pointer; background: linear-gradient(to right, #ff8585, #b40000 99%) !important; border-radius: 5px; height: 33px; margin-left: 7px !important;" ng-click="setCloseStartTime()">Close</button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Thời gian kết thúc:</label>
+                    <div style="position:relative">
+                        <i class="fas fa-calendar-alt click-button" ng-click="showEndTime=true" style="position: absolute; transform: translateY(88%); right: 17px;"></i>
+                        <input type="text" class="form-control" placeholder="Giờ:Phút..." id="datetime" ng-change="setEndTime()" ng-click="showEndTime=true" ng-model="model.endTime" readonly required >
+
+                        <div class="time-picker" ng-show="showEndTime">
+                            <select ng-model="selectedHour">
+                                <option ng-repeat="hour in hours" ng-value="hour">{{hour}}</option>
+                            </select>
+                            :
+                            <select ng-model="selectedMinute">
+                                <option ng-repeat="minute in minutes" ng-value="minute">{{minute}}</option>
+                            </select>
+                            <button ng-click="setEndTime()">OK</button>
+                            <button id="time-picker button close" style="padding: 8px 10px !important; color: #fff !important; border: aliceblue !important; cursor: pointer; background: linear-gradient(to right, #ff8585, #b40000 99%) !important; border-radius: 5px; height: 33px; margin-left: 7px !important;" ng-click="setCloseEndTime()">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+</form>
+        <button type="button" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 41px; padding-left: 17px; padding-right: 17px">
+            Thêm buổi dạy
+        </button>
+        <button class="btn btn-light click-button" ng-click="cancel()">Cancel</button>
+    </div>
+</div>

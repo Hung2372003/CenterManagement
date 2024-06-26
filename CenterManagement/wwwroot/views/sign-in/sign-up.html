@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles_signup.css">
+    <title>Login & Register</title>
+</head>
+<body>
+  <h1>Welcome to Enlish Center Mangement System</h1>
+    <div id="login-tab-content" class="tabcontent">
+        <h3>Sign In</h3>
+        <form class="login-form" action="" method="post" >
+        <input type="text" class="input" id="user_login" autocomplete="off" placeholder="Username"/>
+        <input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Password"/>
+        <select name="role-user" id="role-user">
+            <option value="student">Học sinh</option>
+            <option value="teacher">Giáo viên</option>
+            <option value="admin">Admin</option>
+            <option value="parents">Phụ huynh</option>
+        </select>
+        <br>
+        <input type="submit" class="button" value="Login" id="btn_submit_signin" />
+        </form>
+        <div class="help-text">
+        <p>
+            <a href="#signup-tab-content">Forget your password? </a>
+            <a class="tablinksignup">Sign up</a>
+        </p>
+        </div>
+    </div>
+    <div id="signup-tab-content" class="tabcontent">
+        <h3>Sign up</h3>
+        <form class="signup-form" action="" method="post">
+          <input type="text" class="input" id="name" autocomplete="off" placeholder="Name">
+          <input type="email" class="input" id="user_email" autocomplete="off" placeholder="Email">
+          <input type="text" class="input" id="user_signup" autocomplete="off" placeholder="Username">
+          <input type="password" class="input" id="user_pass_signup" autocomplete="off" placeholder="Password">
+          <input type="password" class="input" id="user_pass_confirm" autocomplete="off" placeholder="Confirm Password">
+          <select name="role-user" id="role-user">
+            <option value="student">Học sinh</option>
+            <option value="teacher">Giáo viên</option>
+            <option value="admin">Admin</option>
+            <option value="parents">Phụ huynh</option>
+        </select>
+          <input type="submit" class="button" value="Sign Up" id="btn_submit_signup"/>
+          <div id="error-message" class="error"></div>
+        </form>
+        <div class="help-text">
+          <p>By signing up, you agree to our Term of service</p>
+          <a href=" https://localhost:7033/CenterClasses" >Sign in</a>
+        </div>
+      </div>
+  <script src="script_signup.js"></script>
+</body>
+</html>

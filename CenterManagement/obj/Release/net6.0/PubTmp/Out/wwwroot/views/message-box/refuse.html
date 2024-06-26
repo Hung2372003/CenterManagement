@@ -1,0 +1,44 @@
+﻿<link href="../../css/message-box/style.css" rel="stylesheet" />
+<div class="message-header">
+    <img class="icon-remove" title="Close" src="/images/default/close.png" ng-click="cancel()" />
+    <div class="message-title" id="message-title">{{Title}}</div>
+</div>
+<div class="message-body">
+    <div class="row">
+        <div class="col-md-2">
+            <img src="../../images/message/question.png" class="h-40" />
+        </div>
+        <div class="col-md-9">
+            <form name="refuseform" class="" method="post" ng-validate="validationOptionsRefusePurchase">
+                <div class="form-body pt-0">
+                    <div class="row mt-action-5">
+                        <div class="col-md-12">
+                            <div class="form-group" ng-class="{ 'has-error': errorRefuse}">
+                                <i class="fa fa-barcode"></i>
+                                <label class="control-label require">Lý do từ chối</label>
+                                <input class="form-control" name="Refuse" ng-model="model.Refuse" type="text" placeholder="Lý do từ chối..." ng-change="changleSelect('Refuse')" />
+                                <span ng-show="errorRefuse" class="label-color validation-message">
+                                    Lý do từ chối không được để trống!
+                                </span>
+                            </div>
+                            <div class="form-group">
+                                <i class="fa fa-barcode"></i>
+                                <label class="control-label ">Ghi chú</label>
+                                <textarea class="form-control" rows="2" name="Note" ng-model="model.Note" type="text" placeholder="ghi chú..." />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="row ">
+                <div class="col-md-12">
+                    <uib-tabset active="active">
+                        <div class="text-center pull-right mr20 mb10" ng-click="submit()" href="javascript:;">
+                            <button type="button" class="btn btn-success margin-top-10">Xác nhận</button>
+                        </div>
+                    </uib-tabset>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

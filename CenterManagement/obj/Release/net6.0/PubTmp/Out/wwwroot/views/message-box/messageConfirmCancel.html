@@ -1,0 +1,79 @@
+﻿<link href="../../css/message-box/style.css" rel="stylesheet" />
+<div class="message-header">
+    <img class="icon-remove" title="Close" src="/images/default/close.png" ng-click="cancel()" />
+    <div class="message-title" id="message-title">Xác nhận</div>
+</div>
+<div class="message-body pt-1">
+    <!--<div class="portlet-body form">-->
+    <!-- <div class="form-body">-->
+    <form name="extensionForm" class="form-horizontal " method="post" ng-validate="validationOptionsExtension">
+        <div class="col-md-12 col-sm-12" style="margin-bottom:0.5em">
+            <div class="col-md-2 col-sm-2 float-left">
+                <img src="../../images/message/deleted.png" class="h-40" />
+            </div>
+            <div class="col-md-10 col-sm-10">
+                <span>{{message}}</span>
+            </div>
+        </div>
+        <br>
+
+        <!--<div class="col-md-12 col-sm-12" style="margin-bottom:0.5em">
+            <div class="col-md-2 col-sm-2">
+                <label class="control-label">Lí do: </label>
+            </div>
+            <div class="form-group col-md-10 col-sm-10" style="color: red" ng-class="{ 'has-error': errorIdProject}">
+                <input type="text" class="form-control" ng-model="model.Refuse" autocomplete="off" placeholder="Lý do hủy..." id="RefuseReason" on-select="changleSelect('RefuseReason')" />
+                <span ng-show="errorIdProject" class="label-color validation-message">
+                    Lý do không được để trống!
+                </span>
+            </div>
+        </div>-->
+        <!--<div class="col-lg-12">
+            <div class=" form-group" ng-class="{ 'has-error': errorExtensionDate}">
+                <div class="col-md-2">
+                    <label class="control-label require">Lí do:</label>
+                </div>
+                <div class="col-md-9 ">
+                    <div class="input-group">
+                        <textarea ng-model="model.Refuse" autocomplete="off" class="form-control" type="text" placeholder="Lí do hủy..." rows="2" ng-keydown="($event.keyCode == 13) && reload()" name='ExtensionReason' id="ExtensionReason" ng-change="changleSelect('RefuseReason')" />
+                        <span class="input-group-btn">
+                            <button type="button" ng-click="model.Refuse='';" class="btn btn-default no-shadow">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                        </span>
+                    </div>
+                    <span ng-show="errorExtensionDate" class="label-color validation-message">
+                        Lý do hủy không được để trống!
+                    </span>
+                </div>
+            </div>
+        </div>-->
+        <div class="col-lg-12">
+            <div class=" form-group">
+                <div class="col-md-2">
+                    <i class="fa fa-pencil-square-o"></i>
+                    <label class="control-label require">Lí do </label>
+                </div>
+                <div class="col-md-10 ">
+                    <textarea class="form-control" ng-model="model.Refuse" name="ExtensionRefuse" id="ExtensionRefuse" rows="2" placeholder="Lí do hủy..." ng-change="changleSelect('RefuseReason')" />
+                </div>
+            </div>
+        </div>
+        <!--</div>-->
+        <!--</div>-->
+        </form>
+</div>
+<div class="message-footer  pt-0">
+    <!--<a ng-click="ok()" class="btn btn-green">
+        <i class="fas fa-check"></i>&nbsp;Xác nhận
+    </a>-->
+    <div class="pr10">
+        <uib-tabset active="active">
+            <div class="text-center pull-right" ng-click="submit()" href="javascript:;">
+                <button type="button" class="btn btn-success margin-top-10" style="margin-bottom:0.5em">Xác nhận</button>
+            </div>
+        </uib-tabset>
+    </div>
+</div>
+
+

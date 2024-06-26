@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1{
+  margin-left: 24%;
+  font-size: 3em;
+  font-family: Raleway, sans-serif;
+  color: rgb(236, 142, 17);
+  text-shadow: rgb(119, 119, 119) 1px 1px 0px;
+  margin-top: 80px;
+  margin-bottom: 4%;
+  padding: 20px;
+}
+.tabcontent h3{
+  margin: 0 0 12px 40%;
+  padding-top: 6%;
+  padding-bottom: 3%;
+  color: #68530f;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:hover {
+  color: #4e4d4d;
+}
+
+input {
+  font: 16px/26px "Raleway", sans-serif;
+}
+body {
+  margin: auto;
+  color: #666;
+  background-color: #f1f2f2;
+  font: 16px/26px "Raleway", sans-serif;
+  background-image: url("./image/backgroung0.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+
+.tabcontent#signup-tab-content {
+  width: 370px;
+  height: 600px;
+  display: none;
+}
+.tabcontent#login-tab-content{
+  width: 370px;
+  height: 350px;
+  display: block;
+}
+
+
+.tabcontent {
+  margin-left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px) opacity(0.8) grayscale(50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  margin-top: 5%;
+}
+
+form #role-user{
+  margin: 0 0 12px 10%;
+  width: 30%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  color: #68530f;
+}
+
+form .input {
+  border-radius: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: inherit;
+  font-family: inherit;
+  padding: 0.8em 0 10px 0.8em;
+  border: 1px solid #cfcfcf;
+  outline: 0;
+  display: inline-block;
+  margin: 0 0 0.8em 10%;
+  padding-right: 2em;
+  width: 80%;
+}
+form .button {
+  width: 50%;
+  border-radius: 5px;
+  margin-left: 25%;
+  margin-bottom: 20px;
+  padding: 0.8em 0 10px 0.8em;
+  background-color: #957203;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px) opacity(0.8) grayscale(50%);
+  transition: all 0.3s ease;
+}
+form .button:hover {
+  background-color: #4e4d4d;
+  backdrop-filter: blur(5px) opacity(1) grayscale(0%);
+}
+form .checkbox {
+  padding: 1px;
+  margin: 0.5em 0 1.5em;
+}
+
+.help-text{
+  margin: 0 18% 0 18%;
+  color: #68530f;
+}

@@ -1,0 +1,44 @@
+﻿
+
+<div class="card" style="-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 54%);position:relative">
+    <div class="card-body">
+        <h4 class="card-title"> Thêm lớp học </h4>
+        <button class="close-button" aria-label="Close" ng-click="cancel()">
+            <span class="close-icon">&times;</span>
+        </button>
+        <form class="forms-sample">
+
+            <div style="display:flex">
+                <div class="form-group" style="width:100% ;padding-right:17px" >
+                    <label for="exampleInputUsername1">Môn Học:</label>
+                    <input type="text" class="form-control" ng-model="model.name" id="exampleInputUsername1" placeholder="Nhập tên lớp...">
+                </div>
+                <div class="form-group" style="width:100%">
+                    <label for="exampleInputUsername1">Tên lớp:</label>
+                    <input type="text" class="form-control" ng-model="model.grade" id="exampleInputUsername1" placeholder="Nhập tên lớp...">
+                </div>
+            </div>
+
+            <div style="display:flex">
+                <div class="form-group"style="width:100% ;padding-right:17px" >
+                    <label for="exampleInputUsername1">Số học viên tối đa:</label>
+                    <input type="text" class="form-control" ng-model="model.maxStudent" id="exampleInputUsername1" placeholder="Nhập tên lớp...">
+                </div>
+
+                <div class="form-group"style="width:100%">
+                    <label for="exampleInputPassword1">Năm học:</label>
+                    <input type="text" class="form-control" ng-model="model.year" id="exampleInputPassword1" placeholder="Năm học...">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Tổng học phí:</label>
+                <input type="text" class="form-control" ng-model="model.tuition" id="exampleInputPassword1" placeholder="Năm học...">
+            </div>
+            <button type="button" class="btn btn-gradient-danger btn-icon-text click-button" ng-click="submit()" style="height: 41px; padding-left: 17px; padding-right: 17px">
+                Thêm mới
+            </button>
+            <button class="btn btn-light click-button" ng-click="cancel()">Cancel</button>
+        </form>
+    </div>
+</div>
