@@ -1,0 +1,37 @@
+﻿<div class="card" style="-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 54%);position:relative">
+    <div class="card-body">
+        <h4 class="card-title"> Thanh toán học phí online </h4>
+        <button class="close-button" aria-label="Close" ng-click="cancel()">
+            <span class="close-icon">&times;</span>
+        </button>
+        <form class="forms-sample">
+
+            <div style="display:flex">
+                <div class="form-group" style="width:100% ;padding-right:17px">
+                    <label for="exampleInputUsername1">Lớp:</label>
+                    <input type="text" class="form-control" ng-model="model.classesId" id="exampleInputUsername1" readonly placeholder="Nhập tên lớp...">
+                </div>
+
+                <div class="form-group" style="width:100%">
+                    <label for="exampleInputUsername1">Còn phải đóng:</label>
+                    <input type="text" class="form-control" ng-model="model.tuitionUnpaid" id="exampleInputUsername1" readonly placeholder="Nhập tên lớp...">
+             
+                </div>
+            </div>
+            <div class="form-group" style="width:100%">
+                <label for="exampleInputUsername1">Số tiền thanh toán:  VNĐ</label>
+                <input type="number" class="form-control" ng-model="model.pay" id="exampleInputUsername1" placeholder="Nhập tên lớp...">
+            </div>
+
+
+            <button type="button" class="btn btn-gradient-danger btn-icon-text click-button" ng-click="generateQRCode()" style="height: 41px; padding-left: 17px; padding-right: 17px">
+                Thanh toán
+            </button>
+            <button class="btn btn-light click-button" ng-click="cancel()">Cancel</button>
+        </form>
+        <div style="display: flex; justify-content: space-evenly; margin-top: 74px" id="qrcode">
+            <img src="{{qr}}" alt="">
+        </div>
+        
+    </div>
+</div>

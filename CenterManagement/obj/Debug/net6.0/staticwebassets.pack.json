@@ -1485,6 +1485,10 @@
       "PackagePath": "staticwebassets\\views\\Parents\\ParentsSonClasses\\index.html"
     },
     {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\Parents\\ParentsSonClasses\\pay.html",
+      "PackagePath": "staticwebassets\\views\\Parents\\ParentsSonClasses\\pay.html"
+    },
+    {
       "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\CenterClasses\\Controller.js",
       "PackagePath": "staticwebassets\\views\\admin\\CenterClasses\\Controller.js"
     },
@@ -1629,12 +1633,12 @@
       "PackagePath": "staticwebassets\\views\\sign-in\\assets\\styles_signup.css"
     },
     {
-      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\sign-in\\script_signup.js",
-      "PackagePath": "staticwebassets\\views\\sign-in\\script_signup.js"
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\sign-in\\index.html",
+      "PackagePath": "staticwebassets\\views\\sign-in\\index.html"
     },
     {
-      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\sign-in\\sign-up.html",
-      "PackagePath": "staticwebassets\\views\\sign-in\\sign-up.html"
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\sign-in\\script_signup.js",
+      "PackagePath": "staticwebassets\\views\\sign-in\\script_signup.js"
     },
     {
       "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\student\\ListClassesStudents\\Controller.js",

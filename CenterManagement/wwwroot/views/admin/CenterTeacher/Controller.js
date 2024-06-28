@@ -8,9 +8,9 @@ app.controller("Ctrl_ESEIM", function ($scope, $rootScope) {
 
 
     $rootScope.studentData = [
-        { id: 1, subject: 'tiếng anh', year: '2024', grade: "3.1", maxStudents: 70, registerStudent: 30, tuition: 20000000, statusClasses: "Mở đăng ký" },
-        { id: 2, subject: 'tiếng anh', year: '2024', grade: "3.1", maxStudents: 70, registerStudent: 30, tuition: 70000000, statusClasses: "Đóng đăng ký" },
-        { id: 3, subject: 'tiếng anh', year: '2024', grade: "3.1", maxStudents: 70, registerStudent: 30, tuition: 90000000, statusClasses: "Lớp học kết thúc" }
+        { _id: 1, subject: 'tiếng anh', year: '2024', grade: "3.1", maxStudents: 70, registerStudent: 30, salary: 20000000, paidSalary:200000, statusClasses: "Mở đăng ký" },
+        { _id: 2, subject: 'tiếng anh', year: '2024', grade: "3.1", maxStudents: 70, registerStudent: 30, salary: 70000000, paidSalary:200000, statusClasses: "Đóng đăng ký" },
+        { _id: 3, subject: 'tiếng anh', year: '2024', grade: "3.1", maxStudents: 70, registerStudent: 30, salary: 90000000, paidSalary:200000,statusClasses: "Lớp học kết thúc" }
     ]
 
 
@@ -126,25 +126,28 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         });
 
     vm.dtColumns = [
-        DTColumnBuilder.newColumn('id').withTitle('ID').renderWith(function (data, type) {
+        DTColumnBuilder.newColumn('_id').withTitle('ID').renderWith(function (data, type) {
             return data;
         }),
-        DTColumnBuilder.newColumn('Name').withTitle('Tên giảng viên').renderWith(function (data, type) {
+        DTColumnBuilder.newColumn('name').withTitle('Tên giảng viên').renderWith(function (data, type) {
             return data;
         }),
-        DTColumnBuilder.newColumn('Addresses').withTitle('Địa chỉ').renderWith(function (data, type) {
+        DTColumnBuilder.newColumn('addresses').withTitle('Địa chỉ').renderWith(function (data, type) {
             return data;
         }),
-        DTColumnBuilder.newColumn('Email').withTitle('Email').renderWith(function (data, type) {
+        DTColumnBuilder.newColumn('email').withTitle('Email').renderWith(function (data, type) {
             return data;
         }),
-        DTColumnBuilder.newColumn('salary').withTitle('Tổng lương tháng này').renderWith(function (data, type) {
+        DTColumnBuilder.newColumn('salary').withTitle('Lương tháng ').renderWith(function (data, type) {
             return data ;
+        }),
+        DTColumnBuilder.newColumn('paidSalary').withTitle('Đã thanh toán').renderWith(function (data, type) {
+            return data;
         }),
 
         DTColumnBuilder.newColumn('action').notSortable().withTitle('Thao tác').renderWith(function (data, type, full, meta) {
     
-            return ' <button type="button"  ng-click="pay(' + full.Id + ')" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 30px; padding-left: 17px; padding-right: 17px;background: #07b113;align-items: center;display:flex;">Đăng ký</button > ';
+            return ' <button type="button"  ng-click="pay(' + full.Id + ')" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 30px; padding-left: 17px; padding-right: 17px;background: #07b113;align-items: center;display:flex;">Trả lương</button > ';
         })
     ];
 

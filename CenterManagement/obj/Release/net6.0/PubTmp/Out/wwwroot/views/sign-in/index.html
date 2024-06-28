@@ -1,0 +1,48 @@
+﻿<h1>Welcome to Enlish Center Mangement System</h1>
+<div ng-show="isVisible1" id="login-tab-content" class="tabcontent">
+    <h3>Sign In</h3>
+    <form class="login-form" >
+        <input type="text" class="input"  ng-model="user.username" id="user_login" autocomplete="off" placeholder="Username" />
+        <input type="password" class="input"  ng-model="user.password" id="user_pass" autocomplete="off" placeholder="Password" />
+        <select name="role-user" ng-model="user.role" id="role-user">
+            <option value="student">Học sinh</option>
+            <option value="teacher">Giáo viên</option>
+            <option value="admin">Admin</option>
+            <option value="parents">Phụ huynh</option>
+        </select>
+        <br>
+        <button type="button" ng-click="login()" class="button"  id="btn_submit_signin" > Loign</button>
+    </form>
+    <div class="help-text" style="display: flex; justify-content: space-evenly;">
+        <p><a href="#signup-tab-content">Forget your password? </a></p>
+        <p  ng-click="openSign()"><a class="tablinksignup" style="cursor: pointer;">Sign up</a></p>    
+    </div>
+</div>
+<div ng-show="isVisible" id="signup-tab-content" class="tabcontent">
+    <h3>Sign up</h3>
+    <form class="signup-form" action="" method="post">
+        <input ng-model="sign.name" type="text" class="input" id="name" autocomplete="off" placeholder="Tên">
+        <input ng-model="sign.email" type="email" class="input" id="user_email" autocomplete="off" placeholder="Email">
+        <input ng-model="sign.userName" type="text" class="input" id="user_signup" autocomplete="off" placeholder="Tên đăng nhập">
+        <input ng-model="sign.Password" type="password" class="input" id="user_pass_signup" autocomplete="off" placeholder="Mật khẩu">
+        <input ng-model="sign.confirmPass" type="password" class="input" id="user_pass_confirm" autocomplete="off" placeholder="Nhập lại mật khẩu">
+        <input ng-model="sign.myStudent" type="password" class="input" id="user_pass_confirm" autocomplete="off" placeholder="Phụ huynh học sinh nếu là phụ huynh">
+        <select name="role-user" id="role-user">
+            <option value="student">Học sinh</option>
+            <option value="teacher">Giáo viên</option>
+            <option value="admin">Admin</option>
+            <option value="parents">Phụ huynh</option>
+        </select>
+
+        <button type="button" ng-click="sign_up()" class="button" value="Sign Up" id="btn_submit_signup">Sign Up</button>
+        <div id="error-message" class="error"></div>
+    </form>
+    <div class="help-text">
+        <p>By signing up, you agree to our Term of service</p>
+        <a href="/admin">Sign in</a>
+    </div>
+</div>
+
+
+
+    

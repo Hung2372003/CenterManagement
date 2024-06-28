@@ -14690,6 +14690,7 @@ table.dataTable tbody td {
 .fc-event:hover {
     width: max-content;
     z-index: 1500;
+    height:max-content
 }
 
 .portlet.calendar .fc-event:hover {

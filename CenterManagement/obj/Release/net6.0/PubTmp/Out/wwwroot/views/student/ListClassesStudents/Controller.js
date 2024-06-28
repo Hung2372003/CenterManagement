@@ -53,7 +53,7 @@ app.config(function ($routeProvider) {
 });
 
 
-app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal, DTOptionsBuilder, DTColumnBuilder) {
+app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal, DTOptionsBuilder, DTColumnBuilder, $window) {
 
 
 
@@ -116,7 +116,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         //});
 
     vm.dtColumns = [
-        DTColumnBuilder.newColumn('id').withTitle('ID').renderWith(function (data, type) {
+        DTColumnBuilder.newColumn('_id').withTitle('ID').renderWith(function (data, type) {
             return data;
         }),
         DTColumnBuilder.newColumn('name').withTitle('Tên lớp').renderWith(function (data, type) {
@@ -126,6 +126,12 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
             return data;
         }),
         DTColumnBuilder.newColumn('grade').withTitle('Lớp').renderWith(function (data, type) {
+            return data;
+        }),
+        DTColumnBuilder.newColumn('maxStudents').withTitle('Số học sinh').renderWith(function (data, type) {
+            return data;
+        }),
+        DTColumnBuilder.newColumn('tuition').withTitle('học phí').renderWith(function (data, type) {
             return data;
         }),
         DTColumnBuilder.newColumn('totalLesson').withTitle('Tổng số buổi học').renderWith(function (data, type) {
@@ -142,23 +148,28 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
 
     vm.dtInstance = {};
 
-    vm.dtOptions.data = [
-        { id: 1, name: 'Listening', year: '2000', totalLesson: 15, learned: 2, grade: 'Grade 1', skipClass :1},
-        { id: 2, name: 'reading', year: '2000', totalLesson: 14, learned: 4, grade: 'Grade 2', skipClass:2 },
-        { id: 3, name: 'wishtkjths', year: '2000', totalLesson: 17, learned: 7, grade: 'Grade 3', skipClass :2}
-    ];
+    //vm.dtOptions.data = [
+    //    { id: 1, name: 'Listening', year: '2000', totalLesson: 15, learned: 2, grade: 'Grade 1', skipClass :1},
+    //    { id: 2, name: 'reading', year: '2000', totalLesson: 14, learned: 4, grade: 'Grade 2', skipClass:2 },
+    //    { id: 3, name: 'wishtkjths', year: '2000', totalLesson: 17, learned: 7, grade: 'Grade 3', skipClass :2}
+    //];
     /*vm.dtOptions.data = $rootScope.studentData;*/
 
 
-    //$scope.response = {};
-    // $http.get('http://localhost:3000/api/v1/student')
-    //    .then(function (response) {
-    //        $scope.response = response.data;
-    //        vm.dtOptions.data = $scope.response.metadata;
-    //    })
-    //    .catch(function (error) {
-    //        console.error('Error:', error);
-    //    });
+    $scope.response = {};
+    $http.get('http://localhost:3000/api/v1/student/statusv2', {
+        headers: {
+            'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
+            'Content-Type': 'application/json'
+        }
+    })
+        .then(function (response) {
+            $scope.response = response.data;
+            vm.dtOptions.data = $scope.response.metadata;
+        })
+        .catch(function (error) {
+            console.error('Error:', error);
+        });
 
 
 

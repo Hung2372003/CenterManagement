@@ -24,7 +24,7 @@ app.controller("Ctrl_ESEIM", function ($scope, $rootScope) {
 
 });
 
-app.factory('dataservice', function ($http) {
+app.factory('dataservice', function ($http, $window) {
     $http.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest";
     var headers = {
         "Content-Type": "application/json;odata=verbose",
@@ -53,10 +53,23 @@ app.factory('dataservice', function ($http) {
     };
     return {
         addClasses: function (data, callback) {
-            $http.post('link/api' , data).success(callback);
+            $http.post('http://localhost:3000/api/v1/class', data, {
+                headers: {
+                    'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
+                    'Content-Type': 'application/json'
+                }
+            }).then(function (response) {          
+                callback(response.data);
+            }, function (error) {
+                console.error('Error:', error);
+            });
         },
         addGrades: function (data, callback) {
-            $http.post('//', data).success(callback);
+            $http.post('http://localhost:3000/api/v1/class', data).then(function (response) {
+                callback(response.data);
+            }, function (error) {
+                console.error('Error:', error);
+            });
         },
         close: function (data, callback) {
             $http.post('//', data).success(callback);
@@ -68,7 +81,25 @@ app.factory('dataservice', function ($http) {
 });
 
 
-
+app.config(function () {
+    toastr.options = {
+        "closeButton": true,
+        "debug": false,
+        "newestOnTop": true,
+        "progressBar": true,
+        "positionClass": "toast-top-right",
+        "preventDuplicates": true,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    };
+});
 
 app.config(function ($routeProvider) {
     $routeProvider
@@ -93,11 +124,12 @@ app.config(function ($routeProvider) {
             redirectTo: "/"
         });
 
+   
 
 
 });
 
-app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal, DTOptionsBuilder, DTColumnBuilder, dataservice) {
+app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal, DTOptionsBuilder, DTColumnBuilder, dataservice, $window) {
 
 
     vm = $scope;
@@ -138,7 +170,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         .withOption('autoWidth', false)
         .withOption('processing', true)
         .withOption('lengthChange', false)
-        .withOption('searching', false)
+        .withOption('searching', true)
         .withOption('scrollX', false)
         .withOption('pageLength', 10)
         .withOption('scrollCollapse', true)
@@ -199,19 +231,21 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
             } else { return data; }
               
         }),
+        DTColumnBuilder.newColumn(null).withTitle('Số buổi').renderWith(function (data, type, full) {
+            return `<div style="display: flex;justify-content: space-between;align-items: center;"><span>` + 5 + `</span>` + '<button title="Các buổi học" ng-click="detail(' + full.id + ')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #3d9afb;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon"><i class="fa-solid fa-eye"></i></button></div>';
+        }),
+
         DTColumnBuilder.newColumn('action').notSortable().withTitle('Thao tác').renderWith(function (data, type, full, meta) {
-            if (full.statusClasses == "Mở đăng ký") {
-                return '<button title="Các buổi học" ng-click="detail(' + full.id + ')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #3d9afb;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon"><i class="fa-solid fa-eye"></i></button>' +
-                    '<button title="Đóng đăng ký" ng-click="lock(' + full.id + ')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #ff6000;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon"><i class="fa-solid fa-key"></i></button>' +
+            if (full.statusClasses == "Mở đăng ký") {            
+                return '<button title="Đóng đăng ký" ng-click="lock(' + full.id + ')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #ff6000;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon"><i class="fa-solid fa-key"></i></button>' +
                     '<button title="Xóa" ng-click="delete(' + full.id + ')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #fe0000;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon"><i class="fa fa-trash"></i></button>';
             }
-            else if (full.statusClasses == "Đóng đăng ký") {
-                return '<button title="Các buổi học" ng-click="detail(' + full.id + ')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #3d9afb;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon"><i class="fa-solid fa-eye"></i></button>' +
-                    '<button title="Mở đăng ký" ng-click="lock(' + full.id + ')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #47b35b;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon"><i class="fa-solid fa-unlock-keyhole"></i></button>' +
+            else if (full.statusClasses == "Đóng đăng ký") {             
+                return '<button title="Mở đăng ký" ng-click="unlock(' + full.id + ')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #47b35b;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon"><i class="fa-solid fa-unlock-keyhole"></i></button>' +
                     '<button title="Xóa" ng-click="delete(' + full.id + ')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #fe0000;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon"><i class="fa fa-trash"></i></button>';
             }
             else
-                return '<button title="Các buổi học" ng-click="detail(' + full.id + ')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #3d9afb;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon"><i class="fa-solid fa-eye"></i></button>';
+                return 
             
         })
     ];
@@ -231,20 +265,15 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
     //        console.error('Error:', error);
     //    });
 
-    $scope.lock = function (id) {
+    $scope.unlock = function (id) {
         var modalInstance = $uibModal.open({
-            templateUrl: ctxfolderMessage + '/messageConfirmDeleted.html',
+            templateUrl: ctxfolderMessage + '/messageConfirmUpdate.html',
             windowClass: "message-center",
             controller: function ($scope, $uibModalInstance) {
-                $scope.message = "Bạn có chắc chắn muốn xóa ?";
+                $scope.message = "Xác nhận mở đăng ký lớp ?";
                 $scope.ok = function () {
                     dataservice.close(id, function (rs) {
-                        if (rs.Error) {
-                            App.toastrError(rs.Title);
-                        } else {
-                            App.toastrSuccess(rs.Title);
-                            $uibModalInstance.close();
-                        }
+                        toastr.success(rs.message);
                     });
                 };
 
@@ -259,6 +288,31 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         }, function () {
         });
     };
+
+    $scope.lock = function (id) {
+        var modalInstance = $uibModal.open({
+            templateUrl: ctxfolderMessage + '/messageConfirmUpdate.html',
+            windowClass: "message-center",
+            controller: function ($scope, $uibModalInstance) {
+                $scope.message = "Xác nhận đóng đăng ký lớp ?";
+                $scope.ok = function () {
+                    dataservice.close(id, function (rs) {
+                        toastr.success(rs.message);
+                    });
+                };
+
+                $scope.cancel = function () {
+                    $uibModalInstance.dismiss('cancel');
+                };
+            },
+            size: '25',
+        });
+        modalInstance.result.then(function (d) {
+            $scope.reloadNoResetPage();
+        }, function () {
+        });
+    };
+
     $scope.delete = function (id) {
         var modalInstance = $uibModal.open({
             templateUrl: ctxfolderMessage + '/messageConfirmDeleted.html',
@@ -267,12 +321,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
                 $scope.message = "Bạn có chắc chắn muốn xóa ?";
                 $scope.ok = function () {
                     dataservice.delete(id, function (rs) {
-                        if (rs.Error) {
-                            App.toastrError(rs.Title);
-                        } else {
-                            App.toastrSuccess(rs.Title);
-                            $uibModalInstance.close();
-                        }
+                        
                     });
                 };
 
@@ -360,11 +409,11 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
             modalElement.addClass('modal-lg');
         });
 
-        modalInstance.result.then(function () {
-            $scope.reload();
-        }, function () {
-            console.log('Modal dismissed at: ' + new Date());
-        });
+        //modalInstance.result.then(function () {
+        //    $scope.reload();
+        //}, function () {
+        //    console.log('Modal dismissed at: ' + new Date());
+        //});
     };
 
 });
@@ -374,7 +423,6 @@ app.controller('detail', function ($scope, $uibModalInstance, $rootScope, $http,
 
     $http.post('http://localhost:3000/api/v1/student', classesId)
         .then(function (response) {
-
             vm.dtOptions.data = response;
             console.log('Response:', $scope.response);
         })
@@ -384,10 +432,31 @@ app.controller('detail', function ($scope, $uibModalInstance, $rootScope, $http,
 
 
 
+
+    function Tdate(x) {
+       
+        var datePart = x.substring(0, 10); 
+        //var timePart = x.substring(11, 19);*/ // Lấy '09:19:00'
+        //var year = parseInt(datePart.substring(0, 4), 10); 
+        //var month = parseInt(datePart.substring(5, 7), 10); 
+        //var day = parseInt(datePart.substring(8, 10), 10);     
+        //var hours = parseInt(timePart.substring(0, 2), 10); 
+        //var minutes = parseInt(timePart.substring(3, 5), 10); 
+        //var seconds = parseInt(timePart.substring(6, 8), 10); 
+
+        return datePart;
+    }
+    function Ttime(x) {      
+        var timePart = x.substring(11, 19); // Lấy '09:19:00'
+        var hours = parseInt(timePart.substring(0, 2), 10);
+        var minutes = parseInt(timePart.substring(3, 5), 10);
+        return `${hours}h:${minutes}`;
+    }
+
+
     $scope.ok = function () {
         $uibModalInstance.close();
     };
-
     $scope.cancel = function () {
         $uibModalInstance.dismiss('cancel');
         $rootScope.lock_screen = !$rootScope.lock_screen;
@@ -442,19 +511,17 @@ app.controller('detail', function ($scope, $uibModalInstance, $rootScope, $http,
             return data;
         }),
         DTColumnBuilder.newColumn('startDate').withTitle('Buổi học').renderWith(function (data, type) {
-            return data;
+            return Tdate(data);
         }),
         DTColumnBuilder.newColumn('startTime').withTitle('Thời gian bắt đầu').renderWith(function (data, type) {
-            return data;
+            return Ttime(data);
         }),
         DTColumnBuilder.newColumn('endTime').withTitle('Thời Gian kết thúc').renderWith(function (data, type) {
-            return data;
+            return Ttime(data);
         }),
     ];
-
     vm.dtInstance = {};
     vm.dtOptions.data = $rootScope.gradeData;
-
     $scope.addGrades = function () {
 
         var modalInstance = $uibModal.open({
@@ -496,27 +563,20 @@ app.controller('detail', function ($scope, $uibModalInstance, $rootScope, $http,
 
 });
 
-app.controller('addClasses', function ($scope, $uibModalInstance, $rootScope, $compile, $uibModal, dataservice) {
+app.controller('addClasses', function ($scope, $uibModalInstance, $rootScope, $http,$compile, $uibModal, dataservice) {
 
     $scope.model = {   
-        grade:'',
+        grade:0,
         name: '',
-        year: '',
-        maxStudent: '', 
-        tuition:'',
+        year: 0,
+        maxStudent: 0, 
+        tuition:0,
         
     }
     $scope.submit = function () {
-       
-        dataservice.addClasses($scope.model, function (result) {
-            if (result.Error) {
-                App.toastrError(result.Title);
-            } else {
-                App.toastrSuccess(result.Title);
-                $uibModalInstance.close();
-                $rootScope.reload();
-            }
-            App.unblockUI("#contentMain");
+        toastr.error("dsjkfh");
+        dataservice.addClasses($scope.model, function (responseData) {
+            toastr.success(responseData.message);
         });
         $uibModalInstance.close();
 
@@ -528,7 +588,7 @@ app.controller('addClasses', function ($scope, $uibModalInstance, $rootScope, $c
 
 });
 
-app.controller('addGrades', function ($scope, $uibModalInstance, $rootScope, $compile, $uibModal, DTOptionsBuilder, DTColumnBuilder) {
+app.controller('addGrades', function ($scope, $uibModalInstance, $rootScope, $compile, $uibModal,dataservice) {
 
 
     $scope.model = {
@@ -540,38 +600,25 @@ app.controller('addGrades', function ($scope, $uibModalInstance, $rootScope, $co
         endTime: "",
     }
 
-
-
-
-
-
     $scope.ok = function () {
         $uibModalInstance.close();
     };
     $scope.cancel = function () {
         $uibModalInstance.dismiss('cancel');
     };
-
-
-
     $scope.selectedDate = null;
     $scope.format = 'yyyy/MM/dd';
     $scope.altInputFormats = ['M!/d!/yyyy'];
-
     $scope.startDate = {
         opened: false
     };
-
     $scope.openStartDate = function () {
         $scope.startDate.opened = true;
     };
-
     $scope.dateOptions = {
         formatYear: 'yy',
         startingDay: 1
     };
-
-
     $scope.showStartTime = false;
     $scope.showEndTime = false;
     $scope.selectedTime = "";
@@ -579,39 +626,57 @@ app.controller('addGrades', function ($scope, $uibModalInstance, $rootScope, $co
     $scope.selectedMinute = "00";
     $scope.hours = [];
     $scope.minutes = [];
-
-    // Populate hours array
     for (var i = 0; i < 24; i++) {
         var hour = (i < 10) ? "0" + i +"h" : "" + i + "h";
         $scope.hours.push(hour);
     }
-
-    // Populate minutes array
     for (var j = 0; j < 60; j++) {
         var minute = (j < 10) ? "0" + j : "" + j;
         $scope.minutes.push(minute);
     }
-
-    // Function to set selected time
     $scope.setEndTime = function () {
         $scope.model.endTime = $scope.selectedHour + ":" + $scope.selectedMinute;
         $scope.showEndTime = false;
     };
-
     $scope.setStartTime = function () {
         $scope.model.startTime = $scope.selectedHour + ":" + $scope.selectedMinute;
         $scope.showStartTime = false;
     };
-
-
-    $scope.setCloseEndTime = function () {
-        
-        $scope.showEndTime = false;
-        
+    $scope.setCloseEndTime = function () {     
+        $scope.showEndTime = false;      
     }
     $scope.setCloseStartTime = function () {
-
         $scope.showStartTime = false;
+    }
+
+
+
+    function SetDate(x, y) {
+        var dateObject = new Date(x);
+        var year = dateObject.getFullYear();
+        var month = ("0" + (dateObject.getMonth() + 1)).slice(-2);
+        var day = ("0" + dateObject.getDate()).slice(-2); 
+        var seconds = '00'; 
+        var timeParts = y.split('h:')
+        var hours = timeParts[0];
+        var minutes = timeParts[1];
+        return `${year}-${month}-${day}T${hours}:${minutes}:${seconds}`;
+
 
     }
+
+    $scope.submit = function () {
+        $scope.model.startTime = SetDate($scope.model.startDate, $scope.model.startTime);
+        $scope.model.endTime = SetDate($scope.model.startDate, $scope.model.endTime);
+
+        dataservice.addGrades($scope.model, function (responseData) {
+            toastr.success(responseData.message);
+        });
+        $uibModalInstance.close()
+
+    }
+  
+
+
+
 });

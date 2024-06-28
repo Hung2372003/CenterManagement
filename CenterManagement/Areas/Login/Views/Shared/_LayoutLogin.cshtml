@@ -5,53 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="views/sign-in/assets/styles_signup.css">
     <title>Login & Register</title>
+
+
+    <link rel="stylesheet" href="LayoutAdmin/assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="LayoutAdmin/assets/vendors/css/vendor.bundle.base.css">
+
+    <style>
+        .btn-outline-button-icon {
+            background: #48eff5e0;
+            transition: background-color 0.3s; /* Thêm hiệu ứng chuyển đổi mượt */
+        }
+
+            .btn-outline-button-icon:hover {
+                background: #f5f5f5;
+            }
+
+            .btn-outline-button-icon:active {
+                transform: scale(0.9);
+            }
+
+    </style>
+    <link rel="shortcut icon" href="LayoutAdmin/assets/images/favicon.ico" />
+    @RenderSection("plugin_style", false)
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+    @* <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">*@
+    <link rel="stylesheet" href="LayoutAdmin/assets/css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <!-- Link to jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Link to DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <!-- Link to DataTables JS -->
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    <!-- Link to AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <!-- Link to Angular Route -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+    <!-- Link to Angular Resource -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-resource.min.js"></script>
+    <!-- Link to Angular UI Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+    @*    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.6/ui-bootstrap-tpls.min.js"></script>*@
+    <!-- Link to Angular DataTables -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-datatables/0.6.4/angular-datatables.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </head>
 <body>
     @RenderBody()
-    <h1>Welcome to Enlish Center Mangement System</h1>
-    <div id="login-tab-content" class="tabcontent">
-        <h3>Sign In</h3>
-        <form class="login-form" action="" method="post">
-            <input type="text" class="input" id="user_login" autocomplete="off" placeholder="Username" />
-            <input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Password" />
-            <select name="role-user" id="role-user">
-                <option value="student">Học sinh</option>
-                <option value="teacher">Giáo viên</option>
-                <option value="admin">Admin</option>
-                <option value="parents">Phụ huynh</option>
-            </select>
-            <br>
-            <input type="submit" class="button" value="Login" id="btn_submit_signin" />
-        </form>
-        <div class="help-text">
-            <p>
-                <a href="#signup-tab-content">Forget your password? </a>
-                <a class="tablinksignup">Sign up</a>
-            </p>
-        </div>
-    </div>
-    <div id="signup-tab-content" class="tabcontent">
-        <h3>Sign up</h3>
-        <form class="signup-form" action="" method="post">
-            <input type="text" class="input" id="name" autocomplete="off" placeholder="Name">
-            <input type="email" class="input" id="user_email" autocomplete="off" placeholder="Email">
-            <input type="text" class="input" id="user_signup" autocomplete="off" placeholder="Username">
-            <input type="password" class="input" id="user_pass_signup" autocomplete="off" placeholder="Password">
-            <input type="password" class="input" id="user_pass_confirm" autocomplete="off" placeholder="Confirm Password">
-            <select name="role-user" id="role-user">
-                <option value="student">Học sinh</option>
-                <option value="teacher">Giáo viên</option>
-                <option value="admin">Admin</option>
-                <option value="parents">Phụ huynh</option>
-            </select>
-            <input type="submit" class="button" value="Sign Up" id="btn_submit_signup" />
-            <div id="error-message" class="error"></div>
-        </form>
-        <div class="help-text">
-            <p>By signing up, you agree to our Term of service</p>
-            <a href="/admin">Sign in</a>
-        </div>
-    </div>
-    <script src="views/sign-in/script_signup.js"></script>
 </body>
 </html>

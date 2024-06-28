@@ -1,1627 +1,1671 @@
 {
   "Files": [
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\CenterManagement.bundle.scp.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\CenterManagement.bundle.scp.css",
       "PackagePath": "staticwebassets\\CenterManagement.bundle.scp.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\css\\style.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\css\\style.css",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\css\\style.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\css\\style.css.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\css\\style.css.map",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\css\\style.css.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Bold.eot",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Bold.eot",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Bold.eot"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Bold.ttf",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Bold.ttf",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Bold.ttf"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Bold.woff",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Bold.woff",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Bold.woff"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Bold.woff2",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Bold.woff2",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Bold.woff2"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Light.eot",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Light.eot",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Light.eot"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Light.ttf",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Light.ttf",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Light.ttf"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Light.woff",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Light.woff",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Light.woff"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Light.woff2",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Light.woff2",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Light.woff2"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Medium.eot",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Medium.eot",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Medium.eot"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Medium.ttf",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Medium.ttf",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Medium.ttf"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Medium.woff",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Medium.woff",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Medium.woff"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Medium.woff2",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Medium.woff2",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Medium.woff2"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Regular.eot",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Regular.eot",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Regular.eot"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Regular.ttf",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Regular.ttf",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Regular.ttf"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Regular.woff",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Regular.woff",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Regular.woff"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Regular.woff2",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Regular.woff2",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\fonts\\Ubuntu\\Ubuntu-Regular.woff2"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\Center.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\Center.png",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\Center.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\dashboard\\circle.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\dashboard\\circle.png",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\dashboard\\circle.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\dashboard\\circle.svg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\dashboard\\circle.svg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\dashboard\\circle.svg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\dashboard\\img_1.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\dashboard\\img_1.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\dashboard\\img_1.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\dashboard\\img_2.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\dashboard\\img_2.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\dashboard\\img_2.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\dashboard\\img_3.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\dashboard\\img_3.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\dashboard\\img_3.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\dashboard\\img_4.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\dashboard\\img_4.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\dashboard\\img_4.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces-clipart\\pic-1.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces-clipart\\pic-1.png",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces-clipart\\pic-1.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces-clipart\\pic-2.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces-clipart\\pic-2.png",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces-clipart\\pic-2.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces-clipart\\pic-3.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces-clipart\\pic-3.png",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces-clipart\\pic-3.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces-clipart\\pic-4.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces-clipart\\pic-4.png",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces-clipart\\pic-4.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face1.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face1.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face1.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face10.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face10.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face10.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face11.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face11.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face11.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face12.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face12.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face12.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face13.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face13.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face13.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face14.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face14.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face14.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face15.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face15.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face15.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face16.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face16.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face16.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face17.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face17.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face17.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face18.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face18.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face18.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face19.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face19.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face19.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face2.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face2.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face2.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face20.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face20.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face20.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face21.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face21.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face21.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face22.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face22.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face22.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face23.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face23.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face23.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face24.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face24.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face24.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face25.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face25.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face25.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face26.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face26.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face26.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face27.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face27.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face27.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face3.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face3.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face3.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face4.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face4.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face4.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face5.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face5.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face5.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face6.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face6.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face6.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face7.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face7.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face7.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face8.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face8.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face8.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face9.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\faces\\face9.jpg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\faces\\face9.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\favicon.ico",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\favicon.ico",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\favicon.ico"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\favicon.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\favicon.png",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\favicon.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\logo-mini.svg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\logo-mini.svg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\logo-mini.svg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\logo-new.svg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\logo-new.svg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\logo-new.svg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\logo.svg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\logo.svg",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\logo.svg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\r2_logo.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\r2_logo.png",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\r2_logo.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\sprites\\blue.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\sprites\\blue.png",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\sprites\\blue.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\sprites\\dark.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\sprites\\dark.png",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\sprites\\dark.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\sprites\\flag.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\sprites\\flag.png",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\sprites\\flag.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\sprites\\green.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\sprites\\green.png",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\sprites\\green.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\sprites\\jsgrid-icons.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\sprites\\jsgrid-icons.png",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\sprites\\jsgrid-icons.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\sprites\\red.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\sprites\\red.png",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\sprites\\red.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\sprites\\yellow.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\images\\sprites\\yellow.png",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\images\\sprites\\yellow.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\js\\chart.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\js\\chart.js",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\js\\chart.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\js\\dashboard.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\js\\dashboard.js",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\js\\dashboard.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\js\\file-upload.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\js\\file-upload.js",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\js\\file-upload.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\js\\hoverable-collapse.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\js\\hoverable-collapse.js",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\js\\hoverable-collapse.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\js\\jquery.cookie.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\js\\jquery.cookie.js",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\js\\jquery.cookie.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\js\\misc.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\js\\misc.js",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\js\\misc.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\js\\off-canvas.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\js\\off-canvas.js",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\js\\off-canvas.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\js\\todo.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\js\\todo.js",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\js\\todo.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\js\\todolist.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\js\\todolist.js",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\js\\todolist.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_dashboard.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_dashboard.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\_dashboard.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_demo.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_demo.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\_demo.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_fonts.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_fonts.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\_fonts.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_footer.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_footer.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\_footer.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_functions.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_functions.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\_functions.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_layouts.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_layouts.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\_layouts.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_misc.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_misc.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\_misc.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_navbar.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_navbar.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\_navbar.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_reset.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_reset.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\_reset.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_sidebar.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_sidebar.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\_sidebar.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_typography.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_typography.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\_typography.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_utilities.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_utilities.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\_utilities.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_variables.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_variables.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\_variables.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_vertical-wrapper.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_vertical-wrapper.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\_vertical-wrapper.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_widget-grid.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\_widget-grid.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\_widget-grid.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_badges.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_badges.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\components\\_badges.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_bootstrap-progress.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_bootstrap-progress.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\components\\_bootstrap-progress.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_breadcrumbs.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_breadcrumbs.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\components\\_breadcrumbs.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_buttons.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_buttons.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\components\\_buttons.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_cards.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_cards.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\components\\_cards.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_checkbox-radio.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_checkbox-radio.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\components\\_checkbox-radio.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_dropdown.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_dropdown.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\components\\_dropdown.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_forms.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_forms.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\components\\_forms.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_icons.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_icons.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\components\\_icons.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_lists.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_lists.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\components\\_lists.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_preview.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_preview.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\components\\_preview.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_tables.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_tables.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\components\\_tables.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_todo-list.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\components\\_todo-list.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\components\\_todo-list.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\landing-screens\\_auth.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\landing-screens\\_auth.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\landing-screens\\_auth.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_animation.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_animation.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\mixins\\_animation.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_background.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_background.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\mixins\\_background.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_badges.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_badges.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\mixins\\_badges.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_blockqoute.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_blockqoute.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\mixins\\_blockqoute.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_breadcrumbs.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_breadcrumbs.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\mixins\\_breadcrumbs.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_buttons.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_buttons.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\mixins\\_buttons.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_cards.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_cards.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\mixins\\_cards.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_misc.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_misc.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\mixins\\_misc.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_pagination.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_pagination.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\mixins\\_pagination.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_popovers.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_popovers.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\mixins\\_popovers.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_text.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_text.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\mixins\\_text.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_tooltips.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\mixins\\_tooltips.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\mixins\\_tooltips.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\style.scss",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\scss\\style.scss",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\scss\\style.scss"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\vendors\\chart.js\\Chart.min.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\vendors\\chart.js\\Chart.min.js",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\vendors\\chart.js\\Chart.min.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\vendors\\css\\vendor.bundle.base.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\vendors\\css\\vendor.bundle.base.css",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\vendors\\css\\vendor.bundle.base.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\vendors\\js\\bootstrap.min.js.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\vendors\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\vendors\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\vendors\\js\\vendor.bundle.base.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\vendors\\js\\vendor.bundle.base.js",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\vendors\\js\\vendor.bundle.base.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\vendors\\mdi\\css\\materialdesignicons.min.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\vendors\\mdi\\css\\materialdesignicons.min.css",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\vendors\\mdi\\css\\materialdesignicons.min.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\vendors\\mdi\\css\\materialdesignicons.min.css.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\vendors\\mdi\\css\\materialdesignicons.min.css.map",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\vendors\\mdi\\css\\materialdesignicons.min.css.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\vendors\\mdi\\fonts\\materialdesignicons-webfont.eot",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\vendors\\mdi\\fonts\\materialdesignicons-webfont.eot",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\vendors\\mdi\\fonts\\materialdesignicons-webfont.eot"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\vendors\\mdi\\fonts\\materialdesignicons-webfont.ttf",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\vendors\\mdi\\fonts\\materialdesignicons-webfont.ttf",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\vendors\\mdi\\fonts\\materialdesignicons-webfont.ttf"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff2",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\LayoutAdmin\\assets\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff2",
       "PackagePath": "staticwebassets\\LayoutAdmin\\assets\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff2"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\apps\\scripts\\calendar.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\apps\\scripts\\calendar.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\apps\\scripts\\calendar.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\apps\\scripts\\calendar.min.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\apps\\scripts\\calendar.min.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\apps\\scripts\\calendar.min.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\apps\\scripts\\inbox.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\apps\\scripts\\inbox.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\apps\\scripts\\inbox.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\apps\\scripts\\inbox.min.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\apps\\scripts\\inbox.min.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\apps\\scripts\\inbox.min.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\apps\\scripts\\todo-2.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\apps\\scripts\\todo-2.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\apps\\scripts\\todo-2.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\apps\\scripts\\todo-2.min.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\apps\\scripts\\todo-2.min.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\apps\\scripts\\todo-2.min.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\apps\\scripts\\todo.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\apps\\scripts\\todo.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\apps\\scripts\\todo.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\apps\\scripts\\todo.min.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\apps\\scripts\\todo.min.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\apps\\scripts\\todo.min.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\css\\components.min.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\css\\components.min.css",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\css\\components.min.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\css\\plugins.min.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\css\\plugins.min.css",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\css\\plugins.min.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\bootstrap-switch\\LICENSE",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\bootstrap-switch\\LICENSE",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\bootstrap-switch"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\bootstrap-switch\\README.md",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\bootstrap-switch\\README.md",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\bootstrap-switch\\README.md"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\bootstrap-switch\\css\\bootstrap-switch.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\bootstrap-switch\\css\\bootstrap-switch.css",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\bootstrap-switch\\css\\bootstrap-switch.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\bootstrap-switch\\css\\bootstrap-switch.min.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\bootstrap-switch\\css\\bootstrap-switch.min.css",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\bootstrap-switch\\css\\bootstrap-switch.min.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\bootstrap-switch\\js\\bootstrap-switch.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\bootstrap-switch\\js\\bootstrap-switch.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\bootstrap-switch\\js\\bootstrap-switch.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\bootstrap-switch\\js\\bootstrap-switch.min.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\bootstrap-switch\\js\\bootstrap-switch.min.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\bootstrap-switch\\js\\bootstrap-switch.min.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\bootstrap\\js\\bootstrap.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\bootstrap\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\bootstrap\\js\\bootstrap.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\bootstrap\\js\\bootstrap.min.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\bootstrap\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\bootstrap\\js\\bootstrap.min.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\bar.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\bar.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\echarts\\chart\\bar.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\chord.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\chord.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\echarts\\chart\\chord.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\eventRiver.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\eventRiver.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\echarts\\chart\\eventRiver.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\force.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\force.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\echarts\\chart\\force.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\funnel.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\funnel.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\echarts\\chart\\funnel.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\gauge.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\gauge.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\echarts\\chart\\gauge.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\heatmap.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\heatmap.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\echarts\\chart\\heatmap.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\k.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\k.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\echarts\\chart\\k.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\line.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\line.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\echarts\\chart\\line.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\map.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\map.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\echarts\\chart\\map.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\pie.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\pie.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\echarts\\chart\\pie.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\radar.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\radar.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\echarts\\chart\\radar.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\scatter.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\scatter.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\echarts\\chart\\scatter.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\tree.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\tree.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\echarts\\chart\\tree.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\treemap.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\treemap.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\echarts\\chart\\treemap.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\venn.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\venn.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\echarts\\chart\\venn.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\wordCloud.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\chart\\wordCloud.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\echarts\\chart\\wordCloud.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\echarts-all.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\echarts-all.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\echarts\\echarts-all.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\echarts.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\echarts\\echarts.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\echarts\\echarts.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\changelog.txt",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\changelog.txt",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\changelog.txt"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\agenda-views.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\agenda-views.html",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\agenda-views.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\background-events.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\background-events.html",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\background-events.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\basic-views.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\basic-views.html",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\basic-views.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\default.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\default.html",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\default.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\external-dragging.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\external-dragging.html",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\external-dragging.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\gcal.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\gcal.html",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\gcal.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\json.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\json.html",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\json.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\json\\events.json",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\json\\events.json",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\json\\events.json"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\languages.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\languages.html",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\languages.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\php\\get-events.php",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\php\\get-events.php",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\php\\get-events.php"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\php\\get-timezones.php",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\php\\get-timezones.php",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\php\\get-timezones.php"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\php\\utils.php",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\php\\utils.php",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\php\\utils.php"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\selectable.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\selectable.html",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\selectable.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\theme.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\theme.html",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\theme.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\timezones.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\timezones.html",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\demos\\timezones.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\fullcalendar.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\fullcalendar.css",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\fullcalendar.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\fullcalendar.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\fullcalendar.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\fullcalendar.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\fullcalendar.min.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\fullcalendar.min.css",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\fullcalendar.min.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\fullcalendar.min.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\fullcalendar.min.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\fullcalendar.min.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\fullcalendar.print.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\fullcalendar.print.css",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\fullcalendar.print.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\gcal.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\gcal.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\gcal.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang-all.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang-all.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang-all.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ar-ma.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ar-ma.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ar-ma.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ar-sa.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ar-sa.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ar-sa.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ar-tn.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ar-tn.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ar-tn.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ar.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ar.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ar.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\bg.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\bg.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\bg.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ca.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ca.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ca.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\cs.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\cs.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\cs.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\da.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\da.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\da.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\de-at.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\de-at.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\de-at.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\de.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\de.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\de.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\el.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\el.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\el.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\en-au.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\en-au.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\en-au.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\en-ca.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\en-ca.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\en-ca.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\en-gb.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\en-gb.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\en-gb.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\es.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\es.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\es.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\fa.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\fa.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\fa.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\fi.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\fi.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\fi.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\fr-ca.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\fr-ca.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\fr-ca.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\fr.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\fr.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\fr.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\he.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\he.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\he.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\hi.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\hi.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\hi.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\hr.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\hr.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\hr.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\hu.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\hu.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\hu.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\id.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\id.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\id.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\is.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\is.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\is.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\it.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\it.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\it.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ja.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ja.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ja.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ko.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ko.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ko.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\lt.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\lt.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\lt.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\lv.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\lv.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\lv.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\nb.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\nb.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\nb.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\nl.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\nl.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\nl.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\pl.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\pl.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\pl.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\pt-br.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\pt-br.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\pt-br.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\pt.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\pt.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\pt.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ro.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ro.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ro.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ru.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ru.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\ru.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\sk.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\sk.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\sk.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\sl.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\sl.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\sl.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\sr-cyrl.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\sr-cyrl.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\sr-cyrl.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\sr.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\sr.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\sr.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\sv.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\sv.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\sv.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\th.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\th.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\th.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\tr.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\tr.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\tr.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\uk.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\uk.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\uk.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\vi.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\vi.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\vi.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\zh-cn.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\zh-cn.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\zh-cn.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\zh-tw.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\zh-tw.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lang\\zh-tw.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\animated-overlay.gif",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\animated-overlay.gif",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\animated-overlay.gif"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_diagonals-thick_90_eeeeee_40x40.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_diagonals-thick_90_eeeeee_40x40.png",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_diagonals-thick_90_eeeeee_40x40.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_flat_15_cd0a0a_40x100.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_flat_15_cd0a0a_40x100.png",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_flat_15_cd0a0a_40x100.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_glass_100_e4f1fb_1x400.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_glass_100_e4f1fb_1x400.png",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_glass_100_e4f1fb_1x400.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_glass_50_3baae3_1x400.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_glass_50_3baae3_1x400.png",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_glass_50_3baae3_1x400.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_glass_80_d7ebf9_1x400.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_glass_80_d7ebf9_1x400.png",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_glass_80_d7ebf9_1x400.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_highlight-hard_100_f2f5f7_1x100.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_highlight-hard_100_f2f5f7_1x100.png",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_highlight-hard_100_f2f5f7_1x100.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_highlight-hard_70_000000_1x100.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_highlight-hard_70_000000_1x100.png",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_highlight-hard_70_000000_1x100.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_highlight-soft_100_deedf7_1x100.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_highlight-soft_100_deedf7_1x100.png",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_highlight-soft_100_deedf7_1x100.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_highlight-soft_25_ffef8f_1x100.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_highlight-soft_25_ffef8f_1x100.png",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-bg_highlight-soft_25_ffef8f_1x100.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-icons_2694e8_256x240.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-icons_2694e8_256x240.png",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-icons_2694e8_256x240.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-icons_2e83ff_256x240.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-icons_2e83ff_256x240.png",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-icons_2e83ff_256x240.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-icons_3d80b3_256x240.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-icons_3d80b3_256x240.png",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-icons_3d80b3_256x240.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-icons_72a7cf_256x240.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-icons_72a7cf_256x240.png",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-icons_72a7cf_256x240.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-icons_ffffff_256x240.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-icons_ffffff_256x240.png",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\images\\ui-icons_ffffff_256x240.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\jquery-ui.min.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\jquery-ui.min.css",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\cupertino\\jquery-ui.min.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\jquery-ui.custom.min.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\jquery-ui.custom.min.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\jquery-ui.custom.min.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\jquery.min.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\jquery.min.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\jquery.min.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\moment.min.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\moment.min.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\lib\\moment.min.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\license.txt",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\fullcalendar\\license.txt",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\fullcalendar\\license.txt"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\jquery.min.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\jquery.min.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\jquery.min.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\jquery.min.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\jquery.min.map",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\jquery.min.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\moment.min.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\moment.min.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\moment.min.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\simple-line-icons\\License.txt",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\simple-line-icons\\License.txt",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\simple-line-icons\\License.txt"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\simple-line-icons\\Readme.txt",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\simple-line-icons\\Readme.txt",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\simple-line-icons\\Readme.txt"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\simple-line-icons\\fonts\\Simple-Line-Icons.dev.svg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\simple-line-icons\\fonts\\Simple-Line-Icons.dev.svg",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\simple-line-icons\\fonts\\Simple-Line-Icons.dev.svg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\simple-line-icons\\fonts\\Simple-Line-Icons.eot",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\simple-line-icons\\fonts\\Simple-Line-Icons.eot",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\simple-line-icons\\fonts\\Simple-Line-Icons.eot"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\simple-line-icons\\fonts\\Simple-Line-Icons.svg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\simple-line-icons\\fonts\\Simple-Line-Icons.svg",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\simple-line-icons\\fonts\\Simple-Line-Icons.svg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\simple-line-icons\\fonts\\Simple-Line-Icons.ttf",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\simple-line-icons\\fonts\\Simple-Line-Icons.ttf",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\simple-line-icons\\fonts\\Simple-Line-Icons.ttf"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\simple-line-icons\\fonts\\Simple-Line-Icons.woff",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\simple-line-icons\\fonts\\Simple-Line-Icons.woff",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\simple-line-icons\\fonts\\Simple-Line-Icons.woff"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\simple-line-icons\\icons-lte-ie7.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\simple-line-icons\\icons-lte-ie7.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\simple-line-icons\\icons-lte-ie7.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\simple-line-icons\\simple-line-icons.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\simple-line-icons\\simple-line-icons.css",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\simple-line-icons\\simple-line-icons.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\simple-line-icons\\simple-line-icons.min.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\plugins\\simple-line-icons\\simple-line-icons.min.css",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\plugins\\simple-line-icons\\simple-line-icons.min.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\scripts\\app.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\scripts\\app.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\scripts\\app.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\scripts\\app.min.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\scripts\\app.min.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\scripts\\app.min.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\scripts\\datatable.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\scripts\\datatable.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\scripts\\datatable.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\scripts\\datatable.min.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\Schedule\\assets\\global\\scripts\\datatable.min.js",
       "PackagePath": "staticwebassets\\Schedule\\assets\\global\\scripts\\datatable.min.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\css\\message-box\\style.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\css\\message-box\\style.css",
       "PackagePath": "staticwebassets\\css\\message-box\\style.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\css\\site.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\favicon.ico",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\BacgAdmin.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\BacgAdmin.jpg",
       "PackagePath": "staticwebassets\\images\\default\\BacgAdmin.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\Background.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\Background.png",
       "PackagePath": "staticwebassets\\images\\default\\Background.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\ChuKyPMTT.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\ChuKyPMTT.png",
       "PackagePath": "staticwebassets\\images\\default\\ChuKyPMTT.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\Supercluster.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\Supercluster.png",
       "PackagePath": "staticwebassets\\images\\default\\Supercluster.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\ThuChucTet.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\ThuChucTet.jpg",
       "PackagePath": "staticwebassets\\images\\default\\ThuChucTet.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\ThuChucTet2024.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\ThuChucTet2024.jpg",
       "PackagePath": "staticwebassets\\images\\default\\ThuChucTet2024.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\box.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\box.png",
       "PackagePath": "staticwebassets\\images\\default\\box.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\box_empty.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\box_empty.png",
       "PackagePath": "staticwebassets\\images\\default\\box_empty.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\check_mark.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\check_mark.png",
       "PackagePath": "staticwebassets\\images\\default\\check_mark.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\checkin.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\checkin.png",
       "PackagePath": "staticwebassets\\images\\default\\checkin.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\checkout.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\checkout.png",
       "PackagePath": "staticwebassets\\images\\default\\checkout.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\close.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\close.png",
       "PackagePath": "staticwebassets\\images\\default\\close.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\cuahang1.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\cuahang1.png",
       "PackagePath": "staticwebassets\\images\\default\\cuahang1.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\daiLy1.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\daiLy1.png",
       "PackagePath": "staticwebassets\\images\\default\\daiLy1.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\default_geocode-1x.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\default_geocode-1x.png",
       "PackagePath": "staticwebassets\\images\\default\\default_geocode-1x.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\drawing.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\drawing.png",
       "PackagePath": "staticwebassets\\images\\default\\drawing.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\eraser.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\eraser.png",
       "PackagePath": "staticwebassets\\images\\default\\eraser.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\gau6.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\gau6.jpg",
       "PackagePath": "staticwebassets\\images\\default\\gau6.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\ic_barcode.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\ic_barcode.png",
       "PackagePath": "staticwebassets\\images\\default\\ic_barcode.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\ic_qrcode.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\ic_qrcode.png",
       "PackagePath": "staticwebassets\\images\\default\\ic_qrcode.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\icon_BaiXe.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\icon_BaiXe.jpg",
       "PackagePath": "staticwebassets\\images\\default\\icon_BaiXe.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\nPP1.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\nPP1.png",
       "PackagePath": "staticwebassets\\images\\default\\nPP1.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\no_image.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\no_image.png",
       "PackagePath": "staticwebassets\\images\\default\\no_image.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\no_user.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\no_user.png",
       "PackagePath": "staticwebassets\\images\\default\\no_user.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\qrCode.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\qrCode.png",
       "PackagePath": "staticwebassets\\images\\default\\qrCode.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\upload_image.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\upload_image.png",
       "PackagePath": "staticwebassets\\images\\default\\upload_image.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\uploadimg.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\default\\uploadimg.png",
       "PackagePath": "staticwebassets\\images\\default\\uploadimg.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\message\\deleted.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\message\\deleted.png",
       "PackagePath": "staticwebassets\\images\\message\\deleted.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\message\\question.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\message\\question.png",
       "PackagePath": "staticwebassets\\images\\message\\question.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\message\\success.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\message\\success.png",
       "PackagePath": "staticwebassets\\images\\message\\success.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\images\\message\\update.png",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\images\\message\\update.png",
       "PackagePath": "staticwebassets\\images\\message\\update.png"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\js\\site.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\Parents\\ParentsSonClasses\\Controller.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\Parents\\ParentsSonClasses\\Controller.js",
       "PackagePath": "staticwebassets\\views\\Parents\\ParentsSonClasses\\Controller.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\Parents\\ParentsSonClasses\\detail.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\Parents\\ParentsSonClasses\\detail.html",
       "PackagePath": "staticwebassets\\views\\Parents\\ParentsSonClasses\\detail.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\Parents\\ParentsSonClasses\\index.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\Parents\\ParentsSonClasses\\index.html",
       "PackagePath": "staticwebassets\\views\\Parents\\ParentsSonClasses\\index.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\CenterClasses\\Controller.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\Parents\\ParentsSonClasses\\pay.html",
+      "PackagePath": "staticwebassets\\views\\Parents\\ParentsSonClasses\\pay.html"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\CenterClasses\\Controller.js",
       "PackagePath": "staticwebassets\\views\\admin\\CenterClasses\\Controller.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\CenterClasses\\addClasses.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\CenterClasses\\addClasses.html",
       "PackagePath": "staticwebassets\\views\\admin\\CenterClasses\\addClasses.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\CenterClasses\\addGrades.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\CenterClasses\\addGrades.html",
       "PackagePath": "staticwebassets\\views\\admin\\CenterClasses\\addGrades.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\CenterClasses\\customDatepickerPopup.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\CenterClasses\\customDatepickerPopup.html",
       "PackagePath": "staticwebassets\\views\\admin\\CenterClasses\\customDatepickerPopup.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\CenterClasses\\detail.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\CenterClasses\\detail.html",
       "PackagePath": "staticwebassets\\views\\admin\\CenterClasses\\detail.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\CenterClasses\\index.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\CenterClasses\\index.html",
       "PackagePath": "staticwebassets\\views\\admin\\CenterClasses\\index.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\CenterTeacher\\Controller.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\CenterTeacher\\Controller.js",
       "PackagePath": "staticwebassets\\views\\admin\\CenterTeacher\\Controller.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\CenterTeacher\\index.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\CenterTeacher\\index.html",
       "PackagePath": "staticwebassets\\views\\admin\\CenterTeacher\\index.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\Statistical\\Controller.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\Statistical\\Controller.js",
       "PackagePath": "staticwebassets\\views\\admin\\Statistical\\Controller.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\Statistical\\index.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\Statistical\\index.html",
       "PackagePath": "staticwebassets\\views\\admin\\Statistical\\index.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\lecturers\\Attendance\\Controller.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\1.jpg",
+      "PackagePath": "staticwebassets\\views\\home\\1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\2.jpg",
+      "PackagePath": "staticwebassets\\views\\home\\2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\3.jpg",
+      "PackagePath": "staticwebassets\\views\\home\\3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\4.jpg",
+      "PackagePath": "staticwebassets\\views\\home\\4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\5.jpg",
+      "PackagePath": "staticwebassets\\views\\home\\5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\6.jpg",
+      "PackagePath": "staticwebassets\\views\\home\\6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\Home.js",
+      "PackagePath": "staticwebassets\\views\\home\\Home.js"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\game.mp4",
+      "PackagePath": "staticwebassets\\views\\home\\game.mp4"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\index.html",
+      "PackagePath": "staticwebassets\\views\\home\\index.html"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\styles.css",
+      "PackagePath": "staticwebassets\\views\\home\\styles.css"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\lecturers\\Attendance\\Controller.js",
       "PackagePath": "staticwebassets\\views\\lecturers\\Attendance\\Controller.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\lecturers\\Attendance\\index.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\lecturers\\Attendance\\index.html",
       "PackagePath": "staticwebassets\\views\\lecturers\\Attendance\\index.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\lecturers\\ListClassesLecturers\\Controller.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\lecturers\\ListClassesLecturers\\Controller.js",
       "PackagePath": "staticwebassets\\views\\lecturers\\ListClassesLecturers\\Controller.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\lecturers\\ListClassesLecturers\\attendance.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\lecturers\\ListClassesLecturers\\attendance.html",
       "PackagePath": "staticwebassets\\views\\lecturers\\ListClassesLecturers\\attendance.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\lecturers\\ListClassesLecturers\\index.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\lecturers\\ListClassesLecturers\\index.html",
       "PackagePath": "staticwebassets\\views\\lecturers\\ListClassesLecturers\\index.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\lecturers\\Schedule\\Controller.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\lecturers\\Schedule\\Controller.js",
       "PackagePath": "staticwebassets\\views\\lecturers\\Schedule\\Controller.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\lecturers\\Schedule\\index.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\lecturers\\Schedule\\index.html",
       "PackagePath": "staticwebassets\\views\\lecturers\\Schedule\\index.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\message-box\\confirm.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\message-box\\confirm.html",
       "PackagePath": "staticwebassets\\views\\message-box\\confirm.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\message-box\\messageConfirmAdd.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\message-box\\messageConfirmAdd.html",
       "PackagePath": "staticwebassets\\views\\message-box\\messageConfirmAdd.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\message-box\\messageConfirmCancel.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\message-box\\messageConfirmCancel.html",
       "PackagePath": "staticwebassets\\views\\message-box\\messageConfirmCancel.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\message-box\\messageConfirmDeleted.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\message-box\\messageConfirmDeleted.html",
       "PackagePath": "staticwebassets\\views\\message-box\\messageConfirmDeleted.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\message-box\\messageConfirmQuestion.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\message-box\\messageConfirmQuestion.html",
       "PackagePath": "staticwebassets\\views\\message-box\\messageConfirmQuestion.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\message-box\\messageConfirmUpdate.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\message-box\\messageConfirmUpdate.html",
       "PackagePath": "staticwebassets\\views\\message-box\\messageConfirmUpdate.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\message-box\\refuse.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\message-box\\refuse.html",
       "PackagePath": "staticwebassets\\views\\message-box\\refuse.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\sign-in\\assets\\image\\backgroung0.jpg",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\sign-in\\assets\\image\\backgroung0.jpg",
       "PackagePath": "staticwebassets\\views\\sign-in\\assets\\image\\backgroung0.jpg"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\sign-in\\assets\\styles_signup.css",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\sign-in\\assets\\styles_signup.css",
       "PackagePath": "staticwebassets\\views\\sign-in\\assets\\styles_signup.css"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\sign-in\\script_signup.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\sign-in\\index.html",
+      "PackagePath": "staticwebassets\\views\\sign-in\\index.html"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\sign-in\\script_signup.js",
       "PackagePath": "staticwebassets\\views\\sign-in\\script_signup.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\sign-in\\sign-up.html",
-      "PackagePath": "staticwebassets\\views\\sign-in\\sign-up.html"
-    },
-    {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\student\\ListClassesStudents\\Controller.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\student\\ListClassesStudents\\Controller.js",
       "PackagePath": "staticwebassets\\views\\student\\ListClassesStudents\\Controller.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\student\\ListClassesStudents\\detail.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\student\\ListClassesStudents\\detail.html",
       "PackagePath": "staticwebassets\\views\\student\\ListClassesStudents\\detail.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\student\\ListClassesStudents\\index.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\student\\ListClassesStudents\\index.html",
       "PackagePath": "staticwebassets\\views\\student\\ListClassesStudents\\index.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\student\\RegisterClasses\\Controller.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\student\\RegisterClasses\\Controller.js",
       "PackagePath": "staticwebassets\\views\\student\\RegisterClasses\\Controller.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\student\\RegisterClasses\\index.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\student\\RegisterClasses\\index.html",
       "PackagePath": "staticwebassets\\views\\student\\RegisterClasses\\index.html"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\student\\Schedule\\Controller.js",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\student\\Schedule\\Controller.js",
       "PackagePath": "staticwebassets\\views\\student\\Schedule\\Controller.js"
     },
     {
-      "Id": "F:\\LAP_Trinh_wed\\De_tai_WED_SUMIT\\manager-english-center\\CenterManagement\\CenterManagement\\wwwroot\\views\\student\\Schedule\\index.html",
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\student\\Schedule\\index.html",
       "PackagePath": "staticwebassets\\views\\student\\Schedule\\index.html"
     },
     {

@@ -25,7 +25,7 @@
                 <label for="exampleInputUsername1">Buổi học:</label>
                 <div style="position:relative">
                     <i class="fas fa-calendar-alt click-button" ng-click="openStartDate()" style="position: absolute; transform: translateY(88%); right: 17px; "></i>
-                    <input type="text" class="form-control" readonly required ng-click="openStartDate()" ng-model="mode.startDate" placeholder="Ngày dạy..." uib-datepicker-popup="{{format}}" is-open="startDate.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats">
+                    <input type="text" class="form-control" readonly required ng-click="openStartDate()" ng-model="model.startDate" placeholder="Ngày dạy..." uib-datepicker-popup="{{format}}" is-open="startDate.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats">
                 </div>
             </div>
 
@@ -78,7 +78,7 @@
 
 
 </form>
-        <button type="button" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 41px; padding-left: 17px; padding-right: 17px">
+        <button type="button" ng-click="submit()" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 41px; padding-left: 17px; padding-right: 17px">
             Thêm buổi dạy
         </button>
         <button class="btn btn-light click-button" ng-click="cancel()">Cancel</button>

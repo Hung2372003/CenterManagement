@@ -7,3 +7,86 @@
 
 </div>
 *@
+
+@section plugin_style{
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+     <link rel="stylesheet" href="/views/home/styles.css">
+}
+
+
+ <nav class="navbar">
+        <ul class="nav-links">
+            <li class="logo"><a href="index.html">English Center</a></li>
+            <li class="nav"><a href="index.html">Home</a></li>
+            <li class="nav"><a href="#about">About</a></li>
+            <li class="nav"><a href="#articles">Articles</a></li>
+            <li class="nav"><a href="#register">Register</a></li>
+            <li class="nav"><a href="/login">Sign in/ Sign up</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="/views/home/2.jpg" alt="Slide 1" width="1000px" height="400px"></div>
+            <div class="slide"><img src="/views/home/2.jpg" alt="Slide 2" width="1000px" height="400px"></div>
+            <div class="slide"><img src="/views/home/3.jpg" alt="Slide 3" width="1000px" height="400px"></div>
+            <div class="slide"><img src="/views/home/4.jpg" alt="Slide 4" width="1000px" height="400px"></div>
+            <div class="slide"><img src="/views/home/5.jpg" alt="Slide 5" width="1000px" height="400px"></div>
+            <div class="slide"><img src="/views/home/6.jpg" alt="Slide 6" width="1000px" height="400px"></div>
+        </div>
+    </div>
+    <div id="about">
+        <h1>TẠI SAO NÊN HỌC TIẾNG ANH TẠI HIDDEN LEAF ?</h1>
+        <p>Bạn đang muốn tìm một nơi học IELTS chất lượng, không nhàm chán với giá cả phải chăng?</p>
+        <p>Các khoá học IELTS tại Hidden Leaf sẽ giúp bạn điều đó</p>
+        <div class="tag-ads">
+            <div class="tag">
+                Online/Offline
+                <img src="/views/home/2.jpg" alt="Slide 1" width="300px" height="500px">
+
+            </div>
+            <div class="tag">
+                Cam kết đầu ra
+                <img src="/views/home/2.jpg" alt="Slide 2" width="300px" height="500px">
+            </div>
+            <div class="tag">
+                Giá cả phải chăng
+                <img src="/views/home/3.jpg" alt="Slide 3" width="300px" height="500px">
+            </div>
+        </div>
+    </div>
+    <div>
+        <section id="articles">
+            <h2>English Guide</h2>
+            <div class="article">
+                <h3>Study with a song</h3>
+                <video width="600" height="400" controls autoplay loop unmuted poster="poster.jpg">
+                    <source src="english.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="article">
+                <h3>Studied by game</h3>
+                <video width="600" height="400" controls autoplay loop unmuted poster="poster.jpg">
+                    <source src="/views/home/game.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+    </div>
+    <section id="register">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Email">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Phone">
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <script src="/views/home/Home.js"></script>

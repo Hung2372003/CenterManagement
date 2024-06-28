@@ -128,7 +128,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
                     series: [{
                         name: 'Số lượng học sinh',
                         type: 'bar',
-                        data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 0]
+                        data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 200.2, 48.7, 18.8, 6.0, 0]
                     }]
                 });
 

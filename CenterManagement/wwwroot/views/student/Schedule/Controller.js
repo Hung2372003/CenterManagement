@@ -5,7 +5,6 @@ var app = angular.module("App_ESEIM", ["ngRoute", "ngResource", "ui.bootstrap", 
 //var app = angular.module('App_ESEIM', ["ui.bootstrap", "ngRoute", "ngCookies", "ngValidate", "datatables", "datatables.bootstrap", "pascalprecht.translate", "ngJsTree", "treeGrid", 'datatables.colvis', "ui.bootstrap.contextMenu", 'datatables.colreorder', 'angular-confirm', 'ui.select', 'ui.tinymce', 'dynamicNumber', 'ngTagsInput']);
 
 app.controller("Ctrl_ESEIM", function ($scope, $rootScope) {
-
    $rootScope.celender= 
          [
             {
@@ -24,8 +23,7 @@ app.controller("Ctrl_ESEIM", function ($scope, $rootScope) {
                 teacher: "Nguyễn Văn Hưng",
                 name:"3A.1"
             }
-        ]
-    
+        ]   
 
 });
 
@@ -45,10 +43,7 @@ app.config(function ($routeProvider) {
 
 });
 
-app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal, DTOptionsBuilder, DTColumnBuilder) {
-
-
-
+app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal, $window) {
     var AppCalendar = function () {
 
         return {
@@ -115,65 +110,57 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
                     });
                 };
 
-
-                var events = $rootScope.celender.map(function (celender) {
-                    return {
-                        title: 'Classes: ' + celender.name + '<br>' + 'Teacher: ' + celender.teacher + '<br>' + 'Topic: ' + celender.topic,
-
-                        start: celender.startTime,
-                        end: celender.endTime,     
-                      
-                    };
-                });
-
            
-                //$http.get('http://localhost:3000/api/v1/student')
-                //    .then(function (response) {
-
-
-                        //var events = response.metadata.map(function (metadata) {
-                        //    return {
-                        //        title: metadata.topic,
-                        //        start: event.start,
-                        //        end: event.end,
-                        //        backgroundColor: App.getBrandColor(event.backgroundColor),
-                        //        allDay: event.allDay !== undefined ? event.allDay : true,
-                        //        url: event.url
-                        //    };
-
-
-                //    })
-                //    .catch(function (error) {
-                //        console.error('error:', error);
-                //    });
-
-
-                $('#calendar').fullCalendar({
-                    header: h,
-                    defaultView: 'agendaWeek',
-                    slotMinutes: 15,
-                    editable: true,
-                    droppable: true,
-                    drop: function (date, allDay) {
-                        var originalEventObject = $(this).data('eventObject');
-                        var copiedEventObject = $.extend({}, originalEventObject);
-                        copiedEventObject.start = date;
-                        copiedEventObject.allDay = allDay;
-                        copiedEventObject.className = $(this).attr("data-class");
-                        $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
-                        if ($('#drop-remove').is(':checked')) {
-                            $(this).remove();
-                        }
-                    },
-
-
-         
-                    events: events,
-                    eventRender: function (event, element) {
-                        element.find('.fc-title').html(event.title); // Render title with HTML
+                $http.get('http://localhost:3000/api/v1/student/schedule', {
+                    headers: {
+                        'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
+                        'Content-Type': 'application/json'
                     }
-                 
-                });
+                })
+                    .then(function (response) {                  
+                        var  events = response.data.metadata.map(function (celender) {
+                            return {
+                                title: 'Lớp: ' + celender.name + '<br>' + 'Giáo viên: ' + celender.teacher + '<br>' + 'Bài giảng: ' + celender.topic,
+
+                                start: celender.startTime,
+                                end: celender.endTime,
+
+                            };
+                        });
+
+
+
+                        $('#calendar').fullCalendar({
+                            header: h,
+                            defaultView: 'agendaWeek',
+                            slotMinutes: 15,
+                            editable: true,
+                            droppable: true,
+                            drop: function (date, allDay) {
+                                var originalEventObject = $(this).data('eventObject');
+                                var copiedEventObject = $.extend({}, originalEventObject);
+                                copiedEventObject.start = date;
+                                copiedEventObject.allDay = allDay;
+                                copiedEventObject.className = $(this).attr("data-class");
+                                $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
+                                if ($('#drop-remove').is(':checked')) {
+                                    $(this).remove();
+                                }
+                            },
+                            events: events,
+                            eventRender: function (event, element) {
+                                element.find('.fc-title').html(event.title); // Render title with HTML
+                            }
+
+                        });
+
+                    })
+                    .catch(function (error) {
+                        console.error('error:', error);
+                    });
+
+
+               
 
             }
 

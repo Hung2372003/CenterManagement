@@ -10,30 +10,30 @@
 
             <div style="display:flex">
                 <div class="form-group" style="width:100% ;padding-right:17px" >
-                    <label for="exampleInputUsername1">Môn Học:</label>
+                    <label for="exampleInputUsername1">Tên Lớp:</label>
                     <input type="text" class="form-control" ng-model="model.name" id="exampleInputUsername1" placeholder="Nhập tên lớp...">
                 </div>
                 <div class="form-group" style="width:100%">
-                    <label for="exampleInputUsername1">Tên lớp:</label>
-                    <input type="text" class="form-control" ng-model="model.grade" id="exampleInputUsername1" placeholder="Nhập tên lớp...">
+                    <label for="exampleInputUsername1">Lớp:</label>
+                    <input type="number" class="form-control" ng-model="model.grade" id="exampleInputUsername1" placeholder="Nhập tên lớp...">
                 </div>
             </div>
 
             <div style="display:flex">
                 <div class="form-group"style="width:100% ;padding-right:17px" >
                     <label for="exampleInputUsername1">Số học viên tối đa:</label>
-                    <input type="text" class="form-control" ng-model="model.maxStudent" id="exampleInputUsername1" placeholder="Nhập tên lớp...">
+                    <input type="number" class="form-control" ng-model="model.maxStudent" id="exampleInputUsername1" placeholder="Nhập tên lớp...">
                 </div>
 
                 <div class="form-group"style="width:100%">
                     <label for="exampleInputPassword1">Năm học:</label>
-                    <input type="text" class="form-control" ng-model="model.year" id="exampleInputPassword1" placeholder="Năm học...">
+                    <input type="number" class="form-control" ng-model="model.year" id="exampleInputPassword1" placeholder="Năm học...">
                 </div>
             </div>
 
             <div class="form-group">
                 <label for="exampleInputPassword1">Tổng học phí:</label>
-                <input type="text" class="form-control" ng-model="model.tuition" id="exampleInputPassword1" placeholder="Năm học...">
+                <input type="number" class="form-control" ng-model="model.tuition" id="exampleInputPassword1" placeholder="Năm học...">
             </div>
             <button type="button" class="btn btn-gradient-danger btn-icon-text click-button" ng-click="submit()" style="height: 41px; padding-left: 17px; padding-right: 17px">
                 Thêm mới

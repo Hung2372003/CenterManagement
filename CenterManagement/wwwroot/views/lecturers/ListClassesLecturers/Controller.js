@@ -40,7 +40,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         .withOption('autoWidth', false)
         .withOption('processing', true)
         .withOption('lengthChange', false)
-        .withOption('searching', false)
+        .withOption('searching', true)
         .withOption('scrollX', false)
         .withOption('pageLength', 10)
         .withOption('scrollCollapse', true)

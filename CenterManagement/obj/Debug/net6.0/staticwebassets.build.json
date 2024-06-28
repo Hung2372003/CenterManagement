@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kJ/oHN6016113l9AnC7l75rYGOPXxRrjGlpy9q0Zfzs=",
+  "Hash": "120MUV7dq3zHEo06fXUxXK1e6Z1oXHO/7w66mnsQBBE=",
   "Source": "CenterManagement",
   "BasePath": "_content/CenterManagement",
   "Mode": "Default",
@@ -6919,6 +6919,23 @@
       "OriginalItemSpec": "wwwroot\\views\\Parents\\ParentsSonClasses\\index.html"
     },
     {
+      "Identity": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\Parents\\ParentsSonClasses\\pay.html",
+      "SourceId": "CenterManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\",
+      "BasePath": "_content/CenterManagement",
+      "RelativePath": "views/Parents/ParentsSonClasses/pay.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\views\\Parents\\ParentsSonClasses\\pay.html"
+    },
+    {
       "Identity": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\sign-in\\assets\\image\\backgroung0.jpg",
       "SourceId": "CenterManagement",
       "SourceType": "Discovered",
@@ -6953,6 +6970,23 @@
       "OriginalItemSpec": "wwwroot\\views\\sign-in\\assets\\styles_signup.css"
     },
     {
+      "Identity": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\sign-in\\index.html",
+      "SourceId": "CenterManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\",
+      "BasePath": "_content/CenterManagement",
+      "RelativePath": "views/sign-in/index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\views\\sign-in\\index.html"
+    },
+    {
       "Identity": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\sign-in\\script_signup.js",
       "SourceId": "CenterManagement",
       "SourceType": "Discovered",
@@ -6968,23 +7002,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\views\\sign-in\\script_signup.js"
-    },
-    {
-      "Identity": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\sign-in\\sign-up.html",
-      "SourceId": "CenterManagement",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\",
-      "BasePath": "_content/CenterManagement",
-      "RelativePath": "views/sign-in/sign-up.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\views\\sign-in\\sign-up.html"
     },
     {
       "Identity": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\student\\ListClassesStudents\\Controller.js",

@@ -82,7 +82,7 @@ app.config(function ($routeProvider) {
 
 });
 
-app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal, DTOptionsBuilder, DTColumnBuilder, dataservice) {
+app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal, DTOptionsBuilder, DTColumnBuilder, dataservice, $window) {
 
    
     vm = $scope;
@@ -159,7 +159,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
 
        
     vm.dtColumns = [
-        DTColumnBuilder.newColumn('id').withTitle('id').renderWith(function (data, type) {
+        DTColumnBuilder.newColumn('_id').withTitle('id').renderWith(function (data, type) {
             return data;
         }),
         DTColumnBuilder.newColumn('name').withTitle('Tên lớp').renderWith(function (data, type) {
@@ -171,9 +171,9 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         DTColumnBuilder.newColumn('grade').withTitle('Lớp').renderWith(function (data, type) {
             return data;
         }),
-        DTColumnBuilder.newColumn('teacher').withTitle('Giảng viên chính').renderWith(function (data, type) {
-            return data;
-        }),
+        //DTColumnBuilder.newColumn('teacher').withTitle('Giảng viên chính').renderWith(function (data, type) {
+        //    return data;
+        //}),
         DTColumnBuilder.newColumn('maxStudents').withTitle('Số lượng học viên').renderWith(function (data, type, full) {
             return full.registeredStudents + "/" + full.maxStudents;
         }),
@@ -181,17 +181,17 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
             return data +" đ";
         }),
         DTColumnBuilder.newColumn('statusClasses').withTitle('trạng thái lớp học').renderWith(function (data, type) {
-            if (data == "Mở đăng ký") {
+            if (data == "open") {
                 return `<span class="text-success">Mở đăng ký</span>`;
-            } else if (data == "Lớp học kết thúc") {
+            } else if (data == "end") {
                 return `<span  class="text-danger">Lớp học kết thúc</span>`;
-            } else if (data == "Đóng đăng ký") {
+            } else if (data == "close") {
                 return `<span  class="text-warning">Đóng đăng ký</span>`;
             } else { return data; }
             
         }),
         DTColumnBuilder.newColumn('statusRegister').withTitle('trạng thái đăng ký').renderWith(function (data, type) {
-            if (data == "Đã đăng ký") {
+            if (data == true) {
                 return `<span class="text-success">Đã đăng ký</span>`;
             //} else if (data == "") {
             //    return `<span  class="text-warning">Chưa đăng ký</span>`;
@@ -212,8 +212,8 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         }),
     ];
 
-    //vm.reloadData = reloadData;
-    //vm.dtInstance = {};
+
+    vm.dtInstance = {};
 
     //function reloadData(resetPaging) {
     //    vm.dtInstance.reloadData(callback, resetPaging);
@@ -223,22 +223,27 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
 
     //};
 
-    vm.dtOptions.data = [
-        { id: 1, name: 'John Doe', grade: '3.1A', maxStudents: 70, registeredStudents:30, tuition: 2000000, statusClasses: "Mở đăng ký", year: 2035, statusRegister:"Đã đăng ký" ,teacher:"Nguyễn Văn Hưng"},
-        { id: 2, name: 'Jane Smith', grade: '25A', maxStudents: 70 ,registeredStudents: 30, tuition: 2000000, statusClasses: "Đóng đăng ký", year: 2043, statusRegister: "", teacher: "Nguyễn Văn Hưng" },
-        { id: 3, name: 'Bob Johnson', grade: '40A', maxStudents: 70, registeredStudents: 30, tuition: 2000000, statusClasses: "Lớp học kết thúc", year: 2015, statusRegister: "", teacher: "Nguyễn Văn Hưng" },
-        { id: 6, name: 'Bob Johnson', grade: '40A', maxStudents: 40, registeredStudents: 30, tuition: 2000000, statusClasses: "Mở đăng ký", year: 2015, statusRegister: "", teacher: "Nguyễn Văn Hưng" },
-    ];
+    //vm.dtOptions.data = [
+    //    { id: 1, name: 'John Doe', grade: '3.1A', maxStudents: 70, registeredStudents:30, tuition: 2000000, statusClasses: "Mở đăng ký", year: 2035, statusRegister:"Đã đăng ký" ,teacher:"Nguyễn Văn Hưng"},
+    //    { id: 2, name: 'Jane Smith', grade: '25A', maxStudents: 70 ,registeredStudents: 30, tuition: 2000000, statusClasses: "Đóng đăng ký", year: 2043, statusRegister: "", teacher: "Nguyễn Văn Hưng" },
+    //    { id: 3, name: 'Bob Johnson', grade: '40A', maxStudents: 70, registeredStudents: 30, tuition: 2000000, statusClasses: "Lớp học kết thúc", year: 2015, statusRegister: "", teacher: "Nguyễn Văn Hưng" },
+    //    { id: 6, name: 'Bob Johnson', grade: '40A', maxStudents: 40, registeredStudents: 30, tuition: 2000000, statusClasses: "Mở đăng ký", year: 2015, statusRegister: "", teacher: "Nguyễn Văn Hưng" },
+    //];
 
-    //$scope.response = {};
-    // $http.get('http://localhost:3000/api/v1/student')
-    //    .then(function (response) {
-    //        $scope.response = response.data;
-    //        vm.dtoptions.data = $scope.response.metadata;
-    //    })
-    //    .catch(function (error) {
-    //        console.error('error:', error);
-    //    });
+    $scope.response = {};
+    $http.get('http://localhost:3000/api/v1/class/student?studentId=66640e7af97700fcfddf05cd', {
+        //headers: {
+        //    'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
+        //    'Content-Type': 'application/json'
+        //}
+    })
+        .then(function (response) {
+            $scope.response = response.data;
+            vm.dtOptions.data = $scope.response.metadata;
+        })
+        .catch(function (error) {
+            console.error('error:', error);
+        });
 
 
     $scope.register = function (id) {
