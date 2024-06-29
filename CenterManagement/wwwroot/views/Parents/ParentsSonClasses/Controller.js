@@ -76,6 +76,7 @@ app.factory('dataservice', function ($http, $window) {
             }).then(function (response) {
                 callback(response.data);
             }, function (error) {
+                $window.location.href = '/home/error';
                 console.error('Error:', error);
             });
         },
@@ -197,25 +198,22 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
 
     vm.dtInstance = {};
 
-    //vm.dtOptions.data = [
-    //    { _id: 1, name: 'Listening', year: '2000', totalLesson: 15, learned: 2, grade: 'Grade 1', teacher:"Nguyễn Văn Hưng", skipClass: 1, tuition: 20000000, tuitionUnpaid :400000},
-    //    { _id: 2, name: 'reading', year: '2000', totalLesson: 14, learned: 4, grade: 'Grade 2', teacher: "Nguyễn Văn Hưng", skipClass: 2, tuition: 20000000, tuitionUnpaid: 400000 } ,
-    //    { _id: 3, name: 'wishtkjths', year: '2000', totalLesson: 17, learned: 7, grade: 'Grade 3', teacher: "Nguyễn Văn Hưng", skipClass: 2, tuition: 20000000, tuitionUnpaid: 400000 }
-    //];
-
-   
-    $http.get('http://localhost:3000/api/v1/student/statusv2', {
-        headers: {
-            'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
-            'Content-Type': 'application/json'
-        }
-    })
-        .then(function (response) {
-            $scope.dtOptions.data = response.data.metadata;
+    loadData()
+    function loadData() {
+        $http.get('http://localhost:3000/api/v1/student/statusv2', {
+            headers: {
+                'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
+                'Content-Type': 'application/json'
+            }
         })
-        .catch(function (error) {
-            $window.location.href = '/home/error';
-        });
+            .then(function (response) {
+                $scope.dtOptions.data = response.data.metadata;
+            })
+            .catch(function (error) {
+                $window.location.href = '/home/error';
+            });
+    }
+   
     function callback(json) {
 
     }

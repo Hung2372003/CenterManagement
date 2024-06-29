@@ -68,6 +68,7 @@ app.factory('dataservice', function ($http, $window) {
             }).then(function (response) {
                 callback(response.data);
             }, function (error) {
+                /*     $window.location.href = '/home/error';*/
                 $window.location.href = '/home/error';
                 console.error('Error:', error);
             });
@@ -234,12 +235,14 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
     //};
 
     $scope.response = {};
-    $http.get('http://localhost:3000/api/v1/class/student?studentId=66640e7af97700fcfddf05cd', {
-        headers: {
-            'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
-            'Content-Type': 'application/json'
-        }
-    })
+    loadData()
+    function loadData() {
+        $http.get('http://localhost:3000/api/v1/class/student?studentId=66640e7af97700fcfddf05cd', {
+            headers: {
+                'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
+                'Content-Type': 'application/json'
+            }
+        })
         .then(function (response) {
             $scope.response = response.data;
             vm.dtOptions.data = $scope.response.metadata;
@@ -248,11 +251,13 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
             $window.location.href = '/home/error';
             console.error('error:', error);
         });
+    }
+   
 
 
     $scope.register = function (_id) {
        
-        dataservice.register({'classId': _id}, function (result) {
+        dataservice.register({'"classId"': _id}, function (result) {
             toastr.success(result)
             //modalInstance.result.then(function () {
             //    $scope.reloadTable(); // Gọi hàm reloadTable để reload lại bảng
