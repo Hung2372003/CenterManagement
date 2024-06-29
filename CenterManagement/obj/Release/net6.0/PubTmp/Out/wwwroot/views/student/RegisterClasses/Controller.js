@@ -31,7 +31,7 @@ app.config(function () {
 });
 
 
-app.factory('dataservice', function ($http) {
+app.factory('dataservice', function ($http, $window) {
     $http.defaults.headers.common["x-requested-with"] = "xmlhttprequest";
     var headers = {
         "content-type": "application/json;odata=verbose",
@@ -60,7 +60,16 @@ app.factory('dataservice', function ($http) {
     };
     return {
         register: function (data, callback) {
-            $http.post('link/api', data).success(callback);
+            $http.post('http://localhost:3000/api/v1/class/student-enroll', data, {
+                headers: {
+                    'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
+                    'Content-Type': 'application/json'
+                }
+            }).then(function (response) {
+                callback(response.data);
+            }, function (error) {
+                console.error('Error:', error);
+            });
         },
     };
 });
@@ -199,10 +208,10 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
 
         }),
         DTColumnBuilder.newColumn('action').notSortable().withTitle('Thao tác').renderWith(function (data, type, full, meta) {
-            if (full.statusClasses == "Mở đăng ký" && (full.statusRegister == "" || full.statusRegister == null)) {
-                return ' <button type="button"  ng-click="register(' + full.id + ')" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 30px; padding-left: 17px; padding-right: 17px;background: #07b113;align-items: center;display:flex;">Đăng ký</button > ';
-            } else if (full.statusClasses == "Mở đăng ký" && full.statusRegister == "Đã đăng ký") {
-                return ' <button type="button"  ng-click="register(' + full.id + ')" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 30px; padding-left: 32px;width: 88.19px;background:#ff753b;align-items: center;display:flex;">Hủy</button > ';
+            if (full.statusClasses == "open" && (full.statusRegister == false || full.statusRegister == null)) {
+                return ' <button type="button"  ng-click="register(' + "'" + full._id + "'" + ')" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 30px; padding-left: 17px; padding-right: 17px;background: #07b113;align-items: center;display:flex;">Đăng ký</button > ';
+            } else if (full.statusClasses == "open" && full.statusRegister == true) {
+                return ' <button type="button"  ng-click="register(' + "'" + full._id + "'" + ')" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 30px; padding-left: 32px;width: 88.19px;background:#ff753b;align-items: center;display:flex;">Hủy</button > ';
 
             }
             else {
@@ -223,19 +232,12 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
 
     //};
 
-    //vm.dtOptions.data = [
-    //    { id: 1, name: 'John Doe', grade: '3.1A', maxStudents: 70, registeredStudents:30, tuition: 2000000, statusClasses: "Mở đăng ký", year: 2035, statusRegister:"Đã đăng ký" ,teacher:"Nguyễn Văn Hưng"},
-    //    { id: 2, name: 'Jane Smith', grade: '25A', maxStudents: 70 ,registeredStudents: 30, tuition: 2000000, statusClasses: "Đóng đăng ký", year: 2043, statusRegister: "", teacher: "Nguyễn Văn Hưng" },
-    //    { id: 3, name: 'Bob Johnson', grade: '40A', maxStudents: 70, registeredStudents: 30, tuition: 2000000, statusClasses: "Lớp học kết thúc", year: 2015, statusRegister: "", teacher: "Nguyễn Văn Hưng" },
-    //    { id: 6, name: 'Bob Johnson', grade: '40A', maxStudents: 40, registeredStudents: 30, tuition: 2000000, statusClasses: "Mở đăng ký", year: 2015, statusRegister: "", teacher: "Nguyễn Văn Hưng" },
-    //];
-
     $scope.response = {};
     $http.get('http://localhost:3000/api/v1/class/student?studentId=66640e7af97700fcfddf05cd', {
-        //headers: {
-        //    'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
-        //    'Content-Type': 'application/json'
-        //}
+        headers: {
+            'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
+            'Content-Type': 'application/json'
+        }
     })
         .then(function (response) {
             $scope.response = response.data;
@@ -246,26 +248,16 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         });
 
 
-    $scope.register = function (id) {
-
-        
-        dataservice.register($scope, function (result) {
-            modalInstance.result.then(function () {
-                $scope.reloadTable(); // Gọi hàm reloadTable để reload lại bảng
-            })
-            if (result.Error) {
-                toastr.error("sjdfhkjsdfh");
-            } else {
-                App.toastrSuccess(result.Title);
-                $uibModalInstance.close();
-                $rootScope.reload();
-            }
-            App.unblockUI("#contentMain");
+    $scope.register = function (_id) {
+       
+        dataservice.register({'classId': _id}, function (result) {
+            toastr.success(result)
+            //modalInstance.result.then(function () {
+            //    $scope.reloadTable(); // Gọi hàm reloadTable để reload lại bảng
+            //})
+            toastr.success("sjdfhkjsdfh");
            
         });
-        $uibModalInstance.close();
-        
-       
     }
 
     $scope.cancel = function () {

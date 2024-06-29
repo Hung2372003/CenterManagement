@@ -6,37 +6,6 @@ var app = angular.module("App_ESEIM", ["ngRoute", "ngResource", "ui.bootstrap", 
 
 app.controller("Ctrl_ESEIM", function ($scope, $rootScope) {
 
-
-
-
-
-    $rootScope.studentData = {
-        "id":23,
-        "name": "3.1",
-        "year": 2024,
-        "grade": 3,
-        "lessons": [
-            {
-                "date": "2024-05-29",
-                "topic": "Introduction to Algebra",
-                "teacherId": "66640f7ccf0f68d1c98dad85"
-            },
-            {
-                "date": "2024-05-30",
-                "topic": "Linear Equations",
-                "teacherId": "66640f7ccf0f68d1c98dad85"
-            },
-            {
-                "date": "2024-06-01",
-                "topic": "Statistics",
-                "teacherId": "66640f7ccf0f68d1c98dad85"
-            }
-        ]
-    };
-
-
-
-
 });
 
 app.config(function ($routeProvider) {
@@ -169,6 +138,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         })
         .catch(function (error) {
             console.error('Error:', error);
+            $window.location.href = '/home/error';
         });
 
 

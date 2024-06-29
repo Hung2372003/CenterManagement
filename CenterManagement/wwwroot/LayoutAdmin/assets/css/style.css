@@ -14754,3 +14754,12 @@ label {
     font-size: 29px !important;
     font-weight: 900 !important;
 }
+
+.error-input{
+    color:red;
+    margin-top:7px;
+    font-size:13px;
+}
+.error-border {
+    border-color: #ff6b6b;
+}

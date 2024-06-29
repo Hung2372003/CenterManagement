@@ -11,7 +11,25 @@ app.controller("Ctrl_ESEIM", function ($scope, $rootScope) {
    
 
 });
-
+app.config(function () {
+    toastr.options = {
+        "closeButton": true,
+        "debug": false,
+        "newestOnTop": true,
+        "progressBar": true,
+        "positionClass": "toast-top-right",
+        "preventDuplicates": true,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    };
+});
 app.config(function ($routeProvider) {
     $routeProvider
         .when("/", {
@@ -35,6 +53,12 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
     vm = $scope;
 
     vm.dtOptions = DTOptionsBuilder.newOptions()
+        // .withOption('ajax', {
+        //        url: 'your-api-endpoint', // URL của API của bạn
+        //        type: 'GET', // Loại yêu cầu (GET hoặc POST)
+        //        dataSrc: 'metadata' // Tên thuộc tính trong phản hồi API chứa dữ liệu
+        // })
+        //.withDataProp('metadata')
         .withPaginationType('full_numbers')
         .withDisplayLength(9)
         .withOption('autoWidth', false)
@@ -68,7 +92,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
             $compile(angular.element(row).contents())($scope);
         });
     vm.dtColumns = [
-        DTColumnBuilder.newColumn('id').withTitle('ID').renderWith(function (data, type) {
+        DTColumnBuilder.newColumn('_id').withTitle('ID').renderWith(function (data, type) {
             return data;
         }),
 
@@ -87,12 +111,12 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         DTColumnBuilder.newColumn('learned').withTitle('Số buổi đã dạy').renderWith(function (data, type) {
             return data;
         }),
-        DTColumnBuilder.newColumn('tuition').withTitle('Học phí cần thu').renderWith(function (data, type) {
+        DTColumnBuilder.newColumn('tuition').withTitle('Học phí').renderWith(function (data, type) {
             return data;
         }),
         DTColumnBuilder.newColumn('status').notSortable().withTitle().renderWith(function (data, type, full, meta) {
            
-            return ' <button type="button"  ng-click="attendance(' + full.Id + ')" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 30px; padding-left: 17px; padding-right: 17px;background: #ff6300;align-items: center;display:flex;">Điểm danh</button > ';
+            return ' <button type="button"  ng-click="attendance(' + full._id + ')" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 30px; padding-left: 17px; padding-right: 17px;background: #ff6300;align-items: center;display:flex;">Điểm danh</button > ';
         }),
 
 
@@ -101,14 +125,14 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
     vm.dtInstance = {};
 
     vm.dtOptions.data = [
-        { Id: 1, subject: 'Listening', year: '2000', totalLesson: 15, learned: 2, grade: 'Grade 1' },
-        { Id: 2, subject: 'reading', year: '2000', totalLesson: 14, learned: 4, grade: 'Grade 2' },
-        { Id: 3, subject: 'wishtkjths', year: '2000', totalLesson: 17, learned: 7, grade: 'Grade 3' }
+        { _id: 1, subject: 'Listening', year: '2000', totalLesson: 15, learned: 2, grade: 'Grade 1' },
+        { _id: 2, subject: 'reading', year: '2000', totalLesson: 14, learned: 4, grade: 'Grade 2' },
+        { _id: 3, subject: 'wishtkjths', year: '2000', totalLesson: 17, learned: 7, grade: 'Grade 3' }
     ]
 
 
     $scope.attendance = function (Id) {
-        console.log('Opening detail modal for student with id:', Id);
+        console.log('Opening detail modal for student with id:', _id);
         var modalInstance = $uibModal.open({
             animation: true,
             templateUrl: ctxfolder + '/attendance.html',

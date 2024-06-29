@@ -1,6 +1,4 @@
 
-
-
 var ctxfolder = "/views/sign-in";
 
 var app = angular.module("App_ESEIM", ["ngRoute", "ngResource", "ui.bootstrap", "datatables"]);
@@ -74,8 +72,10 @@ app.controller('index', function ($scope, $http, $window, $location) {
    
     $scope.user = {};
     $scope.login = function () {
-       
-        $http.post('http://localhost:3000/api/v1/auth/login/' + $scope.user.role, $scope.user)
+      
+        
+
+        $http.post('http://localhost:3000/api/v1/auth/login/' + $scope.user.role, $scope.user)               
                 .then(function (response) {
                     // Lưu token vào localStorage
                     $window.localStorage.setItem('token', response.data.metadata.accessToken);
@@ -91,8 +91,9 @@ app.controller('index', function ($scope, $http, $window, $location) {
                     toastr.success(response.data.message);
                 })
                 .catch(function (error) {
-                    toastr.error("có lỗi xảy ra")
+                    toastr.error("Tài khoản hoặc mật khẩu không chính xác")
                 });
+
        
     };
 

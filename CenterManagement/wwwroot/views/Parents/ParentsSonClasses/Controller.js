@@ -1,7 +1,7 @@
 ﻿var ctxfolder = "/views/Parents/ParentsSonClasses";
 var ctxfolderMessage = "/views/message-box";
-
 var app = angular.module("App_ESEIM", ["ngRoute", "ngResource", "ui.bootstrap", "datatables"]);
+
 
 //var app = angular.module('App_ESEIM', ["ui.bootstrap", "ngRoute", "ngCookies", "ngValidate", "datatables", "datatables.bootstrap", "pascalprecht.translate", "ngJsTree", "treeGrid", 'datatables.colvis', "ui.bootstrap.contextMenu", 'datatables.colreorder', 'angular-confirm', 'ui.select', 'ui.tinymce', 'dynamicNumber', 'ngTagsInput']);
 
@@ -37,6 +37,53 @@ app.config(function () {
         "hideMethod": "fadeOut"
     };
 });
+
+
+app.factory('dataservice', function ($http, $window) {
+    $http.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest";
+    var headers = {
+        "Content-Type": "application/json;odata=verbose",
+        "Accept": "application/json;odata=verbose",
+    }
+    var submitFormUpload = function (url, data, callback) {
+        var req = {
+            method: 'POST',
+            url: url,
+            headers: {
+                'Content-Type': undefined
+            },
+            beforeSend: function () {
+                App.blockUI({
+                    target: "#modal-body",
+                    boxed: true,
+                    message: 'loading...'
+                });
+            },
+            complete: function () {
+                App.unblockUI("#modal-body");
+            },
+            data: data
+        }
+        $http(req).success(callback);
+    };
+    return {
+        pay: function (data, callback) {
+            $http.post('http://localhost:3000/api/v1/payment/pay-tuition', data, {
+                headers: {
+                    'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
+                    'Content-Type': 'application/json'
+                }
+            }).then(function (response) {
+                callback(response.data);
+            }, function (error) {
+                console.error('Error:', error);
+            });
+        },
+
+    };
+});
+
+
 app.config(function ($routeProvider) {
     $routeProvider
         .when("/", {
@@ -167,7 +214,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
             $scope.dtOptions.data = response.data.metadata;
         })
         .catch(function (error) {
-            console.error('Error:', error);
+            $window.location.href = '/home/error';
         });
     function callback(json) {
 
@@ -214,7 +261,8 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
 
     };
 
-    $scope.pay = function (_id,tuitionUnpaid) {
+    $scope.pay = function (_id, tuitionUnpaid) {
+  
         console.log('Opening detail modal for student with id:', _id);
         var modalInstance = $uibModal.open({
             animation: true,
@@ -364,41 +412,38 @@ app.controller('detail', function ($scope, $uibModalInstance, $rootScope, $http,
 
 });
 
-app.controller('pay', function ($scope, $uibModalInstance, $rootScope, $http, classesId, $compile, $uibModal, $window) {
-
-
+app.controller('pay', function ($scope, $uibModalInstance, $rootScope, $http, classesId, $compile, $uibModal, dataservice) {
 
   /*  $scope.model.classesId = classesId;*/
     $scope.model = {
-        classesId: classesId._id,
+        classId: classesId._id,
         tuitionUnpaid: classesId.tuitionUnpaid.toString() + " VNĐ",
         money: classesId.tuitionUnpaid,
         ccv: '',
         cardNumber: '',
+        nameOfCard:''
 
     }
     
 
-    $scope.generateQRCode = function () {
-        $scope.qr = "https://api.vietqr.io/image/970422-0388568575-k6b0GjK.jpg?accountName=NGUYEN%20VAN%20HUNG&amount=" + $scope.model.money + "&addInfo=hoc%20phi%20CenterEL";
+    $scope.generateQRCode = function () {       
+        //$scope.qr = "https://api.vietqr.io/image/970422-0388568575-k6b0GjK.jpg?accountName=NGUYEN%20VAN%20HUNG&amount=" + $scope.model.money + "&addInfo=hoc%20phi%20CenterEL";
         var modalInstance = $uibModal.open({
             templateUrl: ctxfolderMessage + '/messageConfirmUpdate.html',
             windowClass: "message-center",
-            controller: function ($scope, $uibModalInstance) {
+            controller: function ($scope, $uibModalInstance,model) {
+                $scope.model = model;
                 $scope.message = "bạn có muốn thưc hiện giao dịch này?";
+             
                 $scope.ok = function () {
-                    $http.post('http://localhost:3000/api/v1/payment/pay-tuition', $scope.model, {
-                        headers: {
-                            'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
-                            'Content-Type': 'application/json'
-                        }
-                    })
-                        .then(function (response) {
-                            toastr.success(response.message);
-                        })
-                        .catch(function (error) {
-                            console.error('Error:', error);
-                        });
+                    if (checkInput() == false) {
+                        $uibModalInstance.dismiss('cancel');
+                        return
+                    }
+                    dataservice.pay($scope.model, function (responseData) {
+                        toastr.success("thanh toán thành công");
+                        $uibModalInstance.dismiss('cancel');
+                    });
                 };
 
                 $scope.cancel = function () {
@@ -406,12 +451,65 @@ app.controller('pay', function ($scope, $uibModalInstance, $rootScope, $http, cl
                 };
             },
             size: '25',
-        });
-        modalInstance.result.then(function (d) {
-            $scope.reloadNoResetPage();
 
-        })
+            resolve: {
+                model: function () {
+                    return $scope.model; // Truyền model vào modal qua resolve
+                }
+            }
+            
+        });
+        //modalInstance.result.then(function (d) {
+        //    $scope.reloadNoResetPage();
+
+        //})
     };
+    var haveNumber = /\d/;
+    var onlyNumber = /^[0-9]+$/;
+    var only3characters = /^.{3}$/;
+
+    $scope.change = checkInput;
+    function checkInput() {
+      
+        if($scope.model.nameOfCard == null || $scope.model.nameOfCard == '') {
+            $scope.errorNameOfCard = "* Yêu cầu nhập tên chủ thẻ !";
+            $scope.tNameOfCard = true;
+        }
+        else if (haveNumber.test($scope.model.nameOfCard)) {
+            $scope.errorNameOfCard = "* Tên chủ thẻ không để số !";
+            $scope.tNameOfCard = true;
+        }
+        else {
+            $scope.tNameOfCard = false
+        }
+
+        if ($scope.model.cardNumber == null || $scope.model.cardNumber == '') {
+            $scope.errorCardNumber = "* Yêu cầu nhập số thẻ !";
+            $scope.tCardNumber = true;
+        }
+        else if (!$scope.model.cardNumber.match(/^[0-9]*$/)) {
+            $scope.errorCardNumber = "* Yêu cầu nhập số thẻ chỉ số !";
+            $scope.tCardNumber = true;
+        }
+        else {
+            $scope.tCardNumber = false
+        }
+
+        if ($scope.model.ccv == null || $scope.model.ccv == '') {
+            $scope.errorCcv = "* Yêu cầu CCV !";
+            $scope.tCcv = true;
+        }
+        else if (!$scope.model.ccv.match(/^[0-9]*$/) || !only3characters.test($scope.model.ccv)) {
+           $scope.errorCcv = "* Yêu cầu CCV chỉ số và tối đa 3 ký tự !";
+            $scope.tCcv = true;
+        }
+        else {
+            $scope.tCcv = false
+         }
+         if ($scope.tNameOfCard == false && $scope.tCardNumber == false && $scope.tCcv == false) { return true }
+        else return false
+
+    }
 
     $scope.cancel = function () {
 

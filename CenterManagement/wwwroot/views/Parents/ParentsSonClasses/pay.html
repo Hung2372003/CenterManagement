@@ -9,30 +9,33 @@
             <div style="display:flex">
                 <div class="form-group" style="width:100% ;padding-right:17px">
                     <label for="exampleInputUsername1">Lớp:</label>
-                    <input type="text" class="form-control" ng-model="model.classesId" id="exampleInputUsername1" readonly placeholder="Nhập tên lớp...">
+                    <input type="text" class="form-control" ng-model="model.classId" id="exampleInputUsername1" readonly placeholder="Nhập tên lớp...">
                 </div>
 
                 <div class="form-group" style="width:100%">
                     <label for="exampleInputUsername1">Còn phải đóng:</label>
                     <input type="text" class="form-control" ng-model="model.tuitionUnpaid" id="exampleInputUsername1" readonly placeholder="Nhập tên lớp...">
-
                 </div>
             </div>
             <div class="form-group" style="width:100%">
                 <label for="exampleInputUsername1">Số thẻ:</label>
-                <input type="number" class="form-control" ng-model="model.cardNumber" id="exampleInputUsername1" placeholder="Nhập tên lớp...">
+                <input ng-change="change()" type="text" class="form-control" ng-model="model.cardNumber" ng-class="{'error-border':tCardNumber}" id="exampleInputUsername1" placeholder="Nhập số thể...">
+                <div class="error-input" ng-show="tCardNumber">{{errorCardNumber}}</div>
             </div>
             <div class="form-group" style="width:100%">
                 <label for="exampleInputUsername1">Tên chủ thẻ:</label>
-                <input type="text" class="form-control" ng-model="model.nameOfCard" id="exampleInputUsername1" placeholder="Nhập tên lớp...">
+                <input ng-change="change()" type="text" class="form-control " ng-class="{'error-border':tNameOfCard}" ng-model="model.nameOfCard" id="exampleInputUsername1" placeholder="Nhập tên chủ thẻ...">
+                <div class="error-input" ng-show="tNameOfCard">{{errorNameOfCard}}</div>
             </div>
             <div class="form-group" style="width:100%">
                 <label for="exampleInputUsername1">CVV-CCV:</label>
-                <input type="text" class="form-control" ng-model="model.ccv" id="exampleInputUsername1" placeholder="Nhập tên lớp...">
+                <input ng-change="change()" type="text" class="form-control" ng-model="model.ccv"  ng-class="{'error-border':tCcv}"  id="exampleInputUsername1" placeholder="Nhập CCV...">
+                <div class="error-input" ng-show="tCcv">{{errorCcv}}</div>
             </div>
             <div class="form-group" style="width:100%">
                 <label for="exampleInputUsername1">Số tiền muốn  thanh toán:  VNĐ</label>
-                <input type="number" class="form-control" ng-model="model.money" id="exampleInputUsername1" placeholder="Nhập tên lớp...">
+                <input ng-change="change()" type="number" class="form-control" ng-model="model.money" ng-class="{'error-border':tMoney}" id="exampleInputUsername1" placeholder="Nhập tên lớp...">
+                <div class="error-input"ng-show="tMoney">{{errorMoney}}</div>
             </div>
 
             <button type="button" class="btn btn-gradient-danger btn-icon-text click-button" ng-click="generateQRCode()" style="height: 41px; padding-left: 17px; padding-right: 17px">

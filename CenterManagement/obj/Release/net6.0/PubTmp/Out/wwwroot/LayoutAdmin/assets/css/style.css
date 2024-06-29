@@ -14689,7 +14689,7 @@ table.dataTable tbody td {
 
 .fc-event:hover {
     width: max-content;
-    z-index: 1500;
+    z-index: 3000 !important;
     height:max-content
 }
 
@@ -14733,4 +14733,33 @@ table.dataTable tbody td {
 label {
     display: inline-block;
     font-weight: bold;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.custom-font {
+    font-family: 'Roboto', sans-serif;
+    color: #A64DFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(92deg, #ae5eff 50%, #A64DFF 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.font-green {
+    color: #d30fff !important;
+    font-size: 29px !important;
+    font-weight: 900 !important;
+}
+
+.error-input{
+    color:red;
+    margin-top:7px;
+    font-size:13px;
+}
+.error-border {
+    border-color: #ff6b6b;
 }

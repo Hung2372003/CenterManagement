@@ -8,7 +8,7 @@
             <option value="student">Học sinh</option>
             <option value="teacher">Giáo viên</option>
             <option value="admin">Admin</option>
-            <option value="parents">Phụ huynh</option>
+            <option value="parent">Phụ huynh</option>
         </select>
         <br>
         <button type="button" ng-click="login()" class="button"  id="btn_submit_signin" > Loign</button>
@@ -27,11 +27,11 @@
         <input ng-model="sign.Password" type="password" class="input" id="user_pass_signup" autocomplete="off" placeholder="Mật khẩu">
         <input ng-model="sign.confirmPass" type="password" class="input" id="user_pass_confirm" autocomplete="off" placeholder="Nhập lại mật khẩu">
         <input ng-model="sign.myStudent" type="password" class="input" id="user_pass_confirm" autocomplete="off" placeholder="Phụ huynh học sinh nếu là phụ huynh">
-        <select name="role-user" id="role-user">
+        <select name="role-user"ng-model="sign.role" id="role-user">
             <option value="student">Học sinh</option>
             <option value="teacher">Giáo viên</option>
             <option value="admin">Admin</option>
-            <option value="parents">Phụ huynh</option>
+            <option value="parent">Phụ huynh</option>
         </select>
 
         <button type="button" ng-click="sign_up()" class="button" value="Sign Up" id="btn_submit_signup">Sign Up</button>

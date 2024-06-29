@@ -11,7 +11,25 @@ app.controller("Ctrl_ESEIM", function ($scope, $rootScope) {
    
 
 });
-
+app.config(function () {
+    toastr.options = {
+        "closeButton": true,
+        "debug": false,
+        "newestOnTop": true,
+        "progressBar": true,
+        "positionClass": "toast-top-right",
+        "preventDuplicates": true,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    };
+});
 app.config(function ($routeProvider) {
     $routeProvider
         .when("/", {
@@ -35,12 +53,18 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
     vm = $scope;
 
     vm.dtOptions = DTOptionsBuilder.newOptions()
+        // .withOption('ajax', {
+        //        url: 'your-api-endpoint', // URL của API của bạn
+        //        type: 'GET', // Loại yêu cầu (GET hoặc POST)
+        //        dataSrc: 'metadata' // Tên thuộc tính trong phản hồi API chứa dữ liệu
+        // })
+        //.withDataProp('metadata')
         .withPaginationType('full_numbers')
         .withDisplayLength(9)
         .withOption('autoWidth', false)
         .withOption('processing', true)
         .withOption('lengthChange', false)
-        .withOption('searching', false)
+        .withOption('searching', true)
         .withOption('scrollX', false)
         .withOption('pageLength', 10)
         .withOption('scrollCollapse', true)
