@@ -14797,3 +14797,11 @@ label {
     color: white;
     padding-top: 1px;
 }
+
+.dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current{
+
+    border-radius:50% !important
+}
+.dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    border-radius: 50% !important
+}

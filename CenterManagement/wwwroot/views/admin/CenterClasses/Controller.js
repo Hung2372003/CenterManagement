@@ -92,7 +92,17 @@ app.factory('dataservice', function ($http, $window) {
             });
         },
         delete: function (data, callback) {
-            $http.post('ádf/sdf', data).success(callback);
+            $http.delete('http://localhost:3000/api/v1/class', data, {
+                headers: {
+                    'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
+                    'Content-Type': 'application/json'
+                }
+            }).then(function (response) {
+                callback(response.data);
+            }, function (error) {
+                toastr.error(error.data);
+                console.error('Error:', error);
+            });
         },
     };
 });
@@ -317,15 +327,15 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         });
     };
 
-    $scope.delete = function (id) {
+    $scope.delete = function (_id) {
         var modalInstance = $uibModal.open({
             templateUrl: ctxfolderMessage + '/messageConfirmDeleted.html',
             windowClass: "message-center",
             controller: function ($scope, $uibModalInstance) {
                 $scope.message = "Bạn có chắc chắn muốn xóa ?";
                 $scope.ok = function () {
-                    dataservice.delete(id, function (rs) {
-                        
+                    dataservice.delete({ classId: _id }, function (rs) {
+                        toastr.error(rs.message);
                     });
                 };
 
