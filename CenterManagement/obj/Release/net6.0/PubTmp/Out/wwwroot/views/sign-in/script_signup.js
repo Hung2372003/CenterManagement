@@ -80,7 +80,7 @@ app.controller('index', function ($scope, $http, $window, $location) {
                     // Lưu token vào localStorage
                     $window.localStorage.setItem('token', response.data.metadata.accessToken);
                     if (response.data.metadata.user.role == "admin") {
-                        $window.location.href = '/Admin';
+                        $window.location.href = '/CenterClasses';
                     } else if (response.data.metadata.user.role == "parent") {
                         $window.location.href = '/HomeParents';
                     } else if (response.data.metadata.user.role == "teacher") {
@@ -99,14 +99,21 @@ app.controller('index', function ($scope, $http, $window, $location) {
 
     $scope.isVisible = false;
     $scope.isVisible1 = true;
-    //$scope.toggleVisibility = function () {
-       
-    //};
+    $scope.showStudent = false;
+
+    $scope.setStudent = function () {
+
+        if ($scope.sign.role == "parent") {
+            $scope.showStudent = true;
+        } else $scope.showStudent = false;
+    }
 
     $scope.openSign = function () {
         $scope.isVisible = !$scope.isVisible;
         $scope.isVisible1 = !$scope.isVisible1;
     }
+
+    
 
     $scope.sign = {};
     $scope.sign_up = function () {

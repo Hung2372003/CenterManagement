@@ -157,6 +157,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
                     })
                     .catch(function (error) {
                         console.error('error:', error);
+                        $window.location.href = '/home/error';
                     });
 
 

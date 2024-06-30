@@ -103,6 +103,10 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
                     }
                 })
                     .then(function (response) {
+                        if (response == "Authenticate failed!") {
+                            $window.location.href = '/home/error';
+                            return
+                        }
                         var events = response.data.metadata.map(function (celender) {
                             return {
                                 title: 'Classes: ' + celender.classes + '<br>' + 'Student: ' + celender.maxStudent + '<br>' + 'Topic: ' + celender.topic,
@@ -137,7 +141,9 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
                         });
                     })
                     .catch(function (error) {
+                        $window.location.href = '/home/error';
                         console.error('error:', error);
+                        
                     });
 
             }

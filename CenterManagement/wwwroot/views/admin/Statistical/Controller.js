@@ -62,80 +62,96 @@ app.config(function ($routeProvider) {
 
 });
 
-app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal, DTOptionsBuilder, DTColumnBuilder, dataservice) {
+app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal, $window) {
 
+   
+    function initializeChart() {
+        jQuery(document).ready(function () {
 
-    jQuery(document).ready(function () {
-        // ECHARTS
-        require.config({
-            paths: {
-                echarts: 'Schedule/assets/global/plugins/echarts/'
-            }
-        });
+            // ECHARTS
+            require.config({
+                paths: {
+                    echarts: 'Schedule/assets/global/plugins/echarts/'
+                }
+            });
 
-        // DEMOS
-        require(
-            [
-                'echarts',
-                'echarts/chart/bar',
-         
-                'echarts/chart/line',
-          
-            ],
-            function (ec) {
-                //--- BAR ---
-                var myChart = ec.init(document.getElementById('echarts_bar'));
-                myChart.setOption({
-                    tooltip: {
-                        trigger: 'axis'
-                    },
-                    legend: {
-                        data: [ 'Số lượng học sinh']
-                    },
-                    toolbox: {
-                        show: true,
-                        feature: {
-                            mark: {
-                                show: true
-                            },
-                            dataView: {
-                                show: true,
-                                readOnly: false
-                            },
-                            magicType: {
-                                show: true,
-                                type: ['line', 'bar']
-                            },
-                            restore: {
-                                show: true
-                            },
-                            saveAsImage: {
+            // DEMOS
+            require(
+                [
+                    'echarts',
+                    'echarts/chart/bar',
+                    'echarts/chart/line',
+                ],
+                function (ec) {
+
+                    //--- BAR ---
+                    var myChart = ec.init(document.getElementById('echarts_bar'));
+                    myChart.setOption({
+                        tooltip: {
+                            trigger: 'axis'
+                        },
+                        legend: {
+                            data: ['Số lượng học sinh']
+                        },
+                        toolbox: {
+                            show: true,
+                            feature: {
+                                mark: {
+                                    show: true
+                                },
+                                dataView: {
+                                    show: true,
+                                    readOnly: false
+                                },
+                                magicType: {
+                                    show: true,
+                                    type: ['line', 'bar']
+                                },
+                                restore: {
+                                    show: true
+                                },
+                                saveAsImage: {
+                                    show: true
+                                }
+                            }
+                        },
+                        calculable: true,
+                        xAxis: [{
+                            type: 'category',
+                            data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+                        }],
+                        yAxis: [{
+                            type: 'value',
+                            splitArea: {
                                 show: true
                             }
-                        }
-                    },
-                    calculable: true,
-                    xAxis: [{
-                        type: 'category',
-                        data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-                    }],
-                    yAxis: [{
-                        type: 'value',
-                        splitArea: {
-                            show: true
-                        }
-                    }],
-                    series: [{
-                        name: 'Số lượng học sinh',
-                        type: 'bar',
-                        data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 200.2, 48.7, 18.8, 6.0, 0]
-                    }]
-                });
+                        }],
+                        series: [{
+                            name: 'Số lượng học sinh',
+                            type: 'bar',
+                            data: $rootScope.data /*[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 200.2, 48.7, 18.8, 6.0, 0]*/
+                        }]
+                    });
 
-                
-             
-            }
-        );
-    });
+
+
+                }
+            );
+        });
+    }
+    $rootScope.data = [];
+    $http.get('http://localhost:3000/api/v1/statistic/student-fl-month?year=2024', {
+        headers: {
+            'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
+            'Content-Type': 'application/json'
+        }
+    }).then(function (response) {
+        $scope.response = response.data;
+        $rootScope.data = $scope.response.metadata;
+        initializeChart()
+    })
+        .catch(function (error) {
+            console.error('Error:', error);
+        });
 
 });

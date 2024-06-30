@@ -36,10 +36,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3RhdGlzdGljYWxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ProjectEnglishCenter/CenterManagement/CenterManagement/Areas/Lecturers/Views/Attendance/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGVjdHVyZXJzXFZpZXdzXEF0dGVuZGFuY2VcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/ProjectEnglishCenter/CenterManagement/CenterManagement/Areas/Lecturers/Views/HomeLecturers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGVjdHVyZXJzXFZpZXdzXEhvbWVMZWN0dXJlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

@@ -61,6 +61,7 @@ app.factory('dataservice', function ($http, $window) {
             }).then(function (response) {          
                 callback(response.data);
             }, function (error) {
+                $window.location.href = '/home/error';
                 console.error('Error:', error);
             });
         },
@@ -68,11 +69,22 @@ app.factory('dataservice', function ($http, $window) {
             $http.post('http://localhost:3000/api/v1/class', data).then(function (response) {
                 callback(response.data);
             }, function (error) {
+                $window.location.href = '/home/error';
                 console.error('Error:', error);
             });
         },
         close: function (data, callback) {
-            $http.post('//', data).success(callback);
+            $http.post('http://localhost:3000/api/v1/class/set-status', data, {
+                headers: {
+                    'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
+                    'Content-Type': 'application/json'
+                }
+            }).then(function (response) {
+                callback(response.data);
+            }, function (error) {
+                $window.location.href = '/home/error';
+                console.error('Error:', error);
+            });
         },
         delete: function (data, callback) {
             $http.post('ádf/sdf', data).success(callback);
@@ -200,80 +212,94 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         });
 
     vm.dtColumns = [
-        DTColumnBuilder.newColumn('id').withTitle('ID').renderWith(function (data, type) {
+        DTColumnBuilder.newColumn('_id').withTitle('ID').renderWith(function (data, type) {
             return data;
         }),
-        DTColumnBuilder.newColumn('subject').withTitle('Môn học').renderWith(function (data, type) {
+        DTColumnBuilder.newColumn('name').withTitle('Tên lớp').renderWith(function (data, type) {
             return data;
         }),
         DTColumnBuilder.newColumn('year').withTitle('Năm học').renderWith(function (data, type) {
             return data;
         }),
-        DTColumnBuilder.newColumn('grade').withTitle('Tên lớp').renderWith(function (data, type) {
+        DTColumnBuilder.newColumn('grade').withTitle('Lớp').renderWith(function (data, type) {
             return data;
         }),     
-        DTColumnBuilder.newColumn('maxStudents').withTitle('Học Viên tối đa').renderWith(function (data, type) {
+        DTColumnBuilder.newColumn('maxStudents').withTitle('Học viên tối đa').renderWith(function (data, type) {
             return data;
         }),
-        DTColumnBuilder.newColumn('registerStudent').withTitle('Số lượng đăng ký').renderWith(function (data, type,full) {
-            return data + "/" + full.maxStudents;
+        DTColumnBuilder.newColumn('registerStudent').withTitle('Số lượng học viên').renderWith(function (data, type, full) {
+           
+            return full.students.length + "/" + full.maxStudents;
         }),
         DTColumnBuilder.newColumn('tuition').withTitle('Học phí lớp').renderWith(function (data, type) {
             return data +"đ";
         }),
-        DTColumnBuilder.newColumn('statusClasses').withTitle('trạng thái').renderWith(function (data, type) {
-            if (data == "Mở đăng ký") {
+        DTColumnBuilder.newColumn('status').withTitle('trạng thái').renderWith(function (data, type) {
+            if (data == "open") {
                 return `<span class="text-success">Mở đăng ký</span>`;
-            } else if (data == "Lớp học kết thúc") {
+            } else if (data == "end") {
                 return `<span  class="text-danger">Lớp học kết thúc</span>`;
-            } else if (data == "Đóng đăng ký") {
+            } else if (data == "close") {
                 return `<span  class="text-warning">Đóng đăng ký</span>`;
             } else { return data; }
               
         }),
         DTColumnBuilder.newColumn(null).withTitle('Số buổi').renderWith(function (data, type, full) {
-            return `<div style="display: flex;justify-content: space-between;align-items: center;"><span>` + 5 + `</span>` + '<button title="Các buổi học" ng-click="detail(' + full.id + ')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #3d9afb;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon"><i class="fa-solid fa-eye"></i></button></div>';
+            return `<div style="display: flex;justify-content: space-between;align-items: center;"><span>` + full.lesson.length + `</span>` + '<button title="Các buổi học" ng-click="detail(' + "'" + full._id + "'" +')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #3d9afb;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon"><i class="fa-solid fa-eye"></i></button></div>';
         }),
 
         DTColumnBuilder.newColumn('action').notSortable().withTitle('Thao tác').renderWith(function (data, type, full, meta) {
-            if (full.statusClasses == "Mở đăng ký") {            
-                return '<button title="Đóng đăng ký" ng-click="lock(' + full.id + ')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #ff6000;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon"><i class="fa-solid fa-key"></i></button>' +
-                    '<button title="Xóa" ng-click="delete(' + full.id + ')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #fe0000;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon"><i class="fa fa-trash"></i></button>';
+            if (full.status == "open") {            
+                return '<button title="Đóng đăng ký" ng-click="lock(' + "'" + full._id + "'" +')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #ff6000;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon"><i class="fa-solid fa-key"></i></button>' +
+                    '<button title="Xóa" ng-click="delete(' + "'" + full._id + "'" +')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #fe0000;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon"><i class="fa fa-trash"></i></button>';
             }
-            else if (full.statusClasses == "Đóng đăng ký") {             
-                return '<button title="Mở đăng ký" ng-click="unlock(' + full.id + ')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #47b35b;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon"><i class="fa-solid fa-unlock-keyhole"></i></button>' +
-                    '<button title="Xóa" ng-click="delete(' + full.id + ')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #fe0000;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon"><i class="fa fa-trash"></i></button>';
+            else if (full.status == "close") {             
+                return '<button title="Mở đăng ký" ng-click="unlock('+"'"+ full._id +"'"+')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #47b35b;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon"><i class="fa-solid fa-unlock-keyhole"></i></button>' +
+                    '<button title="Xóa" ng-click="delete(' + "'" + full._id + "'" +')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #fe0000;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon"><i class="fa fa-trash"></i></button>';
             }
             else
-                return 
+                return '<button title="Xóa" ng-click="delete(' + "'" + full._id + "'" +')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #fe0000;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon"><i class="fa fa-trash"></i></button>';
             
         })
     ];
 
     vm.dtInstance = {};
-    vm.dtOptions.data = $rootScope.studentData;
+/*    vm.dtOptions.data = $rootScope.studentData;*/
 
    
 
-    //$scope.response = {};
-    // $http.get('http://localhost:3000/api/v1/student')
-    //    .then(function (response) {
-    //        $scope.response = response.data;
-    //        vm.dtOptions.data = $scope.response.metadata;
-    //    })
-    //    .catch(function (error) {
-    //        console.error('Error:', error);
-    //    });
+    $scope.response = {};
 
-    $scope.unlock = function (id) {
+    loadData()
+
+    function loadData() {
+
+
+        $http.get('http://localhost:3000/api/v1/class', {
+            headers: {
+                'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
+                'Content-Type': 'application/json'
+            }
+        }).then(function (response) {
+            $scope.response = response.data;
+            vm.dtOptions.data = $scope.response.metadata;
+        })
+            .catch(function (error) {
+                console.error('Error:', error);
+            });
+    } 
+
+    $scope.unlock = function (_id) {
         var modalInstance = $uibModal.open({
             templateUrl: ctxfolderMessage + '/messageConfirmUpdate.html',
             windowClass: "message-center",
             controller: function ($scope, $uibModalInstance) {
                 $scope.message = "Xác nhận mở đăng ký lớp ?";
                 $scope.ok = function () {
-                    dataservice.close(id, function (rs) {
+                    dataservice.close({ classId: _id, status: "open" }, function (rs) {
                         toastr.success(rs.message);
+                        $uibModalInstance.dismiss('cancel');
+                        loadData();
                     });
                 };
 
@@ -289,15 +315,17 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         });
     };
 
-    $scope.lock = function (id) {
+    $scope.lock = function (_id) {
         var modalInstance = $uibModal.open({
             templateUrl: ctxfolderMessage + '/messageConfirmUpdate.html',
             windowClass: "message-center",
             controller: function ($scope, $uibModalInstance) {
                 $scope.message = "Xác nhận đóng đăng ký lớp ?";
                 $scope.ok = function () {
-                    dataservice.close(id, function (rs) {
+                    dataservice.close({ classId: _id, status:"close" }, function (rs) {
                         toastr.success(rs.message);
+                        $uibModalInstance.dismiss('cancel');
+                        loadData();
                     });
                 };
 
@@ -306,6 +334,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
                 };
             },
             size: '25',
+        
         });
         modalInstance.result.then(function (d) {
             $scope.reloadNoResetPage();
@@ -337,8 +366,8 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         });
     };
 
-    $scope.detail = function (id) {
-        console.log('Opening detail modal for student with id:', id);
+    $scope.detail = function (_id) {
+        console.log('Opening detail modal for student with id:', _id);
         $rootScope.lock_screen = !$rootScope.lock_screen;
         var modalInstance = $uibModal.open({
             animation: true,
@@ -348,7 +377,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
             size: 'lg',
             resolve: {
                 classesId: function () {
-                    return id;
+                    return _id;
                 }
             }
         });
@@ -418,17 +447,25 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
 
 });
 
-app.controller('detail', function ($scope, $uibModalInstance, $rootScope, $http, classesId, $compile, $uibModal, DTOptionsBuilder, DTColumnBuilder) {
+app.controller('detail', function ($scope, $uibModalInstance, $rootScope, $http, classesId, $compile, $uibModal, DTOptionsBuilder, DTColumnBuilder, $window) {
 
 
-    $http.post('http://localhost:3000/api/v1/student', classesId)
-        .then(function (response) {
+    loadData();
+    function loadData() {
+        $http.post('http://localhost:3000/api/v1/class/lesson', { classesId: classesId }, {
+            headers: {
+                'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
+                'Content-Type': 'application/json'
+            }
+        }).then(function (response) {
             vm.dtOptions.data = response;
             console.log('Response:', $scope.response);
         })
-        .catch(function (error) {
-            console.error('Error:', error);
-        });
+            .catch(function (error) {
+                console.error('Error:', error);
+                $window.location.href = '/home/error';
+            });
+    }
 
 
 
@@ -521,7 +558,7 @@ app.controller('detail', function ($scope, $uibModalInstance, $rootScope, $http,
         }),
     ];
     vm.dtInstance = {};
-    vm.dtOptions.data = $rootScope.gradeData;
+   /* vm.dtOptions.data = $rootScope.gradeData;*/
     $scope.addGrades = function () {
 
         var modalInstance = $uibModal.open({

@@ -34,6 +34,8 @@
     </style>
     <link rel="shortcut icon" href="LayoutAdmin/assets/images/favicon.ico" />
     @RenderSection("plugin_style", false)
+    <link href="Schedule/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -121,7 +123,7 @@
                                 <i class="mdi mdi-cached me-2 text-success"></i> Activity Log
                             </a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">
+                            <a id="sign-out" class="dropdown-item" href="/login">
                                 <i class="mdi mdi-logout me-2 text-primary"></i> Signout
                             </a>
                         </div>
@@ -172,8 +174,8 @@
                             <i class="mdi mdi-home menu-icon"></i>
                         </a>
                     </li>
-                   <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+      @*             <li class="nav-item">
+                        <a class="nav-link"  href="/ListTeacher" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                             <span class="menu-title">Quản lý giảng viên</span>
                             <i class="menu-arrow"></i>
                             <i class="mdi mdi-crosshairs-gps menu-icon"></i>
@@ -184,21 +186,22 @@
                                 <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Quản lý lương</a></li>
                             </ul>
                         </div>
+                    </li>*@
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ListTeacher">
+                            <span class="menu-title">Quản lý giảng viên</span>
+                            <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+                        </a>
                     </li>
-                
+
                      <li class="nav-item">
                         <a class="nav-link" href="/Statistical">
                             <span class="menu-title">Thống kê</span>
                             <i class="mdi mdi-contacts menu-icon"></i>
                         </a>
                     </li>
-                    @*    <li class="nav-item">
-                        <a class="nav-link" href="pages/forms/basic_elements.html">
-                            <span class="menu-title">Forms</span>
-                            <i class="mdi mdi-format-list-bulleted menu-icon"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
+          
+                    @*     <li class="nav-item">
                         <a class="nav-link" href="pages/charts/chartjs.html">
                             <span class="menu-title">Charts</span>
                             <i class="mdi mdi-chart-bar menu-icon"></i>
@@ -268,6 +271,15 @@
 
     <script src="LayoutAdmin/assets/js/dashboard.js"></script>
     <script src="LayoutAdmin/assets/js/todolist.js"></script>
+    <script>
+        document.getElementById('sign-out').addEventListener('click', function () {
+            // Xóa token khỏi localStorage
+            localStorage.removeItem('token');
+
+            // Chuyển hướng đến trang đăng nhập
+            window.location.href = '/login';
+        });
+    </script>
     @RenderSection("plugin_script", false)
 </body>
 </html>

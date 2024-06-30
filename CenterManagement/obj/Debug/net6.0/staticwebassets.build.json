@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "120MUV7dq3zHEo06fXUxXK1e6Z1oXHO/7w66mnsQBBE=",
+  "Hash": "BMmKkVijYt0I82qf0oUAIOvVooXx4yfkjDCtXYRUpXU=",
   "Source": "CenterManagement",
   "BasePath": "_content/CenterManagement",
   "Mode": "Default",
@@ -6628,40 +6628,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\views\\home\\styles.css"
-    },
-    {
-      "Identity": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\lecturers\\Attendance\\Controller.js",
-      "SourceId": "CenterManagement",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\",
-      "BasePath": "_content/CenterManagement",
-      "RelativePath": "views/lecturers/Attendance/Controller.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\views\\lecturers\\Attendance\\Controller.js"
-    },
-    {
-      "Identity": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\lecturers\\Attendance\\index.html",
-      "SourceId": "CenterManagement",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\",
-      "BasePath": "_content/CenterManagement",
-      "RelativePath": "views/lecturers/Attendance/index.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\views\\lecturers\\Attendance\\index.html"
     },
     {
       "Identity": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\lecturers\\ListClassesLecturers\\attendance.html",

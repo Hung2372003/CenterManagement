@@ -1569,14 +1569,6 @@
       "PackagePath": "staticwebassets\\views\\home\\styles.css"
     },
     {
-      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\lecturers\\Attendance\\Controller.js",
-      "PackagePath": "staticwebassets\\views\\lecturers\\Attendance\\Controller.js"
-    },
-    {
-      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\lecturers\\Attendance\\index.html",
-      "PackagePath": "staticwebassets\\views\\lecturers\\Attendance\\index.html"
-    },
-    {
       "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\lecturers\\ListClassesLecturers\\Controller.js",
       "PackagePath": "staticwebassets\\views\\lecturers\\ListClassesLecturers\\Controller.js"
     },
