@@ -14764,11 +14764,12 @@ label {
     border-color: #ff6b6b;
 }
 
-.caption{
+.caption {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    padding-right: 5px;
+    /* flex-direction: row; */
     align-items: center;
-    padding-right:5px
 }
 [class*=" fa-"]:not(.fa-stack), [class*=" glyphicon-"], [class*=" icon-"], [class^=fa-]:not(.fa-stack), [class^=glyphicon-], [class^=icon-] {
     display: inline-block;

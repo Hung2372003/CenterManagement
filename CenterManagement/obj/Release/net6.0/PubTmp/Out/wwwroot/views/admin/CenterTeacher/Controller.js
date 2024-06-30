@@ -1,30 +1,32 @@
 ﻿var ctxfolder = "/views/admin/CenterTeacher";
-
+var ctxfolderMessage = "/views/message-box";
 var app = angular.module("App_ESEIM", ["ngRoute", "ngResource", "ui.bootstrap", "datatables"]);
 
 //var app = angular.module('App_ESEIM', ["ui.bootstrap", "ngRoute", "ngCookies", "ngValidate", "datatables", "datatables.bootstrap", "pascalprecht.translate", "ngJsTree", "treeGrid", 'datatables.colvis', "ui.bootstrap.contextMenu", 'datatables.colreorder', 'angular-confirm', 'ui.select', 'ui.tinymce', 'dynamicNumber', 'ngTagsInput']);
 
 app.controller("Ctrl_ESEIM", function ($scope, $rootScope) {
 
-
-    $rootScope.studentData = [
-        { _id: 1, subject: 'tiếng anh', year: '2024', grade: "3.1", maxStudents: 70, registerStudent: 30, salary: 20000000, paidSalary:200000, statusClasses: "Mở đăng ký" },
-        { _id: 2, subject: 'tiếng anh', year: '2024', grade: "3.1", maxStudents: 70, registerStudent: 30, salary: 70000000, paidSalary:200000, statusClasses: "Đóng đăng ký" },
-        { _id: 3, subject: 'tiếng anh', year: '2024', grade: "3.1", maxStudents: 70, registerStudent: 30, salary: 90000000, paidSalary:200000,statusClasses: "Lớp học kết thúc" }
-    ]
-
-
-
-
-    $rootScope.gradeData = [
-        { id: 1, teacherId: 'Nguyễn Văn Hưng', topic: '2024', grade: "3.1", startDate: "23/7/2024", startTime: "7h00", endTime: "10h30" },
-        { id: 2, teacherId: 'Vữ Công Hậu', topic: '2024', grade: "3.1", startDate: "28/7/2024", startTime: "7h00", endTime: "10h30" },
-        { id: 3, teacherId: 'Đăng Minh Phương', topic: '2024', grade: "3.1", startDate: "31/7/2024", startTime: "7h00", endTime: "10h30" }
-    ]
-
 });
-
-app.factory('dataservice', function ($http) {
+app.config(function () {
+    toastr.options = {
+        "closeButton": true,
+        "debug": false,
+        "newestOnTop": true,
+        "progressBar": true,
+        "positionClass": "toast-top-right",
+        "preventDuplicates": true,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    };
+});
+app.factory('dataservice', function ($http, $window) {
     $http.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest";
     var headers = {
         "Content-Type": "application/json;odata=verbose",
@@ -52,19 +54,22 @@ app.factory('dataservice', function ($http) {
         $http(req).success(callback);
     };
     return {
-        addClasses: function (data, callback) {
-            $http.post('link/api', data).success(callback);
+        pay: function (data, callback) {
+            $http.post('http://localhost:3000/api/v1/payment/pay-salary', data, {
+                headers: {
+                    'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
+                    'Content-Type': 'application/json'
+                }
+            }).then(function (response) {
+                callback(response.data);
+            }, function (error) {
+               /* $window.location.href = '/home/error';*/
+                console.error('Error:', error);
+                toastr.error(error.data);
+
+            });
         },
-        addGrades: function (data, callback) {
-            $http.post('//', data).success(callback);
-        },
-        close: function (data, callback) {
-            $http.post('//', data).success(callback);
-        },
-        delete: function (data, callback) {
-            $http.post('//', data).success(callback);
-        },
-    };
+    }
 });
 
 
@@ -84,7 +89,7 @@ app.config(function ($routeProvider) {
 
 });
 
-app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal, DTOptionsBuilder, DTColumnBuilder) {
+app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal, DTOptionsBuilder, DTColumnBuilder, dataservice, $window) {
 
 
     vm = $scope;
@@ -96,7 +101,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         .withOption('autoWidth', false)
         .withOption('processing', true)
         .withOption('lengthChange', false)
-        .withOption('searching', false)
+        .withOption('searching', true)
         .withOption('scrollX', false)
         .withOption('pageLength', 10)
         .withOption('scrollCollapse', true)
@@ -119,53 +124,117 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         /*.withOption('scrollX', false)*/
         /*  .withOption('serverSide', true)*/
         .withOption('columnDefs', [
-            { targets: 0, visible: false },  // Ẩn cột đầu tiên          
+            { targets: 0, visible: true },  // Ẩn cột đầu tiên          
         ])
         .withOption('createdRow', function (row, data, dataIndex) {
             $compile(angular.element(row).contents())($scope);
         });
 
     vm.dtColumns = [
-        DTColumnBuilder.newColumn('_id').withTitle('ID').renderWith(function (data, type) {
+        DTColumnBuilder.newColumn('_id').withTitle('Mã giảng viên').renderWith(function (data, type) {
             return data;
         }),
         DTColumnBuilder.newColumn('name').withTitle('Tên giảng viên').renderWith(function (data, type) {
             return data;
         }),
-        DTColumnBuilder.newColumn('addresses').withTitle('Địa chỉ').renderWith(function (data, type) {
-            return data;
-        }),
-        DTColumnBuilder.newColumn('email').withTitle('Email').renderWith(function (data, type) {
-            return data;
-        }),
-        DTColumnBuilder.newColumn('salary').withTitle('Lương tháng ').renderWith(function (data, type) {
+        //DTColumnBuilder.newColumn('addresses').withTitle('Địa chỉ').renderWith(function (data, type) {
+        //    return data;
+        //}),
+        //DTColumnBuilder.newColumn('email').withTitle('Email').renderWith(function (data, type) {
+        //    return data;
+        //}),
+        DTColumnBuilder.newColumn('salary').withTitle('Lương tháng').renderWith(function (data, type) {
             return data ;
         }),
-        DTColumnBuilder.newColumn('paidSalary').withTitle('Đã thanh toán').renderWith(function (data, type) {
+        DTColumnBuilder.newColumn(null).withTitle('Còn phải trả').renderWith(function (data, type, full) {
+            if (full.prePaid == full.salary) {
+                return `<span class="text-success">0</span>`
+
+            } else { return `<span  class="text-warning">` + (full.salary - full.prePaid) + `</span>`; }
+        }),
+        DTColumnBuilder.newColumn('dateOflastPaid').withTitle('Thanh toán gần nhất').renderWith(function (data, type) {
+            if (data == null) {
+                return `<span  class="text-warning">Chưa có giao dịch nào</span>`
+            }
+            else return setTime(data);
+        }),
+
+        DTColumnBuilder.newColumn('totalPaid').withTitle('Tổng số chi trả').renderWith(function (data, type) {
             return data;
         }),
 
         DTColumnBuilder.newColumn('action').notSortable().withTitle('Thao tác').renderWith(function (data, type, full, meta) {
-    
-            return ' <button type="button"  ng-click="pay(' + full.Id + ')" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 30px; padding-left: 17px; padding-right: 17px;background: #07b113;align-items: center;display:flex;">Trả lương</button > ';
+            if (full.prePaid == full.salary) {
+                return ""
+            } else
+                return ' <button type="button"  ng-click="pay(' + "'" + full._id + "'" +')" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 30px; padding-left: 17px; padding-right: 17px;background: #07b113;align-items: center;display:flex;">Trả lương</button > ';
         })
     ];
 
     vm.dtInstance = {};
     vm.dtOptions.data = $rootScope.studentData;
 
+    loadData()
 
-    //$scope.response = {};
-    // $http.get('http://localhost:3000/api/v1/student')
-    //    .then(function (response) {
-    //        $scope.response = response.data;
-    //        vm.dtOptions.data = $scope.response.metadata;
-    //    })
-    //    .catch(function (error) {
-    //        console.error('Error:', error);
-    //    });
+    function loadData() {
 
 
+        $http.get('http://localhost:3000/api/v1/teacher', {
+            headers: {
+                'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
+                'Content-Type': 'application/json'
+            }
+        }).then(function (response) {
+            $scope.response = response.data;
+            vm.dtOptions.data = $scope.response.metadata;
+        })
+            .catch(function (error) {
+                console.error('Error:', error);
+            });
 
 
+    }
+
+
+
+
+    function setTime(x) {
+        var parts = x.split('T');
+        $scope.date = parts[0];
+        var timeParts = parts[1].split(':');
+        $scope.time = parts[0]+" "+ timeParts[0] + 'h' + timeParts[1] 
+        return $scope.time
+
+    }
+    function setDate(x) {
+        var parts = x.split('T');
+        $scope.date = parts[0];
+        $scope.time = parts[1];
+        return parts[0];
+    }
+    $scope.pay = function (_id) {
+        var modalInstance = $uibModal.open({
+            templateUrl: ctxfolderMessage + '/messageConfirmUpdate.html',
+            windowClass: "message-center",
+            controller: function ($scope, $uibModalInstance) {
+                $scope.message = "Xác nhận mở đăng ký lớp ?";
+                $scope.ok = function () {
+                    dataservice.pay({ teacherId: _id }, function (rs) {
+                        toastr.success(rs.message);
+                        $uibModalInstance.dismiss('cancel');
+                        loadData();
+                    });
+                };
+
+                $scope.cancel = function () {
+                    $uibModalInstance.dismiss('cancel');
+                };
+            },
+            size: '25',
+        });
+        modalInstance.result.then(function (d) {
+            $scope.reloadNoResetPage();
+        }, function () {
+        });
+    };
 })

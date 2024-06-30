@@ -109,7 +109,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
                         }
                         var events = response.data.metadata.map(function (celender) {
                             return {
-                                title: 'Classes: ' + celender.classes + '<br>' + 'Student: ' + celender.maxStudent + '<br>' + 'Topic: ' + celender.topic,
+                                title: 'classId: ' + celender.classId + '<br>' + 'Topic: ' + celender.topic,
 
                                 start: celender.startTime,
                                 end: celender.endTime,     

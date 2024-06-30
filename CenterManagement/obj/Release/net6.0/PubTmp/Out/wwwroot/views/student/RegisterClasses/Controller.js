@@ -69,7 +69,8 @@ app.factory('dataservice', function ($http, $window) {
                 callback(response.data);
             }, function (error) {
                 /*     $window.location.href = '/home/error';*/
-                $window.location.href = '/home/error';
+                toastr.error(error.data);
+            
                 console.error('Error:', error);
             });
         },
@@ -99,36 +100,6 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
     vm = $scope;
 
     vm.dtOptions = DTOptionsBuilder.newOptions()
-
-        //.withOption('ajax', {
-        //    url: 'your-api-endpoint', // URL của API của bạn
-        //    type: 'GET', // Loại yêu cầu (GET hoặc POST)
-        //    dataSrc: 'data' // Tên thuộc tính trong phản hồi API chứa dữ liệu
-        //})
-
-        //.withOption('ajax', {
-        //    url: "/TimekeepingData/HRLeaveType/JTable",
-        //    beforeSend: function (jqXHR, settings) {
-        //        App.blockUI({
-        //            target: "#contentMain",
-        //            boxed: true,
-        //            message: 'loading...'
-        //        });
-        //    },
-        //    type: 'POST',
-        //    data: function (d) {
-        //        d.Code = $scope.model.Code;
-        //        d.Name = $scope.model.Name;
-        //        d.Coefficient = $scope.model.Coefficient;
-        //        d.IsSubsidize = $scope.model.IsSubsidize;
-
-        //    },
-        //    complete: function () {
-        //        App.unblockUI("#contentMain");
-        //    }
-        //})
-        //.withDataProp('data') // Cách cũ để chỉ định thuộc tính dữ liệu
-
         .withPaginationType('full_numbers')
         .withDisplayLength(9)
         .withOption('order', [0, 'desc'])
@@ -155,7 +126,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
             "zeroRecords": "Không tìm thấy dữ liệu"
         })
 
-        /*.withOption('scrollX', false)*/
+       /* .withOption('scrollX', false)*/
         /*  .withOption('serverSide', true)*/
         .withOption('columnDefs', [
             { targets: 0, visible: false },  // Ẩn cột đầu tiên          
@@ -163,12 +134,6 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         .withOption('createdRow', function (row, data, dataIndex) {
             $compile(angular.element(row).contents())($scope);
         })
-      
-        //.withOption('initComplete', function (settings, json) {
-        // /*   vm.dtInstance = settings.oInstance.api(); // Gán đối tượng DataTable API vào vm.dtInstance*/
-        //});
-
-       
     vm.dtColumns = [
         DTColumnBuilder.newColumn('_id').withTitle('id').renderWith(function (data, type) {
             return data;
@@ -225,15 +190,6 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
 
 
     vm.dtInstance = {};
-
-    //function reloadData(resetPaging) {
-    //    vm.dtInstance.reloadData(callback, resetPaging);
-
-    //};
-    //function callback(json) {
-
-    //};
-
     $scope.response = {};
     loadData()
     function loadData() {
@@ -257,12 +213,10 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
 
     $scope.register = function (_id) {
        
-        dataservice.register({'"classId"': _id}, function (result) {
-            toastr.success(result)
-            //modalInstance.result.then(function () {
-            //    $scope.reloadTable(); // Gọi hàm reloadTable để reload lại bảng
-            //})
-            toastr.success("sjdfhkjsdfh");
+        dataservice.register({ '"classId"': _id }, function (result) {
+            toastr.success(result.message);
+            loadData()
+   
            
         });
     }

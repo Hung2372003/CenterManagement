@@ -48,7 +48,7 @@ app.config(function ($routeProvider) {
 });
 
 
-app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal, DTOptionsBuilder, DTColumnBuilder) {
+app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal, DTOptionsBuilder, DTColumnBuilder, $window) {
 
     vm = $scope;
 
@@ -79,9 +79,9 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
             },
             "lengthMenu": "Hiển thị _MENU_ mục",
             "search": "Tìm kiếm:",
-            "infoEmpty": "Không có dữ liệu",
+            "infoEmpty": "Bạn chưa đăng ký lớp học nào",
             "infoFiltered": "(lọc từ _MAX_ mục)",
-            "zeroRecords": "Không tìm thấy dữ liệu"
+            "zeroRecords": "Bạn chưa đăng ký lớp học nào"
         })
         /*.withOption('scrollX', false)*/
         /*  .withOption('serverSide', true)*/
@@ -99,7 +99,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         DTColumnBuilder.newColumn('grade').withTitle('Lớp').renderWith(function (data, type) {
             return data;
         }),
-        DTColumnBuilder.newColumn('subject').withTitle('Môn học').renderWith(function (data, type) {
+        DTColumnBuilder.newColumn('name').withTitle('Tên lớp').renderWith(function (data, type) {
             return data;
         }),
         DTColumnBuilder.newColumn('year').withTitle('Năm học').renderWith(function (data, type) {
@@ -124,11 +124,23 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
 
     vm.dtInstance = {};
 
-    vm.dtOptions.data = [
-        { _id: 1, subject: 'Listening', year: '2000', totalLesson: 15, learned: 2, grade: 'Grade 1' },
-        { _id: 2, subject: 'reading', year: '2000', totalLesson: 14, learned: 4, grade: 'Grade 2' },
-        { _id: 3, subject: 'wishtkjths', year: '2000', totalLesson: 17, learned: 7, grade: 'Grade 3' }
-    ]
+    loadData();
+    function loadData() {
+        $http.get('http://localhost:3000/api/v1/class/teacher', {
+            headers: {
+                'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
+                'Content-Type': 'application/json'
+            }
+        }).then(function (response) {
+            vm.dtOptions.data = response.data.metadata;
+            console.log('Response:', $scope.response);
+        })
+            .catch(function (error) {
+                console.error('Error:', error);
+                $window.location.href = '/home/error';
+            });
+    }
+
 
 
     $scope.attendance = function (Id) {

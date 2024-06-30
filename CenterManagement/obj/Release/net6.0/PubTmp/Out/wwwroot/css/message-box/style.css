@@ -94,7 +94,7 @@
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    display: flex;
+    display: flex !important;
     justify-content: space-around;
     align-items: center;
     cursor: pointer;
