@@ -23,8 +23,8 @@
     <form class="signup-form" action="" method="post">
         <input ng-model="sign.name" type="text" class="input" id="name" autocomplete="off" placeholder="Tên">
         <input ng-model="sign.email" type="email" class="input" id="user_email" autocomplete="off" placeholder="Email">
-        <div>
-            <i class="fas fa-calendar-alt click-button" ng-click="openStartDate()" style="position: absolute; transform: translateY(88%); right: 17px; "></i>
+        <div style="position:relative" >
+            <i class="fas fa-calendar-alt click-button" ng-click="openStartDate()" style="position: absolute; transform: translateY(88%); right: 53px; "></i>
             <input type="text" class="input" readonly required ng-click="openStartDate()" ng-model="model.dob" placeholder="Ngày sinh..." uib-datepicker-popup="{{format}}" is-open="startDate.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats">
         </div>
         <input ng-model="sign.address" type="text" class="input" id="user_email" autocomplete="off" placeholder="địa chỉ">

@@ -1769,10 +1769,6 @@
       "PackagePath": "staticwebassets\\site\\images\\loading.gif"
     },
     {
-      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\logo-default-195x39.png",
-      "PackagePath": "staticwebassets\\site\\images\\logo-default-195x39.png"
-    },
-    {
       "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\logo-inverse-195x39.png",
       "PackagePath": "staticwebassets\\site\\images\\logo-inverse-195x39.png"
     },

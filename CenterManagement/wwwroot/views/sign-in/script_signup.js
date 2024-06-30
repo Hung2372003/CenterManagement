@@ -92,7 +92,7 @@ app.controller('index', function ($scope, $http, $window, $location) {
                     toastr.success(response.data.message);
                 })
                 .catch(function (error) {
-                    toastr.error("Tài khoản hoặc mật khẩu không chính xác")
+                    toastr.error("thông tin đăng nhập không chính xác")
                 });
 
        

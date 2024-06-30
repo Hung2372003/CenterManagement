@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hl6axnjE1YP6GvS4aoFsAFsM2UvKVpQhwLMcLzjm+VM=",
+  "Hash": "JKwCQDSCGB0pLXrxREZ88/JwBYq5TDs5hjvQTRQdT9M=",
   "Source": "CenterManagement",
   "BasePath": "_content/CenterManagement",
   "Mode": "Default",
@@ -7546,23 +7546,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\site\\images\\loading.gif"
-    },
-    {
-      "Identity": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\logo-default-195x39.png",
-      "SourceId": "CenterManagement",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\",
-      "BasePath": "_content/CenterManagement",
-      "RelativePath": "site/images/logo-default-195x39.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\site\\images\\logo-default-195x39.png"
     },
     {
       "Identity": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\logo-inverse-195x39.png",

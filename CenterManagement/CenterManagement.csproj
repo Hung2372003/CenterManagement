@@ -195,7 +195,6 @@
     <None Include="wwwroot\site\images\ie8-panel\warning_bar_0000_us.jpg" />
     <None Include="wwwroot\site\images\img.jpg" />
     <None Include="wwwroot\site\images\loading.gif" />
-    <None Include="wwwroot\site\images\logo-default-195x39.png" />
     <None Include="wwwroot\site\images\logo-inverse-195x39.png" />
     <None Include="wwwroot\site\images\our-team-1-272x197.jpg" />
     <None Include="wwwroot\site\images\our-team-2-272x197.jpg" />
