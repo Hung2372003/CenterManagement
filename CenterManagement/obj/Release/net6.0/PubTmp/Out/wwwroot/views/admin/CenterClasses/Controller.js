@@ -66,7 +66,12 @@ app.factory('dataservice', function ($http, $window) {
             });
         },
         addGrades: function (data, callback) {
-            $http.post('http://localhost:3000/api/v1/class', data).then(function (response) {
+            $http.post('http://localhost:3000/api/v1/class/add-lesson', data, {
+                headers: {
+                    'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
+                    'Content-Type': 'application/json'
+                }
+            }).then(function (response) {
                 callback(response.data);
             }, function (error) {
                 toastr.error(error.data);
@@ -87,7 +92,19 @@ app.factory('dataservice', function ($http, $window) {
             });
         },
         delete: function (data, callback) {
-            $http.post('ádf/sdf', data).success(callback);
+            $http.delete('http://localhost:3000/api/v1/class', data, {
+
+                headers: {
+                    'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
+                    'Content-Type': 'application/json'
+                }
+            }).then(function (response) {
+                callback(response.data);
+            }, function (error) {
+                console.log($window.localStorage.getItem('token'))
+                toastr.error(error.data);
+                console.error('Error:', error);
+            });
         },
     };
 });
@@ -312,15 +329,17 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         });
     };
 
-    $scope.delete = function (id) {
+    $scope.delete = function (_id) {
         var modalInstance = $uibModal.open({
             templateUrl: ctxfolderMessage + '/messageConfirmDeleted.html',
             windowClass: "message-center",
             controller: function ($scope, $uibModalInstance) {
                 $scope.message = "Bạn có chắc chắn muốn xóa ?";
                 $scope.ok = function () {
-                    dataservice.delete(id, function (rs) {
-                        
+                    dataservice.delete({ classId: _id }, function (rs) {
+                        toastr.error(rs.message);
+                        loadData()
+                        $uibModalInstance.dismiss('cancel');
                     });
                 };
 
@@ -331,7 +350,8 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
             size: '25',
         });
         modalInstance.result.then(function (d) {
-            $scope.reloadNoResetPage();
+            loadData()
+        
         }, function () {
         });
     };
@@ -370,9 +390,10 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         });
 
         modalInstance.result.then(function () {
-            $scope.reload();
+            loadData()
         }, function () {
             console.log('Modal dismissed at: ' + new Date());
+            loadData()
         });
 
 
@@ -419,7 +440,6 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
 
 app.controller('detail', function ($scope, $uibModalInstance, $rootScope, $http, classesId, $compile, $uibModal, DTOptionsBuilder, DTColumnBuilder, $window) {
 
-
     loadData();
     function loadData() {
         $http.get('http://localhost:3000/api/v1/class/lesson?classId=' + classesId, {
@@ -437,11 +457,6 @@ app.controller('detail', function ($scope, $uibModalInstance, $rootScope, $http,
                /* $window.location.href = '/home/error';*/
             });
     }
-
-
-
-
-  
 
     $scope.ok = function () {
         $uibModalInstance.close();
@@ -490,10 +505,10 @@ app.controller('detail', function ($scope, $uibModalInstance, $rootScope, $http,
         });
 
     vm.dtColumns = [
-        DTColumnBuilder.newColumn('id').withTitle('id').renderWith(function (data, type) {
+        DTColumnBuilder.newColumn('_id').withTitle('id').renderWith(function (data, type) {
             return data;
         }),
-        DTColumnBuilder.newColumn('teacherId').withTitle('Giáo viên').renderWith(function (data, type) {
+        DTColumnBuilder.newColumn('teacher').withTitle('Giáo viên').renderWith(function (data, type) {
             return data;
         }),
         DTColumnBuilder.newColumn('topic').withTitle('Bài giảng').renderWith(function (data, type) {
@@ -535,6 +550,8 @@ app.controller('detail', function ($scope, $uibModalInstance, $rootScope, $http,
         return `${formattedHours}h ${formattedMinutes}`;
     }
 
+    $scope.classesId = classesId;
+
     $scope.addGrades = function () {
 
         var modalInstance = $uibModal.open({
@@ -543,7 +560,11 @@ app.controller('detail', function ($scope, $uibModalInstance, $rootScope, $http,
             controller: 'addGrades',
             backdrop: 'static',
             size: 'lg',
-
+            resolve: {
+                classId: function () {
+                    return $scope.classesId;
+                }
+            }
         });
         modalInstance.opened.then(function () {
             $('.modal').css({
@@ -566,10 +587,11 @@ app.controller('detail', function ($scope, $uibModalInstance, $rootScope, $http,
         });
 
         modalInstance.result.then(function () {
-            $scope.reload();
+            loadData();
         }, function () {
             console.log('Modal dismissed at: ' + new Date());
         });
+        loadData();
     };
 
 
@@ -583,7 +605,7 @@ app.controller('addClasses', function ($scope, $uibModalInstance, $rootScope, $h
         name: '',
         year: 0,
         maxStudent: 0, 
-        tuition:0,
+        tuition: 0,
         
     }
     $scope.submit = function () {
@@ -601,16 +623,17 @@ app.controller('addClasses', function ($scope, $uibModalInstance, $rootScope, $h
 
 });
 
-app.controller('addGrades', function ($scope, $uibModalInstance, $rootScope, $compile, $uibModal,dataservice) {
+app.controller('addGrades', function ($scope, $uibModalInstance, classId,$rootScope, $compile, $uibModal,dataservice) {
 
 
     $scope.model = {
-        classId:"",
+       
         topic: "",
         teacherId: "",
         startDate:"",
         startTime:"",
         endTime: "",
+        classId: classId
     }
 
     $scope.ok = function () {

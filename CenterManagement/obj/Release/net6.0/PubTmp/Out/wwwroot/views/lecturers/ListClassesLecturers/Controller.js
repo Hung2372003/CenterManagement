@@ -105,18 +105,30 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         DTColumnBuilder.newColumn('year').withTitle('Năm học').renderWith(function (data, type) {
             return data;
         }), 
-        DTColumnBuilder.newColumn('totalLesson').withTitle('Tổng số buổi học').renderWith(function (data, type) {
-            return data;
-        }),
-        DTColumnBuilder.newColumn('learned').withTitle('Số buổi đã dạy').renderWith(function (data, type) {
-            return data;
+        //DTColumnBuilder.newColumn('totalLesson').withTitle('Tổng số buổi học').renderWith(function (data, type) {
+        //    return data;
+        //}),
+        //DTColumnBuilder.newColumn('learned').withTitle('Số buổi đã dạy').renderWith(function (data, type) {
+        //    return data;
+        //}),
+        DTColumnBuilder.newColumn(null).withTitle('Học viên').renderWith(function (data, type,full) {
+            return full.students.length +"/"+full.maxStudents ;
         }),
         DTColumnBuilder.newColumn('tuition').withTitle('Học phí').renderWith(function (data, type) {
-            return data;
+            return data +" $";
+        }),
+        DTColumnBuilder.newColumn('status').withTitle('Trạng thái').renderWith(function (data, type) {
+            if (data == "open") {
+                return `<span class="text-success">Đang mở đăng ký</span>`;
+            } else if (data == "end") {
+                return `<span  class="text-danger">Lớp học kết thúc</span>`;
+            } else if (data == "close") {
+                return `<span  class="text-warning">Đã đóng đăng ký</span>`;
+            } else { return data; }
         }),
         DTColumnBuilder.newColumn('status').notSortable().withTitle().renderWith(function (data, type, full, meta) {
-           
-            return ' <button type="button"  ng-click="attendance(' + full._id + ')" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 30px; padding-left: 17px; padding-right: 17px;background: #ff6300;align-items: center;display:flex;">Điểm danh</button > ';
+            if (data == "end" || data == "open") { return "" }
+            else return ' <button type="button"  ng-click="attendance(' + "'" + full._id + "'" + ')" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 30px; padding-left: 17px; padding-right: 17px;background: #ff6300;align-items: center;display:flex;">Điểm danh</button > ';
         }),
 
 
@@ -143,7 +155,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
 
 
 
-    $scope.attendance = function (Id) {
+    $scope.attendance = function (_id) {
         console.log('Opening detail modal for student with id:', _id);
         var modalInstance = $uibModal.open({
             animation: true,
@@ -154,7 +166,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
 
             resolve: {
                 classesId: function () {
-                    return Id;
+                    return _id;
                 }
             }
         });
@@ -189,17 +201,9 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
 
 app.controller('attendance', function ($scope, $uibModalInstance, $rootScope, $http, classesId, $compile, $uibModal, DTOptionsBuilder, DTColumnBuilder) {
 
-
-    //$http.post('http://localhost:3000/api/v1/student', classesId)
-    //    .then(function (response) {
-
-    //        vm.dtOptions.data = response;
-    //        console.log('Response:', $scope.response);
-    //    })
-    //    .catch(function (error) {
-    //        console.error('Error:', error);
-    //    });
-
+    $scope.studentList = [];
+    $scope.lesson = [];
+    
 
 
     $scope.ok = function () {
@@ -243,52 +247,69 @@ app.controller('attendance', function ($scope, $uibModalInstance, $rootScope, $h
         /*.withOption('scrollX', false)*/
         /*  .withOption('serverSide', true)*/
         .withOption('columnDefs', [
-            { targets: 0, visible: false },  // Ẩn cột đầu tiên          
+            { targets: 0, visible: true },  // Ẩn cột đầu tiên          
         ])
         .withOption('createdRow', function (row, data, dataIndex) {
             $compile(angular.element(row).contents())($scope);
         });
 
+
+    $http.get('http://localhost:3000/api/v1/class/attendance?classId=' + classesId)
+        .then(function (response) {
+
+            vm.dtOptions.data = response.data.metadata.studentList;
+            $scope.studentList = response.data.metadata.studentList;
+            $scope.lesson = response.data.metadata.lesson;
+            loadColum();
+            loadcolum2($scope.lesson)
+            console.log('Response:', $scope.response);
+        })
+        .catch(function (error) {
+            console.error('Error:', error);
+        });
+
+    function loadColum() { 
     vm.dtColumns = [
-        DTColumnBuilder.newColumn('id').withTitle('id').renderWith(function (data, type) {
+        DTColumnBuilder.newColumn('_id').withTitle('Mã học viên').renderWith(function (data, type,full) {
             return data;
         }),
 
         DTColumnBuilder.newColumn('name').withTitle('Tên học viên').renderWith(function (data, type) {
             return data;
         }),
-        DTColumnBuilder.newColumn('dateBirth').withTitle('Ngày sinh').renderWith(function (data, type) {
-            return data;
-        }),
-        DTColumnBuilder.newColumn('address').withTitle('Địa chỉ').renderWith(function (data, type) {
-            return data;
-        }),
-        DTColumnBuilder.newColumn('startTime').withTitle('Buổi x').renderWith(function (data, type) {
-            return data;
-        }),
-        DTColumnBuilder.newColumn('endTime').withTitle('Buổi y').renderWith(function (data, type) {
-            return data;
-        }),
         DTColumnBuilder.newColumn(null).withTitle('Select').notSortable()
             .renderWith(function (data, type, full, meta) {
-                return '<input type="checkbox" ng-model="ng'+ full.id +'" ng-change="toggleSelection(' + full.id +')">';
+                return '<input type="checkbox" ng-model="ng'+ full._id +'" ng-change="toggleSelection(' + full._id +')">';
             }),
-    ];
-    
-    //vm.dtColumns.push(DTColumnBuilder.newColumn(null).withTitle('iddjfh').renderWith(function (data, type) {
-    //    return data;
-    //}),)
+        ];
+    }
+    function loadcolum2(lessons) {
+        lessons.forEach(function (lesson) {
+            vm.dtColumns.push(
+                DTColumnBuilder.newColumn(null).withTitle(Tdate(lesson.startTime)).renderWith(function (data) {
+                    var isAbsent = lesson.absent.includes(data._id);
+                    return '<input type="checkbox" ' + (isAbsent ? 'checked' : '') + ' ng-model="ng' + lesson._id + '" ng-change="toggleSelection(\'' + data._id + '\')">';
+                })
+            );
+        });
+    }
 
 
+
+
+    function Tdate(x) {
+        var datePart = x.substring(0, 10);
+   return datePart;
+    }
 
 
 
     vm.dtInstance = {};
-    vm.dtOptions.data = [
-        { id: 1, subject: 'Listening', year: '2000', totalLesson: 15, learned: 2, grade: 'Grade 1' },
-        { id: 2, subject: 'reading', year: '2000', totalLesson: 14, learned: 4, grade: 'Grade 2' },
-        { id: 3, subject: 'wishtkjths', year: '2000', totalLesson: 17, learned: 7, grade: 'Grade 3' }       
-    ]
+    //vm.dtOptions.data = [
+    //    { id: 1, subject: 'Listening', year: '2000', totalLesson: 15, learned: 2, grade: 'Grade 1' },
+    //    { id: 2, subject: 'reading', year: '2000', totalLesson: 14, learned: 4, grade: 'Grade 2' },
+    //    { id: 3, subject: 'wishtkjths', year: '2000', totalLesson: 17, learned: 7, grade: 'Grade 3' }       
+    //]
 
 
     $scope.toggleSelection = function (item) {

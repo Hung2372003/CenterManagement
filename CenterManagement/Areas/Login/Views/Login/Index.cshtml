@@ -4,9 +4,20 @@
     Layout = "~/Areas/Login/Views/Shared/_LayoutLogin.cshtml";
 }
 
+<style>
+
+
+    .uib-datepicker-popup.dropdown-menu {
+        display: block;
+        float: none;
+        margin: 0;
+        left: 195px !important;
+        top: 239px !important;
+    }
+</style>
 
 <div ng-app="App_ESEIM" ng-controller="Ctrl_ESEIM">
-    <div ng-view></div>
+    <div ng-view style="display: flex;flex-direction: column;align-items: baseline;"></div>
 
 </div>
 

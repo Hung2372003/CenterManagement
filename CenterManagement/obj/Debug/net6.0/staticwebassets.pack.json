@@ -1473,6 +1473,414 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\about.html",
+      "PackagePath": "staticwebassets\\site\\about.html"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\bat\\ReCaptcha\\ReCaptcha.php",
+      "PackagePath": "staticwebassets\\site\\bat\\ReCaptcha\\ReCaptcha.php"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\bat\\ReCaptcha\\RequestMethod.php",
+      "PackagePath": "staticwebassets\\site\\bat\\ReCaptcha\\RequestMethod.php"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\bat\\ReCaptcha\\RequestMethod\\Curl.php",
+      "PackagePath": "staticwebassets\\site\\bat\\ReCaptcha\\RequestMethod\\Curl.php"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\bat\\ReCaptcha\\RequestMethod\\CurlPost.php",
+      "PackagePath": "staticwebassets\\site\\bat\\ReCaptcha\\RequestMethod\\CurlPost.php"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\bat\\ReCaptcha\\RequestMethod\\Post.php",
+      "PackagePath": "staticwebassets\\site\\bat\\ReCaptcha\\RequestMethod\\Post.php"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\bat\\ReCaptcha\\RequestMethod\\Socket.php",
+      "PackagePath": "staticwebassets\\site\\bat\\ReCaptcha\\RequestMethod\\Socket.php"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\bat\\ReCaptcha\\RequestMethod\\SocketPost.php",
+      "PackagePath": "staticwebassets\\site\\bat\\ReCaptcha\\RequestMethod\\SocketPost.php"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\bat\\ReCaptcha\\RequestParameters.php",
+      "PackagePath": "staticwebassets\\site\\bat\\ReCaptcha\\RequestParameters.php"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\bat\\ReCaptcha\\Response.php",
+      "PackagePath": "staticwebassets\\site\\bat\\ReCaptcha\\Response.php"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\bat\\ReCaptcha\\autoload.php",
+      "PackagePath": "staticwebassets\\site\\bat\\ReCaptcha\\autoload.php"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\bat\\phpmailer\\PHPMailerAutoload.php",
+      "PackagePath": "staticwebassets\\site\\bat\\phpmailer\\PHPMailerAutoload.php"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\bat\\phpmailer\\class.phpmailer.php",
+      "PackagePath": "staticwebassets\\site\\bat\\phpmailer\\class.phpmailer.php"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\bat\\phpmailer\\class.pop3.php",
+      "PackagePath": "staticwebassets\\site\\bat\\phpmailer\\class.pop3.php"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\bat\\phpmailer\\class.smtp.php",
+      "PackagePath": "staticwebassets\\site\\bat\\phpmailer\\class.smtp.php"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\bat\\rd-mailform.config.json",
+      "PackagePath": "staticwebassets\\site\\bat\\rd-mailform.config.json"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\bat\\rd-mailform.php",
+      "PackagePath": "staticwebassets\\site\\bat\\rd-mailform.php"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\bat\\rd-mailform.tpl",
+      "PackagePath": "staticwebassets\\site\\bat\\rd-mailform.tpl"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\bat\\rd-search.php",
+      "PackagePath": "staticwebassets\\site\\bat\\rd-search.php"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\bat\\reCaptcha.php",
+      "PackagePath": "staticwebassets\\site\\bat\\reCaptcha.php"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\contact-us.html",
+      "PackagePath": "staticwebassets\\site\\contact-us.html"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\site\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\css\\fonts.css",
+      "PackagePath": "staticwebassets\\site\\css\\fonts.css"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\css\\style.css",
+      "PackagePath": "staticwebassets\\site\\css\\style.css"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\site\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\fonts\\Linearicons.eot",
+      "PackagePath": "staticwebassets\\site\\fonts\\Linearicons.eot"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\fonts\\Linearicons.svg",
+      "PackagePath": "staticwebassets\\site\\fonts\\Linearicons.svg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\fonts\\Linearicons.ttf",
+      "PackagePath": "staticwebassets\\site\\fonts\\Linearicons.ttf"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\fonts\\Linearicons.woff",
+      "PackagePath": "staticwebassets\\site\\fonts\\Linearicons.woff"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\site\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\site\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\site\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\site\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\site\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\fonts\\lg.eot",
+      "PackagePath": "staticwebassets\\site\\fonts\\lg.eot"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\fonts\\lg.svg",
+      "PackagePath": "staticwebassets\\site\\fonts\\lg.svg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\fonts\\lg.ttf",
+      "PackagePath": "staticwebassets\\site\\fonts\\lg.ttf"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\fonts\\lg.woff",
+      "PackagePath": "staticwebassets\\site\\fonts\\lg.woff"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\fonts\\materialdesignicons-webfont.eot",
+      "PackagePath": "staticwebassets\\site\\fonts\\materialdesignicons-webfont.eot"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\fonts\\materialdesignicons-webfont.svg",
+      "PackagePath": "staticwebassets\\site\\fonts\\materialdesignicons-webfont.svg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\fonts\\materialdesignicons-webfont.ttf",
+      "PackagePath": "staticwebassets\\site\\fonts\\materialdesignicons-webfont.ttf"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\fonts\\materialdesignicons-webfont.woff",
+      "PackagePath": "staticwebassets\\site\\fonts\\materialdesignicons-webfont.woff"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\fonts\\materialdesignicons-webfont.woff2",
+      "PackagePath": "staticwebassets\\site\\fonts\\materialdesignicons-webfont.woff2"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\_blank.png",
+      "PackagePath": "staticwebassets\\site\\images\\_blank.png"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\about-1-457x566.png",
+      "PackagePath": "staticwebassets\\site\\images\\about-1-457x566.png"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\about-2.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\about-2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\site\\images\\ajax-loader.gif"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\bg-image-01.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\bg-image-01.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\bg-image-02.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\bg-image-02.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\bg-image-2.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\bg-image-2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\bg-image-3.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\bg-image-3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\bg-image-4.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\bg-image-4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\brand-1-229x162.png",
+      "PackagePath": "staticwebassets\\site\\images\\brand-1-229x162.png"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\brand-2-228x162.png",
+      "PackagePath": "staticwebassets\\site\\images\\brand-2-228x162.png"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\brand-3-228x154.png",
+      "PackagePath": "staticwebassets\\site\\images\\brand-3-228x154.png"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\brand-4-228x162.png",
+      "PackagePath": "staticwebassets\\site\\images\\brand-4-228x162.png"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\brand-5-228x162.png",
+      "PackagePath": "staticwebassets\\site\\images\\brand-5-228x162.png"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\site\\images\\favicon.ico"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\group-01-722x490.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\group-01-722x490.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\group-01-original.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\group-01-original.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\group-02-360x326.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\group-02-360x326.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\group-02-original.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\group-02-original.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\group-03-360x326.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\group-03-360x326.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\group-03-original.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\group-03-original.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\home-1-slider-bg.png",
+      "PackagePath": "staticwebassets\\site\\images\\home-1-slider-bg.png"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\home-3-2-258x273.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\home-3-2-258x273.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\home-3-3-258x273.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\home-3-3-258x273.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\home-3-4-258x273.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\home-3-4-258x273.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\home-3-5-258x273.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\home-3-5-258x273.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\home-3-6-95x95.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\home-3-6-95x95.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\home-3-7-95x95.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\home-3-7-95x95.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\ie8-panel\\warning_bar_0000_us.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\ie8-panel\\warning_bar_0000_us.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\img.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\img.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\loading.gif",
+      "PackagePath": "staticwebassets\\site\\images\\loading.gif"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\logo-default-195x39.png",
+      "PackagePath": "staticwebassets\\site\\images\\logo-default-195x39.png"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\logo-inverse-195x39.png",
+      "PackagePath": "staticwebassets\\site\\images\\logo-inverse-195x39.png"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\our-team-1-272x197.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\our-team-1-272x197.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\our-team-2-272x197.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\our-team-2-272x197.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\our-team-3-272x197.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\our-team-3-272x197.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\our-team-4-272x197.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\our-team-4-272x197.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\preloader.gif",
+      "PackagePath": "staticwebassets\\site\\images\\preloader.gif"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\preloader.png",
+      "PackagePath": "staticwebassets\\site\\images\\preloader.png"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\testimonials-1-84x84.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\testimonials-1-84x84.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\testimonials-2-84x84.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\testimonials-2-84x84.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\testimonials-3-84x84.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\testimonials-3-84x84.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\testimonials-4-84x84.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\testimonials-4-84x84.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\tour-list-2-1-365x248.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\tour-list-2-1-365x248.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\tour-list-2-2-365x248.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\tour-list-2-2-365x248.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\tour-list-2-3-365x248.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\tour-list-2-3-365x248.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\tour-list-2-4-365x248.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\tour-list-2-4-365x248.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\video-play.png",
+      "PackagePath": "staticwebassets\\site\\images\\video-play.png"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\vimeo-play.png",
+      "PackagePath": "staticwebassets\\site\\images\\vimeo-play.png"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\world-map-728x385.png",
+      "PackagePath": "staticwebassets\\site\\images\\world-map-728x385.png"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\images\\youtube-play.png",
+      "PackagePath": "staticwebassets\\site\\images\\youtube-play.png"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\index.html",
+      "PackagePath": "staticwebassets\\site\\index.html"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\js\\core.min.js",
+      "PackagePath": "staticwebassets\\site\\js\\core.min.js"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\js\\script.js",
+      "PackagePath": "staticwebassets\\site\\js\\script.js"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\typography.html",
+      "PackagePath": "staticwebassets\\site\\typography.html"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\video\\video.jpg",
+      "PackagePath": "staticwebassets\\site\\video\\video.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\video\\video.mp4",
+      "PackagePath": "staticwebassets\\site\\video\\video.mp4"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\video\\video.ogv",
+      "PackagePath": "staticwebassets\\site\\video\\video.ogv"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\site\\video\\video.webm",
+      "PackagePath": "staticwebassets\\site\\video\\video.webm"
+    },
+    {
       "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\Parents\\ParentsSonClasses\\Controller.js",
       "PackagePath": "staticwebassets\\views\\Parents\\ParentsSonClasses\\Controller.js"
     },
@@ -1519,6 +1927,18 @@
     {
       "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\CenterTeacher\\index.html",
       "PackagePath": "staticwebassets\\views\\admin\\CenterTeacher\\index.html"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\ListStudents\\Controller.js",
+      "PackagePath": "staticwebassets\\views\\admin\\ListStudents\\Controller.js"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\ListStudents\\edit.html",
+      "PackagePath": "staticwebassets\\views\\admin\\ListStudents\\edit.html"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\ListStudents\\index.html",
+      "PackagePath": "staticwebassets\\views\\admin\\ListStudents\\index.html"
     },
     {
       "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\admin\\Statistical\\Controller.js",

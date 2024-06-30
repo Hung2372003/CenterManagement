@@ -74,6 +74,26 @@ app.factory('dataservice', function ($http, $window) {
                 console.error('Error:', error);
             });
         },
+
+
+
+        UnRegister: function (data, callback) {
+            $http.post('http://localhost:3000/api/v1/class/student-cancel', data, {
+                headers: {
+                    'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
+                    'Content-Type': 'application/json'
+                }
+            }).then(function (response) {
+                callback(response.data);
+            }, function (error) {
+                /*     $window.location.href = '/home/error';*/
+                toastr.error(error.data);
+
+                console.error('Error:', error);
+            });
+        },
+
+
     };
 });
 
@@ -178,7 +198,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
             if (full.statusClasses == "open" && (full.statusRegister == false || full.statusRegister == null)) {
                 return ' <button type="button"  ng-click="register(' + "'" + full._id + "'" + ')" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 30px; padding-left: 17px; padding-right: 17px;background: #07b113;align-items: center;display:flex;">Đăng ký</button > ';
             } else if (full.statusClasses == "open" && full.statusRegister == true) {
-                return ' <button type="button"  ng-click="register(' + "'" + full._id + "'" + ')" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 30px; padding-left: 32px;width: 88.19px;background:#ff753b;align-items: center;display:flex;">Hủy</button > ';
+                return ' <button type="button"  ng-click="UnRegister(' + "'" + full._id + "'" + ')" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 30px; padding-left: 32px;width: 88.19px;background:#ff753b;align-items: center;display:flex;">Hủy</button > ';
 
             }
             else {
@@ -220,6 +240,18 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
            
         });
     }
+
+    $scope.UnRegister = function (_id) {
+
+        dataservice.UnRegister({ '"classId"': _id }, function (result) {
+            toastr.success(result.message);
+            loadData()
+
+
+        });
+    }
+
+
 
     $scope.cancel = function () {
         $rootScope.lock_screen = !$rootScope.lock_screen;

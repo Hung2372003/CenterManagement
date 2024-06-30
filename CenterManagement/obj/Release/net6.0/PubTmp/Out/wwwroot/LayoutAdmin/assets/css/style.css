@@ -14764,11 +14764,12 @@ label {
     border-color: #ff6b6b;
 }
 
-.caption{
+.caption {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    padding-right: 5px;
+    /* flex-direction: row; */
     align-items: center;
-    padding-right:5px
 }
 [class*=" fa-"]:not(.fa-stack), [class*=" glyphicon-"], [class*=" icon-"], [class^=fa-]:not(.fa-stack), [class^=glyphicon-], [class^=icon-] {
     display: inline-block;
@@ -14795,4 +14796,12 @@ label {
     margin-right: 7px;
     color: white;
     padding-top: 1px;
+}
+
+.dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current{
+
+    border-radius:50% !important
+}
+.dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    border-radius: 50% !important
 }

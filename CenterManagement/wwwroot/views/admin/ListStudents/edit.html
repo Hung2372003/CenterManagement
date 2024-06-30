@@ -1,0 +1,19 @@
+﻿
+<div class="card" style="-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 54%);position:relative">
+    <div class="card-body">
+        <h4 class="card-title"> Cài đặt độ ưu tiên </h4>
+        <button class="close-button" aria-label="Close" ng-click="cancel()">
+            <span class="close-icon">&times;</span>
+        </button>
+        <form class="forms-sample">
+            <div class="form-group">
+                <label for="exampleInputPassword1">Độ ưu tiên:</label>
+                <input type="number" class="form-control" ng-model="model.discount" id="exampleInputPassword1" placeholder="Nhập độ ưu tiên...">
+            </div>
+            <button type="button" class="btn btn-gradient-danger btn-icon-text click-button" ng-click="submit()" style="height: 41px; padding-left: 17px; padding-right: 17px">
+                xác nhận
+            </button>
+            <button class="btn btn-light click-button" ng-click="cancel()">Cancel</button>
+        </form>
+    </div>
+</div>

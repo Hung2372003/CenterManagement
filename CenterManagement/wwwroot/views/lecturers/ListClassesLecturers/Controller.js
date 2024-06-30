@@ -277,27 +277,25 @@ app.controller('attendance', function ($scope, $uibModalInstance, $rootScope, $h
         DTColumnBuilder.newColumn('name').withTitle('Tên học viên').renderWith(function (data, type) {
             return data;
         }),
-        //DTColumnBuilder.newColumn(null).withTitle('Select').notSortable()
-        //    .renderWith(function (data, type, full, meta) {
-        //        return '<input type="checkbox" ng-model="ng'+ full._id +'" ng-change="toggleSelection(' + full._id +')">';
-        //    }),
+        DTColumnBuilder.newColumn(null).withTitle('Select').notSortable()
+            .renderWith(function (data, type, full, meta) {
+                return '<input type="checkbox" ng-model="ng'+ full._id +'" ng-change="toggleSelection(' + full._id +')">';
+            }),
         ];
     }
     function loadcolum2(lessons) {
-        lessons.forEach(function (lesson, index) {
+        lessons.forEach(function (lesson) {
             vm.dtColumns.push(
                 DTColumnBuilder.newColumn(null).withTitle(Tdate(lesson.startTime)).renderWith(function (data) {
-                    return ""
-                    //var isAbsent = data.absent.includes(lesson._id);
-                    //return '<input type="checkbox" ' + (isAbsent ? 'checked' : '') + ' ng-model="ng' + lesson._id + '" ng-change="toggleSelection(\'' + lesson._id + '\')">';
+                    var isAbsent = lesson.absent.includes(data._id);
+                    return '<input type="checkbox" ' + (isAbsent ? 'checked' : '') + ' ng-model="ng' + lesson._id + '" ng-change="toggleSelection(\'' + data._id + '\')">';
                 })
             );
         });
     }
 
-    //vm.dtColumns.push(DTColumnBuilder.newColumn(null).withTitle('iddjfh').renderWith(function (data, type) {
-    //    return data;
-    //}),)
+
+
 
     function Tdate(x) {
         var datePart = x.substring(0, 10);

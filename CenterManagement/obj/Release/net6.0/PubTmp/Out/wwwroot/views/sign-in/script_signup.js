@@ -79,6 +79,7 @@ app.controller('index', function ($scope, $http, $window, $location) {
                 .then(function (response) {
                     // Lưu token vào localStorage
                     $window.localStorage.setItem('token', response.data.metadata.accessToken);
+                    $window.localStorage.setItem('user', response.data.metadata.user.name)
                     if (response.data.metadata.user.role == "admin") {
                         $window.location.href = '/CenterClasses';
                     } else if (response.data.metadata.user.role == "parent") {
@@ -127,5 +128,18 @@ app.controller('index', function ($scope, $http, $window, $location) {
             });
     };
 
+    $scope.selectedDate = null;
+    $scope.format = 'yyyy/MM/dd';
+    $scope.altInputFormats = ['M!/d!/yyyy'];
+    $scope.startDate = {
+        opened: false
+    };
+    $scope.openStartDate = function () {
+        $scope.startDate.opened = true;
+    };
+    $scope.dateOptions = {
+        formatYear: 'yy',
+        startingDay: 1
+    };
 
 });

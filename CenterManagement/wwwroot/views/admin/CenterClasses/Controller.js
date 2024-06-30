@@ -93,6 +93,7 @@ app.factory('dataservice', function ($http, $window) {
         },
         delete: function (data, callback) {
             $http.delete('http://localhost:3000/api/v1/class', data, {
+
                 headers: {
                     'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
                     'Content-Type': 'application/json'
@@ -100,6 +101,7 @@ app.factory('dataservice', function ($http, $window) {
             }).then(function (response) {
                 callback(response.data);
             }, function (error) {
+                console.log($window.localStorage.getItem('token'))
                 toastr.error(error.data);
                 console.error('Error:', error);
             });
@@ -336,6 +338,8 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
                 $scope.ok = function () {
                     dataservice.delete({ classId: _id }, function (rs) {
                         toastr.error(rs.message);
+                        loadData()
+                        $uibModalInstance.dismiss('cancel');
                     });
                 };
 
@@ -346,7 +350,8 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
             size: '25',
         });
         modalInstance.result.then(function (d) {
-            $scope.reloadNoResetPage();
+            loadData()
+        
         }, function () {
         });
     };
