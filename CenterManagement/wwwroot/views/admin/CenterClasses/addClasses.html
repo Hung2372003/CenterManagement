@@ -9,31 +9,36 @@
         <form class="forms-sample">
 
             <div style="display:flex">
-                <div class="form-group" style="width:100% ;padding-right:17px" >
+                <div class="form-group" style="width:100% ;padding-right:17px">
                     <label for="exampleInputUsername1">Tên Lớp:</label>
-                    <input type="text" class="form-control" ng-model="model.name" id="exampleInputUsername1" placeholder="Nhập tên lớp...">
+                    <input ng-change="change()" type="text" class="form-control"  ng-class="{'error-border':tName}" ng-model="model.name" id="exampleInputUsername1" placeholder="Nhập tên lớp...">
+                    <div class="error-input" ng-show="tName">{{errorName}}</div>
                 </div>
                 <div class="form-group" style="width:100%">
                     <label for="exampleInputUsername1">Lớp:</label>
-                    <input type="number" class="form-control" ng-model="model.grade" id="exampleInputUsername1" placeholder="Nhập tên lớp...">
+                    <input ng-change="change()" type="number" class="form-control"  ng-class="{'error-border':tGrade}" ng-model="model.grade" id="exampleInputUsername1" placeholder="Nhập tên lớp...">
+                    <div class="error-input" ng-show="tGrade">{{errorGrade}}</div>
                 </div>
             </div>
 
             <div style="display:flex">
-                <div class="form-group"style="width:100% ;padding-right:17px" >
+                <div class="form-group" style="width:100% ;padding-right:17px">
                     <label for="exampleInputUsername1">Số học viên tối đa:</label>
-                    <input type="number" class="form-control" ng-model="model.maxStudent" id="exampleInputUsername1" placeholder="Nhập tên lớp...">
+                    <input ng-change="change()" type="number" class="form-control" ng-model="model.maxStudent" ng-class="{'error-border':tMaxStudent}" id="exampleInputUsername1" placeholder="Nhập số lượng học viên...">
+                    <div class="error-input" ng-show="tMaxStudent">{{errorMaxStudent}}</div>
                 </div>
 
-                <div class="form-group"style="width:100%">
+                <div class="form-group" style="width:100%">
                     <label for="exampleInputPassword1">Năm học:</label>
-                    <input type="number" class="form-control" ng-model="model.year" id="exampleInputPassword1" placeholder="Năm học...">
+                    <input ng-change="change()" type="number" class="form-control" ng-class="{'error-border':tYear}" ng-model="model.year" id="exampleInputPassword1" placeholder="Năm học...">
+                    <div class="error-input" ng-show="tYear">{{errorYear}}</div>
                 </div>
             </div>
 
             <div class="form-group">
                 <label for="exampleInputPassword1">Tổng học phí:</label>
-                <input type="number" class="form-control" ng-model="model.tuition" id="exampleInputPassword1" placeholder="Năm học...">
+                <input ng-change="change()" type="number" class="form-control" ng-model="model.tuition" ng-class="{'error-border':tTuition}" id="exampleInputPassword1" placeholder="Nhập học phí...">
+                <div class="error-input" ng-show="tTuition">{{errorTuition}}</div>
             </div>
             <button type="button" class="btn btn-gradient-danger btn-icon-text click-button" ng-click="submit()" style="height: 41px; padding-left: 17px; padding-right: 17px">
                 Thêm mới

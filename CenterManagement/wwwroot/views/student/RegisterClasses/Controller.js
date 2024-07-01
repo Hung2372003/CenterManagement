@@ -189,10 +189,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         DTColumnBuilder.newColumn('statusRegister').withTitle('trạng thái đăng ký').renderWith(function (data, type) {
             if (data == true) {
                 return `<span class="text-success">Đã đăng ký</span>`;
-            //} else if (data == "") {
-            //    return `<span  class="text-warning">Chưa đăng ký</span>`;
             } else { return ""; }
-
         }),
         DTColumnBuilder.newColumn('action').notSortable().withTitle('Thao tác').renderWith(function (data, type, full, meta) {
             if (full.statusClasses == "open" && (full.statusRegister == false || full.statusRegister == null)) {
@@ -213,7 +210,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
     $scope.response = {};
     loadData()
     function loadData() {
-        $http.get('http://localhost:3000/api/v1/class/student?studentId=66640e7af97700fcfddf05cd', {
+        $http.get('http://localhost:3000/api/v1/class/student', {
             headers: {
                 'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
                 'Content-Type': 'application/json'
@@ -231,23 +228,17 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
    
 
 
-    $scope.register = function (_id) {
-       
-        dataservice.register({ '"classId"': _id }, function (result) {
+    $scope.register = function (_id) {    
+        dataservice.register({ classId: _id }, function (result) {
             toastr.success(result.message);
-            loadData()
-   
-           
+            loadData()         
         });
     }
 
     $scope.UnRegister = function (_id) {
-
-        dataservice.UnRegister({ '"classId"': _id }, function (result) {
+        dataservice.UnRegister({ classId: _id }, function (result) {
             toastr.success(result.message);
             loadData()
-
-
         });
     }
 

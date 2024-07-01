@@ -9,14 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Purple Admin</title>
-
-
-@*    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.6/ui-bootstrap-csp.css">*@
-    <!-- Thư viện CSS -->
     <link rel="stylesheet" href="LayoutAdmin/assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="LayoutAdmin/assets/vendors/css/vendor.bundle.base.css">
-   
     <style>
         .btn-outline-button-icon {
             background: #48eff5e0;
@@ -34,17 +28,12 @@
     </style>
     <link rel="shortcut icon" href="LayoutAdmin/assets/images/favicon.ico" />
     @RenderSection("plugin_style", false)
-    <link href="Schedule/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
-
+@*    <link href="Schedule/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />*@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
- 
-
-   @* <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">*@
-    <link rel="stylesheet" href="LayoutAdmin/assets/css/style.css">
-
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="LayoutAdmin/assets/css/style.css">
     <!-- Link to jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
@@ -61,22 +50,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-resource.min.js"></script>
     <!-- Link to Angular UI Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
-@*    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.6/ui-bootstrap-tpls.min.js"></script>*@
     <!-- Link to Angular DataTables -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-datatables/0.6.4/angular-datatables.min.js"></script>
 
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
- 
-
-
-    @* <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/angular/1.11.5/angular-datatables.min.js"></script>
-    *@
-
-
 
 
 </head>
@@ -102,7 +79,7 @@
                 <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
                     <span class="mdi mdi-menu"></span>
                 </button>
-                <div class="search-field d-none d-md-block">
+              @*  <div class="search-field d-none d-md-block">
                     <form class="d-flex align-items-center h-100" action="#">
                         <div class="input-group">
                             <div class="input-group-prepend bg-transparent">
@@ -111,7 +88,7 @@
                             <input type="text" class="form-control bg-transparent border-0" placeholder="Search projects">
                         </div>
                     </form>
-                </div>
+                </div>*@
                 <ul class="navbar-nav navbar-nav-right">
                     <li class="nav-item nav-profile dropdown">
                         <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
@@ -139,7 +116,7 @@
                         </a>
                     </li>                
                     <li class="nav-item nav-logout d-none d-lg-block">
-                        <a class="nav-link" href="#">
+                        <a id="log-out" class="nav-link" href="/home">
                             <i class="mdi mdi-power"></i>
                         </a>
                     </li>
@@ -280,14 +257,14 @@
     <script src="LayoutAdmin/assets/js/todolist.js"></script>
     <script>
         var paragraph = document.getElementById('user');
-        // Gán giá trị của biến vào nội dung của phần tử
         paragraph.innerHTML = localStorage.getItem('user');
         document.getElementById('sign-out').addEventListener('click', function () {
-            // Xóa token khỏi localStorage
             localStorage.removeItem('token');
-
-            // Chuyển hướng đến trang đăng nhập
             window.location.href = '/login';
+        });
+        document.getElementById('log-out').addEventListener('click', function () {
+            localStorage.removeItem('token');
+            window.location.href = '/home';
         });
     </script>
     @RenderSection("plugin_script", false)

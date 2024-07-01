@@ -5,25 +5,6 @@ var app = angular.module("App_ESEIM", ["ngRoute", "ngResource", "ui.bootstrap", 
 //var app = angular.module('App_ESEIM', ["ui.bootstrap", "ngRoute", "ngCookies", "ngValidate", "datatables", "datatables.bootstrap", "pascalprecht.translate", "ngJsTree", "treeGrid", 'datatables.colvis', "ui.bootstrap.contextMenu", 'datatables.colreorder', 'angular-confirm', 'ui.select', 'ui.tinymce', 'dynamicNumber', 'ngTagsInput']);
 
 app.controller("Ctrl_ESEIM", function ($scope, $rootScope) {
-   $rootScope.celender= 
-         [
-            {
-                topic: "Lunch",
-                startTime: "2024-06-23T12:00:00",
-                endTime: "2024-06-23T14:00:00",
-                teacher: "Nguyễn Văn Hưng",
-                name: "4a.5"
-
-             },
-
-            {
-                topic: "Birthday Party",
-                startTime: "2024-06-24T19:00:00",
-                endTime: "2024-06-24T22:30:00",
-                teacher: "Nguyễn Văn Hưng",
-                name:"3A.1"
-            }
-        ]   
 
 });
 

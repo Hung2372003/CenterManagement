@@ -7,12 +7,6 @@ var app = angular.module("App_ESEIM", ["ngRoute", "ngResource", "ui.bootstrap", 
 
 app.controller("Ctrl_ESEIM", function ($scope,$rootScope) {
 
-   
-    $rootScope.gradeData = [
-        { id: 1, teacherId: 'Nguyễn Văn Hưng', topic: '2024', grade: "3.1", startDate: "23/7/2024", startTime: "7h00", endTime: "10h30" },
-        { id: 2, teacherId: 'Vữ Công Hậu', topic: '2024', grade: "3.1", startDate: "28/7/2024", startTime: "7h00", endTime: "10h30" },
-        { id: 3, teacherId: 'Đăng Minh Phương', topic: '2024', grade: "3.1", startDate: "31/7/2024", startTime: "7h00", endTime: "10h30" }
-    ]
 
 
 });
@@ -77,6 +71,7 @@ app.factory('dataservice', function ($http, $window) {
                 callback(response.data);
             }, function (error) {
                 $window.location.href = '/home/error';
+                toastr.error(error.data);
                 console.error('Error:', error);
             });
         },
@@ -173,8 +168,10 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         DTColumnBuilder.newColumn('learned').withTitle('Đã học').renderWith(function (data, type) {
             return data;
         }),
-        DTColumnBuilder.newColumn('skipClass').withTitle('Đã nghỉ').renderWith(function (data, type,full) {
-            return  `<div style="display: flex;justify-content: space-between;align-items: center;"><span  class="text-danger">` + data + `</span>` + '<button title="Các buổi học" ng-click="detail(' +"'"+ full._id +"'"+ ')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #3d9afb;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon"><i class="fa-solid fa-eye"></i></button></div>';
+        DTColumnBuilder.newColumn('skipClass').withTitle('Đã nghỉ').renderWith(function (data, type, full) {
+            if (data == 0) return data;
+            else
+            return `<div style="display: flex;justify-content: space-between;align-items: center;"><span  class="text-danger">` + data + `</span>` + '<button title="Các buổi học" ng-click="detail(' + "'" + full._id + "'" + ')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%) !important;border-radius: 50%;margin-right: 7px;color: white;background: #3d9afb;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon click-button"><i class="fa-solid fa-eye"></i></button></div>';
         }),
         DTColumnBuilder.newColumn('tuition').withTitle('Học phí').renderWith(function (data, type) {
             return data;
@@ -187,7 +184,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         DTColumnBuilder.newColumn('action').notSortable().withTitle('Thanh toán học phí').renderWith(function (data, type, full, meta) {
             if ((full.tuition - full.paid) > 0) {
                 var tuitionUnpaid = (full.tuition - full.paid);
-                return ' <button type="button"  ng-click="pay(\'' + full._id + '\', ' + tuitionUnpaid + ')" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 30px; padding-left: 17px; padding-right: 17px;background: #ff6300;align-items: center;display:flex;">Thanh toán</button > ';
+                return ' <button type="button"  ng-click="pay(\'' + full._id + '\', ' + tuitionUnpaid + ')" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 30px; padding-left: 17px; padding-right: 17px;align-items: center;display:flex;">Thanh toán</button > ';
             }
             else {
                 return '';
@@ -211,6 +208,9 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
             })
             .catch(function (error) {
                 $window.location.href = '/home/error';
+                toastr.error(error.data);
+                console.error('Error:', error);
+      
             });
     }
    
@@ -391,7 +391,10 @@ app.controller('detail', function ($scope, $uibModalInstance, $rootScope, $http,
             vm.dtOptions.data = response.data.metadata;
         })
         .catch(function (error) {
+            $window.location.href = '/home/error';
+            toastr.error(error.data);
             console.error('Error:', error);
+         
         });
     function setTime(x) {
         var parts = x.split('T');
@@ -501,10 +504,23 @@ app.controller('pay', function ($scope, $uibModalInstance, $rootScope, $http, cl
            $scope.errorCcv = "* Yêu cầu CCV chỉ số và tối đa 3 ký tự !";
             $scope.tCcv = true;
         }
+
         else {
             $scope.tCcv = false
-         }
-         if ($scope.tNameOfCard == false && $scope.tCardNumber == false && $scope.tCcv == false) { return true }
+        }
+
+        if ($scope.model.money == null  ) {
+            $scope.errorMoney = "* Tiền thanh toán không được để trống !";
+            $scope.tMoney = true;
+        }
+        else if ($scope.model.money > classesId.tuitionUnpaid || $scope.model.money<10000 ) {
+            $scope.errorMoney = "* yêu cầu tiền thanh toán không được lớn hơn khoản nợ và tối thiểu 10.000đ !";
+            $scope.tMoney = true;
+        }
+        else {
+            $scope.tMoney = false
+        }
+        if ($scope.tNameOfCard == false && $scope.tCardNumber == false && $scope.tCcv == false && $scope.tMoney == false) { return true }
         else return false
 
     }

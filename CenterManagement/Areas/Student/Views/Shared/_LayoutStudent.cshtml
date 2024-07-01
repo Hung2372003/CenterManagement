@@ -12,53 +12,66 @@
 
 
 
-    <!-- Thư viện CSS -->
+
+
+    <style>
+        .card {
+            background: #ffffff;
+        }
+
+
+
+        .dataTables_wrapper .dataTables_paginate .paginate_button {
+            background: center; /* Xóa phông nền */
+            border: none; /* Xóa viền */
+            color: #007bff; /* Màu chữ, có thể thay đổi theo ý muốn */
+            /* transition: all 0.5s ease-in-out;*/
+        }
+
+            .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+                /* Xóa phông nền khi hover */
+                /* Xóa viền khi hover */
+                background: center;
+                border: none;
+                color: #0056b3 !important;
+                /* Màu chữ khi hover, có thể thay đổi theo ý muốn */
+            }
+
+            .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+                border-radius: 50%;
+                width: 23px;
+                height: 23px;
+                padding: 1px; /* Xóa viền của nút hiện tại */
+                color: #007eff !important;
+            }
+    </style>
+
     <link href="Schedule/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
     <link href="Schedule/assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
     <link rel="stylesheet" href="LayoutAdmin/assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="LayoutAdmin/assets/vendors/css/vendor.bundle.base.css">
-    
-@*
-    <link rel="stylesheet" href="LayoutAdmin/assets/css/close.css">*@
-    <link rel="stylesheet" href="LayoutAdmin/assets/css/style.css">
-     <style>
-        .btn-outline-button-icon {
-            background: #48eff5e0;
-            transition: background-color 0.3s; /* Thêm hiệu ứng chuyển đổi mượt */
-        }
 
-            .btn-outline-button-icon:hover {
-                background: #f5f5f5;
-            }
-
-            .btn-outline-button-icon:active {
-                transform: scale(0.9);
-            }
-
-    </style>
     <link rel="shortcut icon" href="LayoutAdmin/assets/images/favicon.ico" />
     @RenderSection("plugin_style", false)
-    
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 
-    <!-- toastr CSS -->
+
+    @* <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">*@
+    <link rel="stylesheet" href="LayoutAdmin/assets/css/style.css">
+
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-
-    <!-- toastr JavaScript -->
-   
-
-@*    <link href="../assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
-    <link href="../assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />*@
-
     <!-- Link to jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <!-- Link to DataTables CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
     <!-- Link to DataTables JS -->
     <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
     <!-- Link to AngularJS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <!-- Link to Angular Route -->
@@ -67,10 +80,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-resource.min.js"></script>
     <!-- Link to Angular UI Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+    @*    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.6/ui-bootstrap-tpls.min.js"></script>*@
     <!-- Link to Angular DataTables -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-datatables/0.6.4/angular-datatables.min.js"></script>
 
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+
+
+
+
+
 
 </head>
 <body>
@@ -80,7 +101,7 @@
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                <d
+
                 <div class="navbar-brand brand-logo caption">
                     <i class=" icon-layers font-green"></i>
 
@@ -93,16 +114,16 @@
                 <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
                     <span class="mdi mdi-menu"></span>
                 </button>
-                <div class="search-field d-none d-md-block">
-                    <form class="d-flex align-items-center h-100" action="#">
-                        <div class="input-group">
-                            <div class="input-group-prepend bg-transparent">
-                                <i class="input-group-text border-0 mdi mdi-magnify"></i>
-                            </div>
-                            <input type="text" class="form-control bg-transparent border-0" placeholder="Search projects">
-                        </div>
-                    </form>
+                @* <div class="search-field d-none d-md-block">
+                <form class="d-flex align-items-center h-100" action="#">
+                <div class="input-group">
+                <div class="input-group-prepend bg-transparent">
+                <i class="input-group-text border-0 mdi mdi-magnify"></i>
                 </div>
+                <input type="text" class="form-control bg-transparent border-0" placeholder="Search projects">
+                </div>
+                </form>
+                </div>*@
                 <ul class="navbar-nav navbar-nav-right">
                     <li class="nav-item nav-profile dropdown">
                         <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
@@ -129,10 +150,9 @@
                             <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
                         </a>
                     </li>
-                 
-                   
+
                     <li class="nav-item nav-logout d-none d-lg-block">
-                        <a class="nav-link" href="#">
+                        <a id="log-out" class="nav-link" href="/home">
                             <i class="mdi mdi-power"></i>
                         </a>
                     </li>
@@ -152,30 +172,30 @@
             <!-- partial:partials/_sidebar.html -->
             <nav class="sidebar sidebar-offcanvas" id="sidebar">
                 <ul class="nav">
-                   @* <li class="nav-item nav-profile">
-                        <a href="#" class="nav-link">
-                            <div class="nav-profile-image">
-                                <img style="border-radius:50% !important" src="LayoutAdmin/assets/images/faces/face1.jpg" alt="profile">
-                                <span class="login-status online"></span>
-                                <!--change to offline or busy as needed-->
-                            </div>
-                            <div class="nav-profile-text d-flex flex-column">
-                                <span class="font-weight-bold mb-2">David Grey. H</span>
-                                <span class="text-secondary text-small">Project Manager</span>
-                            </div>
-                            <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
-                        </a>
+                    @* <li class="nav-item nav-profile">
+                    <a href="#" class="nav-link">
+                    <div class="nav-profile-image">
+                    <img src="LayoutAdmin/assets/images/faces/face1.jpg" alt="profile">
+                    <span class="login-status online"></span>
+                    <!--change to offline or busy as needed-->
+                    </div>
+                    <div class="nav-profile-text d-flex flex-column">
+                    <span class="font-weight-bold mb-2">David Grey. H</span>
+                    <span class="text-secondary text-small">Project Manager</span>
+                    </div>
+                    <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
+                    </a>
                     </li>*@
                     <li class="nav-item">
                         <a class="nav-link" href="/Student">
-                            <span class="menu-title">Các lớp đang học</span>
+                            <span class="menu-title">Danh sách lớp học</span>
                             <i class="mdi mdi-home menu-icon"></i>
                         </a>
                     </li>
-                 
-                   
+
+
                     <li class="nav-item">
-                        <a class="nav-link" href="/registerClasses">
+                        <a class="nav-link" href="/RegisterClasses">
                             <span class="menu-title">Đăng ký lớp học</span>
                             <i class="mdi mdi-format-list-bulleted menu-icon"></i>
                         </a>
@@ -187,7 +207,9 @@
                             <i class="mdi mdi-format-list-bulleted menu-icon"></i>
                         </a>
                     </li>
-                   
+
+
+
                 </ul>
             </nav>
             <!-- partial -->
@@ -202,8 +224,6 @@
             </div>
         </div>
     </div>
-
-   
     <script src="LayoutAdmin/assets/vendors/js/vendor.bundle.base.js"></script>
 
     <script src="LayoutAdmin/assets/vendors/chart.js/Chart.min.js"></script>
@@ -215,20 +235,21 @@
 
     <script src="LayoutAdmin/assets/js/dashboard.js"></script>
     <script src="LayoutAdmin/assets/js/todolist.js"></script>
+
     <script>
         var paragraph = document.getElementById('user');
-        // Gán giá trị của biến vào nội dung của phần tử
         paragraph.innerHTML = localStorage.getItem('user');
-
-       
         document.getElementById('sign-out').addEventListener('click', function () {
-            // Xóa token khỏi localStorage
             localStorage.removeItem('token');
-
-            // Chuyển hướng đến trang đăng nhập
             window.location.href = '/login';
         });
+        document.getElementById('log-out').addEventListener('click', function () {
+            localStorage.removeItem('token');
+            window.location.href = '/home';
+        });
+
     </script>
     @RenderSection("plugin_script", false)
+
 </body>
 </html>

@@ -115,7 +115,7 @@
                 <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
                     <span class="mdi mdi-menu"></span>
                 </button>
-                <div class="search-field d-none d-md-block">
+               @* <div class="search-field d-none d-md-block">
                     <form class="d-flex align-items-center h-100" action="#">
                         <div class="input-group">
                             <div class="input-group-prepend bg-transparent">
@@ -124,7 +124,7 @@
                             <input type="text" class="form-control bg-transparent border-0" placeholder="Search projects">
                         </div>
                     </form>
-                </div>
+                </div>*@
                 <ul class="navbar-nav navbar-nav-right">
                     <li class="nav-item nav-profile dropdown">
                         <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
@@ -153,7 +153,7 @@
                     </li>
                     
                     <li class="nav-item nav-logout d-none d-lg-block">
-                        <a class="nav-link" href="#">
+                        <a id="log-out" class="nav-link" href="/home">
                             <i class="mdi mdi-power"></i>
                         </a>
                     </li>
@@ -232,15 +232,16 @@
 
     <script>
         var paragraph = document.getElementById('user');
-        // Gán giá trị của biến vào nội dung của phần tử
         paragraph.innerHTML = localStorage.getItem('user');
         document.getElementById('sign-out').addEventListener('click', function () {
-            // Xóa token khỏi localStorage
             localStorage.removeItem('token');
-
-            // Chuyển hướng đến trang đăng nhập
             window.location.href = '/login';
         });
+        document.getElementById('log-out').addEventListener('click', function () {
+            localStorage.removeItem('token');
+            window.location.href = '/home';
+        });
+
     </script>
     @RenderSection("plugin_script", false)
 
