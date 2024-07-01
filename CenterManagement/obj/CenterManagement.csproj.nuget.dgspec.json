@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\CenterManagement.csproj": {}
+    "C:\\Users\\minhp\\CenterManagement\\CenterManagement\\CenterManagement.csproj": {}
   },
   "projects": {
-    "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\CenterManagement.csproj": {
+    "C:\\Users\\minhp\\CenterManagement\\CenterManagement\\CenterManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\CenterManagement.csproj",
+        "projectUniqueName": "C:\\Users\\minhp\\CenterManagement\\CenterManagement\\CenterManagement.csproj",
         "projectName": "CenterManagement",
-        "projectPath": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\CenterManagement.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\obj\\",
+        "projectPath": "C:\\Users\\minhp\\CenterManagement\\CenterManagement\\CenterManagement.csproj",
+        "packagesPath": "C:\\Users\\minhp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\minhp\\CenterManagement\\CenterManagement\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\minhp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +35,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -66,6 +66,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -74,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

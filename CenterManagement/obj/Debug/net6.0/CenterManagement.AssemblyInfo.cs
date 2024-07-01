@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CenterManagement")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d41600bfa9539dcf4c7fe163a14e4e64e6519f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("CenterManagement")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CenterManagement")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
