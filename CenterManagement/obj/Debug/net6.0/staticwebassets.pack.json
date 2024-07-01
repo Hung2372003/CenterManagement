@@ -1945,36 +1945,40 @@
       "PackagePath": "staticwebassets\\views\\admin\\Statistical\\index.html"
     },
     {
-      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\1.jpg",
-      "PackagePath": "staticwebassets\\views\\home\\1.jpg"
-    },
-    {
-      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\2.jpg",
-      "PackagePath": "staticwebassets\\views\\home\\2.jpg"
-    },
-    {
-      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\3.jpg",
-      "PackagePath": "staticwebassets\\views\\home\\3.jpg"
-    },
-    {
-      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\4.jpg",
-      "PackagePath": "staticwebassets\\views\\home\\4.jpg"
-    },
-    {
-      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\5.jpg",
-      "PackagePath": "staticwebassets\\views\\home\\5.jpg"
-    },
-    {
-      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\6.jpg",
-      "PackagePath": "staticwebassets\\views\\home\\6.jpg"
-    },
-    {
       "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\Home.js",
       "PackagePath": "staticwebassets\\views\\home\\Home.js"
     },
     {
-      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\game.mp4",
-      "PackagePath": "staticwebassets\\views\\home\\game.mp4"
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\image\\1.jpg",
+      "PackagePath": "staticwebassets\\views\\home\\image\\1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\image\\2.jpg",
+      "PackagePath": "staticwebassets\\views\\home\\image\\2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\image\\3.jpg",
+      "PackagePath": "staticwebassets\\views\\home\\image\\3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\image\\4.jpg",
+      "PackagePath": "staticwebassets\\views\\home\\image\\4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\image\\5.jpg",
+      "PackagePath": "staticwebassets\\views\\home\\image\\5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\image\\6.jpg",
+      "PackagePath": "staticwebassets\\views\\home\\image\\6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\image\\7.jpg",
+      "PackagePath": "staticwebassets\\views\\home\\image\\7.jpg"
+    },
+    {
+      "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\image\\8.jpg",
+      "PackagePath": "staticwebassets\\views\\home\\image\\8.jpg"
     },
     {
       "Id": "D:\\ProjectEnglishCenter\\CenterManagement\\CenterManagement\\wwwroot\\views\\home\\index.html",

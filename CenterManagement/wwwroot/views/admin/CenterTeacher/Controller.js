@@ -137,12 +137,20 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         DTColumnBuilder.newColumn('name').withTitle('Tên giảng viên').renderWith(function (data, type) {
             return data;
         }),
-        //DTColumnBuilder.newColumn('addresses').withTitle('Địa chỉ').renderWith(function (data, type) {
-        //    return data;
-        //}),
-        //DTColumnBuilder.newColumn('email').withTitle('Email').renderWith(function (data, type) {
-        //    return data;
-        //}),
+        DTColumnBuilder.newColumn('address').withTitle('Địa chỉ').renderWith(function (data, type) {
+            return data;
+        }),
+        DTColumnBuilder.newColumn('email').withTitle('Email').renderWith(function (data, type) {
+            return data;
+        }),
+        DTColumnBuilder.newColumn('dob').withTitle('ngày sinh').renderWith(function (data, type) {
+            return setDate(data);
+        }),
+        DTColumnBuilder.newColumn('render').withTitle('Giới tính').renderWith(function (data, type) {
+            if (data == "male") { return "Nam" }
+            else
+            return "Nữ";
+        }),
         DTColumnBuilder.newColumn('salary').withTitle('Lương tháng').renderWith(function (data, type) {
             return data ;
         }),

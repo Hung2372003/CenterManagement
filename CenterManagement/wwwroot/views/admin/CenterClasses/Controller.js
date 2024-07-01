@@ -615,8 +615,9 @@ app.controller('addClasses', function ($scope, $uibModalInstance, $rootScope, $h
         }
         dataservice.addClasses($scope.model, function (responseData) {
             toastr.success(responseData.message);
+            $uibModalInstance.close();
         });
-        $uibModalInstance.close();
+     
 
     }
     $scope.cancel = function () {
@@ -632,22 +633,23 @@ app.controller('addClasses', function ($scope, $uibModalInstance, $rootScope, $h
             $scope.tName = true;
         }
         else {
+
             $scope.tName = false
         }
 
-        if ($scope.model.grade == null || $scope.model.grade == '') {
+        if ($scope.model.grade == null || $scope.model.grade == 0) {
             $scope.errorGrade = "* Lớp không được để trống !";
             $scope.tGrade = true;
         }
-        else if (!$scope.model.grade.match(/^[0-9]*$/)) {
-            $scope.errorGrade = "* lớp chỉ có số !";
-            $scope.tGrade = true;
-        }
+        //else if (!$scope.model.grade.match(/^[0-9]*$/)) {
+        //    $scope.errorGrade = "* lớp chỉ có số !";
+        //    $scope.tGrade = true;
+        //}
         else {
             $scope.tGrade = false
         }
 
-        if ($scope.model.maxStudent == null || $scope.model.maxStudent == '') {
+        if ($scope.model.maxStudent == null || $scope.model.maxStudent == 0) {
             $scope.errorMaxStudent = "* Số lượng học viên không đc để trống !";
             $scope.tMaxStudent = true;
         }
@@ -655,7 +657,7 @@ app.controller('addClasses', function ($scope, $uibModalInstance, $rootScope, $h
             $scope.tMaxStudent = false
         }
 
-        if ($scope.model.year == null) {
+        if ($scope.model.year <=0) {
             $scope.errorYear = "* yêu cầu nhập năm học !";
             $scope.tYear = true;
         }
