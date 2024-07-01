@@ -68,7 +68,7 @@ app.factory('dataservice', function ($http, $window) {
             }).then(function (response) {
                 callback(response.data);
             }, function (error) {
-                /*     $window.location.href = '/home/error';*/
+                    /* $window.location.href = '/home/error';*/
                 toastr.error(error.data);
             
                 console.error('Error:', error);
@@ -86,7 +86,7 @@ app.factory('dataservice', function ($http, $window) {
             }).then(function (response) {
                 callback(response.data);
             }, function (error) {
-                /*     $window.location.href = '/home/error';*/
+                 /*    $window.location.href = '/home/error';*/
                 toastr.error(error.data);
 
                 console.error('Error:', error);

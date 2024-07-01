@@ -14806,3 +14806,11 @@ label {
 .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
     border-radius: 50% !important
 }
+
+.separator {
+    flex-grow: 1;
+    border: none;
+    height: 1px;
+    background-color: black;
+    margin: 0 10px;
+}

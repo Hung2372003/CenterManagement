@@ -1,9 +1,9 @@
 ﻿<h1>Welcome to Enlish Center Mangement System</h1>
 <div ng-show="isVisible1" id="login-tab-content" class="tabcontent">
     <h3>Sign In</h3>
-    <form class="login-form" >
-        <input type="text" class="input"  ng-model="user.username" id="user_login" autocomplete="off" placeholder="Username" />
-        <input type="password" class="input"  ng-model="user.password" id="user_pass" autocomplete="off" placeholder="Password" />
+    <form class="login-form">
+        <input type="text" class="input" ng-model="user.username" id="user_login" autocomplete="off" placeholder="Username" />
+        <input type="password" class="input" ng-model="user.password" id="user_pass" autocomplete="off" placeholder="Password" />
         <select name="role-user" ng-model="user.role" id="role-user">
             <option value="student">Học sinh</option>
             <option value="teacher">Giáo viên</option>
@@ -11,12 +11,13 @@
             <option value="parent">Phụ huynh</option>
         </select>
         <br>
-        <button type="button" ng-click="login()" class="button"  id="btn_submit_signin" > Loign</button>
+        <button type="button" ng-click="login()" class="button" id="btn_submit_signin"> Login</button>
     </form>
     <div class="help-text" style="display: flex; justify-content: space-evenly;">
         <p><a ng-show="isVisible1" href="#signup-tab-content">Forget your password? </a></p>
-        <p  ng-click="openSign()"><a class="tablinksignup" style="cursor: pointer;">Sign up</a></p>    
+        <p ng-click="openSign()"><a class="tablinksignup" style="cursor: pointer;">Sign up</a></p>
     </div>
+        <p style="display: flex; justify-content: space-evenly;"><a href="/home" class="tablinksignup" style="cursor: pointer;">Home</a></p>
 </div>
 <div style="margin-bottom:17px" ng-show="isVisible" id="signup-tab-content" class="tabcontent">
     <h3>Sign up</h3>
@@ -35,7 +36,7 @@
         <select ng-change="setStudent()" name="role-user" ng-model="sign.role" id="role-user">
             <option value="student">Học sinh</option>
             <option value="teacher">Giáo viên</option>
-            <option value="admin">Admin</option>
+            <!--<option value="admin">Admin</option>-->
             <option value="parent">Phụ huynh</option>
         </select>
 
@@ -44,7 +45,10 @@
     </form>
     <div class="help-text">
         <p>By signing up, you agree to our Term of service</p>
-        <a ng-click="openSign()" href="">Sign in</a>
+        <div style="display: flex; align-items: center; justify-content: space-evenly;">
+            <a ng-click="openSign()" href="">Sign in</a>
+            <a href="/home" class="tablinksignup" style="cursor: pointer;">Home</a>
+        </div>
     </div>
 </div>
 

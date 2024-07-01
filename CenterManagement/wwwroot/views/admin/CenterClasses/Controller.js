@@ -261,6 +261,10 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
 
     function loadData() {
 
+        if ($window.localStorage.getItem('token') == null || $window.localStorage.getItem('token') == '') {
+            $window.location.href = '/home/error';
+            return;
+        }
 
         $http.get('http://localhost:3000/api/v1/class', {
             headers: {
@@ -664,7 +668,9 @@ app.controller('addClasses', function ($scope, $uibModalInstance, $rootScope, $h
         else {
             $scope.tYear = false
         }
-        if ($scope.tName == false && $scope.tCardNumber == false && $scope.tGrade == false && $scope.tMaxStudent == false && $scope.tYear == false) { return true }
+
+
+        if ($scope.tName == false && $scope.tGrade == false && $scope.tMaxStudent == false && $scope.tYear == false) { return true }
         else return false
 
     }

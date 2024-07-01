@@ -50,10 +50,10 @@ body {
   height: 700px;
   
 }
-.tabcontent#login-tab-content{
-  width: 370px;
-  height: 350px;
-  display: block;
+.tabcontent#login-tab-content {
+    width: 370px;
+    height: 377px;
+    display: block;
 }
 
 

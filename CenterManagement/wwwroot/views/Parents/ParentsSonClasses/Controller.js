@@ -173,8 +173,10 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
             else
             return `<div style="display: flex;justify-content: space-between;align-items: center;"><span  class="text-danger">` + data + `</span>` + '<button title="Các buổi học" ng-click="detail(' + "'" + full._id + "'" + ')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%) !important;border-radius: 50%;margin-right: 7px;color: white;background: #3d9afb;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon click-button"><i class="fa-solid fa-eye"></i></button></div>';
         }),
-        DTColumnBuilder.newColumn('tuition').withTitle('Học phí').renderWith(function (data, type) {
-            return data;
+        DTColumnBuilder.newColumn('tuition').withTitle('Học phí').renderWith(function (data, type, full) {
+            if (full.originalTuition != data)
+                return `<div style="display: flex;flex-direction: column;"><span style=" text-decoration: line-through;">` + full.originalTuition + `</span>` + `<span style="margin-top: 7px;" class="text-danger" >` + data + `</span></div>`;
+            else return `<span style="margin-top: 7px;" class="text-danger" >` + data + `</span>`
         }),
         DTColumnBuilder.newColumn('paid').withTitle('Còn phải đóng').renderWith(function (data, type,full) {
             if ((full.tuition - full.paid)>0) {

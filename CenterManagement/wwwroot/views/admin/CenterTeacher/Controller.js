@@ -124,7 +124,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         /*.withOption('scrollX', false)*/
         /*  .withOption('serverSide', true)*/
         .withOption('columnDefs', [
-            { targets: 0, visible: true },  // Ẩn cột đầu tiên          
+            { targets: 0, visible: false },  // Ẩn cột đầu tiên          
         ])
         .withOption('createdRow', function (row, data, dataIndex) {
             $compile(angular.element(row).contents())($scope);
@@ -138,18 +138,17 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
             return data;
         }),
         DTColumnBuilder.newColumn('address').withTitle('Địa chỉ').renderWith(function (data, type) {
+            if (data == null) return ""
+            else
             return data;
         }),
         DTColumnBuilder.newColumn('email').withTitle('Email').renderWith(function (data, type) {
             return data;
         }),
         DTColumnBuilder.newColumn('dob').withTitle('ngày sinh').renderWith(function (data, type) {
-            return setDate(data);
-        }),
-        DTColumnBuilder.newColumn('render').withTitle('Giới tính').renderWith(function (data, type) {
-            if (data == "male") { return "Nam" }
+            if (data == null) return ""
             else
-            return "Nữ";
+                return setDate(data);
         }),
         DTColumnBuilder.newColumn('salary').withTitle('Lương tháng').renderWith(function (data, type) {
             return data ;
@@ -175,7 +174,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
             if (full.prePaid == full.salary) {
                 return ""
             } else
-                return ' <button type="button"  ng-click="pay(' + "'" + full._id + "'" +')" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 30px; padding-left: 17px; padding-right: 17px;background: #07b113;align-items: center;display:flex;">Trả lương</button > ';
+                return ' <button type="button"  ng-click="pay(' + "'" + full._id + "'" +')" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 30px; padding-left: 17px; padding-right: 17px;background: #07b113;align-items: center;display:flex;">Thanh toán</button > ';
         })
     ];
 

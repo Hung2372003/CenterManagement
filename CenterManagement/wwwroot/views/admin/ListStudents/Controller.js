@@ -137,12 +137,19 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         DTColumnBuilder.newColumn('name').withTitle('Tên học viên').renderWith(function (data, type) {
             return data;
         }),
-        //DTColumnBuilder.newColumn('addresses').withTitle('Địa chỉ').renderWith(function (data, type) {
-        //    return data;
-        //}),
-       
+        DTColumnBuilder.newColumn('dob').withTitle('Ngày sinh').renderWith(function (data, type) {
+            if (data == null) return ""
+            else
+            return data;
+        }),
         DTColumnBuilder.newColumn('address').withTitle('Địa chỉ').renderWith(function (data, type) {
+            if (data == null) return ""
+            else
             return data ;
+        }),
+        DTColumnBuilder.newColumn('email').withTitle('Email').renderWith(function (data, type) {
+
+            return data;
         }),
         DTColumnBuilder.newColumn('discount').withTitle('Ưu đãi').renderWith(function (data, type,full) {
             return `<div style="display: flex;justify-content: space-between;align-items: center;"><span>` + data + ` % </span>` + '<button title="chỉnh sửa" ng-click="edit(' + "'" + full._id + "'" + ')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #3d9afb;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon button-full "><i class="fa-solid fa-pen-to-square"></i></button></div>';

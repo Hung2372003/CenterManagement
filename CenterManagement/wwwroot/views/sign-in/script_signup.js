@@ -71,8 +71,9 @@ app.factory('authInterceptor', function ($q, $window) {
 app.controller('index', function ($scope, $http, $window, $location) {
    
     $scope.user = {};
+   /* $cope.sign.role = "student";*/
     $scope.login = function () {
-      
+     
         
 
         $http.post('http://localhost:3000/api/v1/auth/login/' + $scope.user.role, $scope.user)               
@@ -80,6 +81,7 @@ app.controller('index', function ($scope, $http, $window, $location) {
                     // Lưu token vào localStorage
                     $window.localStorage.setItem('token', response.data.metadata.accessToken);
                     $window.localStorage.setItem('user', response.data.metadata.user.name)
+                    $window.localStorage.setItem('IDUser', response.data.metadata.user._id)
                     if (response.data.metadata.user.role == "admin") {
                         $window.location.href = '/CenterClasses';
                     } else if (response.data.metadata.user.role == "parent") {
@@ -124,6 +126,7 @@ app.controller('index', function ($scope, $http, $window, $location) {
        
             })
             .catch(function (error) {
+                toastr.error(error.data);
             
             });
     };

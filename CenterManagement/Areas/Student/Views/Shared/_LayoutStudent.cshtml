@@ -125,6 +125,8 @@
                 </form>
                 </div>*@
                 <ul class="navbar-nav navbar-nav-right">
+                    <li  id="IDUser">
+                    </li>
                     <li class="nav-item nav-profile dropdown">
                         <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                             <div class="nav-profile-img">
@@ -135,6 +137,7 @@
                                 <p id="user" class="mb-1 text-black"></p>
                             </div>
                         </a>
+
                         <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
                             <a class="dropdown-item" href="#">
                                 <i class="mdi mdi-cached me-2 text-success"></i> Activity Log
@@ -143,7 +146,8 @@
                             <a id="sign-out" class="dropdown-item" href="/login">
                                 <i class="mdi mdi-logout me-2 text-primary"></i> Signout
                             </a>
-                        </div>
+                           
+                        </div>                      
                     </li>
                     <li class="nav-item d-none d-lg-block full-screen-link">
                         <a class="nav-link">
@@ -151,6 +155,8 @@
                         </a>
                     </li>
 
+
+                 
                     <li class="nav-item nav-logout d-none d-lg-block">
                         <a id="log-out" class="nav-link" href="/home">
                             <i class="mdi mdi-power"></i>
@@ -237,6 +243,7 @@
     <script src="LayoutAdmin/assets/js/todolist.js"></script>
 
     <script>
+
         var paragraph = document.getElementById('user');
         paragraph.innerHTML = localStorage.getItem('user');
         document.getElementById('sign-out').addEventListener('click', function () {
@@ -247,6 +254,7 @@
             localStorage.removeItem('token');
             window.location.href = '/home';
         });
+        document.getElementById('IDUser').innerHTML = "ID:" + localStorage.getItem('IDUser');
 
     </script>
     @RenderSection("plugin_script", false)
