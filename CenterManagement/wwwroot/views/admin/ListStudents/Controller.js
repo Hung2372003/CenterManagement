@@ -144,8 +144,8 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
         DTColumnBuilder.newColumn('address').withTitle('Địa chỉ').renderWith(function (data, type) {
             return data ;
         }),
-        DTColumnBuilder.newColumn('discount').withTitle('Độ ưu tiên').renderWith(function (data, type,full) {
-            return `<div style="display: flex;justify-content: space-between;align-items: center;"><span>` + data + `</span>` + '<button title="chỉnh sửa" ng-click="edit(' + "'" + full._id + "'" + ')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #3d9afb;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon button-full "><i class="fa-solid fa-pen-to-square"></i></button></div>';
+        DTColumnBuilder.newColumn('discount').withTitle('Ưu đãi').renderWith(function (data, type,full) {
+            return `<div style="display: flex;justify-content: space-between;align-items: center;"><span>` + data + ` % </span>` + '<button title="chỉnh sửa" ng-click="edit(' + "'" + full._id + "'" + ')" style="width: 25px;pointer-events: auto !important; height: 25px; padding: 0px;-webkit-box-shadow: 0 2px 5px 0 rgb(0 3 6 / 97%);border-radius: 50%;margin-right: 7px;color: white;background: #3d9afb;padding-top: 1px; " class="btn btn-icon-only btn-circle btn-outline-button-icon button-full "><i class="fa-solid fa-pen-to-square"></i></button></div>';
         }),
         //DTColumnBuilder.newColumn('action').notSortable().withTitle('').renderWith(function (data, type, full, meta) {
         //        return ' <button type="button"  ng-click="pay(' + "'" + full._id + "'" +')" class="btn btn-gradient-danger btn-icon-text click-button" style="height: 30px; padding-left: 17px; padding-right: 17px;background: #07b113;align-items: center;display:flex;">Trả lương</button > ';

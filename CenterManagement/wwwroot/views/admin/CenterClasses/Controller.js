@@ -92,7 +92,7 @@ app.factory('dataservice', function ($http, $window) {
             });
         },
         delete: function (data, callback) {
-            $http.delete('http://localhost:3000/api/v1/class', data, {
+            $http.post('http://localhost:3000/api/v1/class/delete', data, {
 
                 headers: {
                     'Authorization': 'Bearer ' + $window.localStorage.getItem('token'),
@@ -337,7 +337,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
                 $scope.message = "Bạn có chắc chắn muốn xóa ?";
                 $scope.ok = function () {
                     dataservice.delete({ classId: _id }, function (rs) {
-                        toastr.error(rs.message);
+                        toastr.success(rs.message);
                         loadData()
                         $uibModalInstance.dismiss('cancel');
                     });

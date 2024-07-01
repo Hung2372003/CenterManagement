@@ -199,7 +199,7 @@ app.controller('index', function ($scope, $compile, $rootScope, $http, $uibModal
 
 
 
-app.controller('attendance', function ($scope, $uibModalInstance, $rootScope, $http, classesId, $compile, $uibModal, DTOptionsBuilder, DTColumnBuilder) {
+app.controller('attendance', function ($scope, $uibModalInstance, $rootScope, $http, classesId, $compile, $uibModal, $timeout, DTOptionsBuilder, DTColumnBuilder) {
 
     $scope.studentList = [];
     $scope.lesson = [];
@@ -269,37 +269,38 @@ app.controller('attendance', function ($scope, $uibModalInstance, $rootScope, $h
         });
 
     function loadColum() { 
-    vm.dtColumns = [
-        DTColumnBuilder.newColumn('_id').withTitle('Mã học viên').renderWith(function (data, type,full) {
-            return data;
-        }),
+        vm.dtColumns = [
+            DTColumnBuilder.newColumn('_id').withTitle('Mã học viên').renderWith(function (data, type, full) {
+                return data;
+            }),
 
-        DTColumnBuilder.newColumn('name').withTitle('Tên học viên').renderWith(function (data, type) {
-            return data;
-        }),
-        DTColumnBuilder.newColumn(null).withTitle('Select').notSortable()
-            .renderWith(function (data, type, full, meta) {
-                return '<input type="checkbox" ng-model="ng'+ full._id +'" ng-change="toggleSelection(' + full._id +')">';
+            DTColumnBuilder.newColumn('name').withTitle('Tên học viên').renderWith(function (data, type) {
+                return data;
             }),
         ];
     }
     function loadcolum2(lessons) {
-        lessons.forEach(function (lesson) {
-            vm.dtColumns.push(
-                DTColumnBuilder.newColumn(null).withTitle(Tdate(lesson.startTime)).renderWith(function (data) {
-                    var isAbsent = lesson.absent.includes(data._id);
-                    return '<input type="checkbox" ' + (isAbsent ? 'checked' : '') + ' ng-model="ng' + lesson._id + '" ng-change="toggleSelection(\'' + data._id + '\')">';
-                })
-            );
+       
+        $timeout(function () {
+            loadColum();  // Gọi lại hàm này để đảm bảo rằng các cột ban đầu được tải trước
+            lessons.forEach(function (lesson) {
+                vm.dtColumns.push(
+                    DTColumnBuilder.newColumn(null).withTitle(lesson.startTime).renderWith(function (data) {
+                        var isAbsent = lesson.absent.includes(data._id);
+                        return '<input type="checkbox" ' + (isAbsent ? 'checked' : '') + ' ng-model="ng' + lesson._id + '" ng-change="toggleSelection(\'' + data._id + '\')">';
+                    })
+                );
+            });
         });
+    /*    $scope.$apply(); */
     }
 
-
+    loadColum();
 
 
     function Tdate(x) {
         var datePart = x.substring(0, 10);
-   return datePart;
+         return datePart;
     }
 
 
